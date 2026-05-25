@@ -1,8 +1,10 @@
-
+'use client'
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import Marquee from 'react-fast-marquee'
+import { Price, useCurrency } from "@/util/currency"
 export default function DealerDetails() {
+	const { format } = useCurrency()
 
 	return (
 		<>
@@ -203,7 +205,7 @@ export default function DealerDetails() {
 															</div>
 															<div className="endtime">
 																<div className="card-price">
-																	<h6 className="text-lg-bold neutral-1000">$72.15</h6>
+																	<h6 className="text-lg-bold neutral-1000"><Price amount={72.15} /></h6>
 																	<p className="text-md-medium neutral-500">/ day</p>
 																</div>
 																<div className="card-button"><Link className="btn btn-gray" href="/cars-details-1">Book Now</Link></div>
@@ -237,7 +239,7 @@ export default function DealerDetails() {
 															</div>
 															<div className="endtime">
 																<div className="card-price">
-																	<h6 className="text-lg-bold neutral-1000">$69.56</h6>
+																	<h6 className="text-lg-bold neutral-1000"><Price amount={69.56} /></h6>
 																	<p className="text-md-medium neutral-500">/ day</p>
 																</div>
 																<div className="card-button"><Link className="btn btn-gray" href="/cars-details-1">Book Now</Link></div>
@@ -271,7 +273,7 @@ export default function DealerDetails() {
 															</div>
 															<div className="endtime">
 																<div className="card-price">
-																	<h6 className="text-lg-bold neutral-1000">$253.0</h6>
+																	<h6 className="text-lg-bold neutral-1000"><Price amount={253} /></h6>
 																	<p className="text-md-medium neutral-500">/ day</p>
 																</div>
 																<div className="card-button"><Link className="btn btn-gray" href="/cars-details-1">Book Now</Link></div>
@@ -305,7 +307,7 @@ export default function DealerDetails() {
 															</div>
 															<div className="endtime">
 																<div className="card-price">
-																	<h6 className="text-lg-bold neutral-1000">$75.86</h6>
+																	<h6 className="text-lg-bold neutral-1000"><Price amount={75.86} /></h6>
 																	<p className="text-md-medium neutral-500">/ day</p>
 																</div>
 																<div className="card-button"><Link className="btn btn-gray" href="/cars-details-1">Book Now</Link></div>
@@ -340,7 +342,7 @@ export default function DealerDetails() {
 													<div className="pt-20">
 														<div className="box-slider-range">
 															<div id="slider-range" />
-															<div className="box-value-price"><span className="text-md-medium neutral-1000">$0</span><span className="text-md-medium neutral-1000">$500</span></div>
+															<div className="box-value-price"><span className="text-md-medium neutral-1000">{format(0, { decimals: 0 })}</span><span className="text-md-medium neutral-1000">{format(500, { decimals: 0 })}</span></div>
 															<input className="value-money" type="hidden" />
 														</div>
 													</div>

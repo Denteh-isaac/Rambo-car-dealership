@@ -1,4 +1,6 @@
+'use client'
 import Link from 'next/link'
+import { Price } from '@/util/currency'
 
 export default function CarCard2({ car }: any) {
 	return (
@@ -42,7 +44,7 @@ export default function CarCard2({ car }: any) {
 						<div className="endtime">
 							<div className="card-price">
 								<p className="text-md-medium neutral-500 mr-5">From</p>
-								<h6 className="heading-6 neutral-1000">$778.35</h6>
+								<h6 className="heading-6 neutral-1000"><Price amount={car?.price ?? 778.35} /></h6>
 								<p className="text-md-medium neutral-500">/ night</p>
 							</div>
 							<div className="card-button"><Link className="btn btn-gray" href="/cars-details-3">Book Now</Link></div>

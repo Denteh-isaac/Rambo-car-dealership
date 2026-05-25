@@ -1,6 +1,9 @@
+'use client';
 import Link from "next/link";
+import { CURRENCIES, CurrencyCode, Price, useCurrency } from "@/util/currency";
 
 export default function Offcanvas({ isOffcanvas, handleOffcanvas }: any) {
+    const { currency, setCurrency } = useCurrency();
     return (
         <>
             <div className={`sidebar-canvas-wrapper perfect-scrollbar button-bg-2 ${isOffcanvas ? "sidebar-canvas-visible" : ""}`}>
@@ -45,30 +48,21 @@ export default function Offcanvas({ isOffcanvas, handleOffcanvas }: any) {
                             </div>
                             <div className="d-inline-block box-dropdown-cart align-middle mr-15">
                                 <span className="text-14-medium icon-list icon-cart">
-                                    <span className="text-14-medium arrow-down text-dark invert">USD</span>
+                                    <span className="text-14-medium arrow-down text-dark invert">{currency}</span>
                                 </span>
                                 <div className="dropdown-cart">
                                     <ul>
-                                        <li>
-                                            <Link className="text-sm-medium" href="#">
-                                                GHS (₵)
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link className="text-sm-medium" href="#">
-                                                USD
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link className="text-sm-medium" href="#">
-                                                EUR
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link className="text-sm-medium" href="#">
-                                                SGP
-                                            </Link>
-                                        </li>
+                                        {(Object.keys(CURRENCIES) as CurrencyCode[]).map((code) => (
+                                            <li key={code}>
+                                                <a
+                                                    className="text-sm-medium"
+                                                    href="#"
+                                                    onClick={(e) => { e.preventDefault(); setCurrency(code); }}
+                                                >
+                                                    {CURRENCIES[code].label}
+                                                </a>
+                                            </li>
+                                        ))}
                                     </ul>
                                 </div>
                             </div>
@@ -106,7 +100,7 @@ export default function Offcanvas({ isOffcanvas, handleOffcanvas }: any) {
                                         <Link href="#" className="text-md-bold neutral-1000">
                                             R1 Concepts® – eLINE Series Plain Brake Rotors
                                         </Link>
-                                        <p className="text-md-bold text-success">$20.00</p>
+                                        <p className="text-md-bold text-success"><Price amount={20} /></p>
                                     </div>
                                 </div>
                                 <div className="d-flex align-items-center mb-3">
@@ -119,7 +113,7 @@ export default function Offcanvas({ isOffcanvas, handleOffcanvas }: any) {
                                         <Link href="#" className="text-md-bold neutral-1000">
                                             PIRELLI TIRES® – P4 FOUR SEASONS PLUS
                                         </Link>
-                                        <p className="text-md-bold text-success">$160.00</p>
+                                        <p className="text-md-bold text-success"><Price amount={160} /></p>
                                     </div>
                                 </div>
                                 <div className="d-flex align-items-center mb-3">
@@ -132,7 +126,7 @@ export default function Offcanvas({ isOffcanvas, handleOffcanvas }: any) {
                                         <Link href="#" className="text-md-bold neutral-1000">
                                             Mobil 1 Extended Performance Full Synthetic Motor Oil
                                         </Link>
-                                        <p className="text-md-bold text-success">$33.00</p>
+                                        <p className="text-md-bold text-success"><Price amount={33} /></p>
                                     </div>
                                 </div>
                                 <div className="d-flex align-items-center mb-3">
@@ -145,7 +139,7 @@ export default function Offcanvas({ isOffcanvas, handleOffcanvas }: any) {
                                         <Link href="#" className="text-md-bold neutral-1000">
                                             HRE FlowForm® – FT01 Tarma Honda 2024
                                         </Link>
-                                        <p className="text-md-bold text-success">$250.00</p>
+                                        <p className="text-md-bold text-success"><Price amount={250} /></p>
                                     </div>
                                 </div>
                                 <div className="d-flex align-items-center mb-3">
@@ -158,7 +152,7 @@ export default function Offcanvas({ isOffcanvas, handleOffcanvas }: any) {
                                         <Link href="#" className="text-md-bold neutral-1000">
                                             Mobil Delvac 1300 Super Heavy Duty Synthetic
                                         </Link>
-                                        <p className="text-md-bold text-success">$44.00</p>
+                                        <p className="text-md-bold text-success"><Price amount={44} /></p>
                                     </div>
                                 </div>
                             </div>

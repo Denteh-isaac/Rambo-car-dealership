@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "price": 100,
+        "price": 77595,
         "duration": "7",
         "carType": "Sedans",
         "amenities": "Leather upholstery",
@@ -13,7 +13,7 @@
     },
     {
         "id": 2,
-        "price": 200,
+        "price": 51080,
         "duration": "5",
         "carType": "Hatchbacks",
         "amenities": "Heated seats",
@@ -25,7 +25,7 @@
     },
     {
         "id": 3,
-        "price": 300,
+        "price": 34525,
         "duration": "10",
         "carType": "Convertibles",
         "amenities": "Sunroof/Moonroof",
@@ -37,7 +37,7 @@
     },
     {
         "id": 4,
-        "price": 400,
+        "price": 37245,
         "duration": "7",
         "carType": "Sedans",
         "amenities": "Leather upholstery",
@@ -49,7 +49,7 @@
     },
     {
         "id": 5,
-        "price": 500,
+        "price": 158550,
         "duration": "5",
         "carType": "Sedans",
         "amenities": "Heads-up display",
@@ -61,7 +61,7 @@
     },
     {
         "id": 6,
-        "price": 100,
+        "price": 29100,
         "duration": "4",
         "carType": "SUVs",
         "amenities": "Leather upholstery",
@@ -73,7 +73,7 @@
     },
     {
         "id": 7,
-        "price": 200,
+        "price": 29000,
         "duration": "7",
         "carType": "SUVs",
         "amenities": "Adaptive cruise control",
@@ -85,7 +85,7 @@
     },
     {
         "id": 8,
-        "price": 300,
+        "price": 61995,
         "duration": "7",
         "carType": "SUVs",
         "amenities": "Heated seats",
@@ -97,7 +97,7 @@
     },
     {
         "id": 9,
-        "price": 400,
+        "price": 39695,
         "duration": "5",
         "carType": "Coupes",
         "amenities": "Sunroof/Moonroof",
@@ -109,7 +109,7 @@
     },
     {
         "id": 10,
-        "price": 500,
+        "price": 44365,
         "duration": "7",
         "carType": "Coupes",
         "amenities": "Heated seats",
@@ -121,7 +121,7 @@
     },
     {
         "id": 11,
-        "price": 450,
+        "price": 59575,
         "duration": "5",
         "carType": "Compacts",
         "amenities": "Sunroof/Moonroof",
@@ -133,7 +133,7 @@
     },
     {
         "id": 12,
-        "price": 370,
+        "price": 49460,
         "duration": "7",
         "carType": "SUVs",
         "amenities": "Heated seats",
@@ -145,7 +145,7 @@
     },
     {
         "id": 13,
-        "price": 420,
+        "price": 37650,
         "duration": "6",
         "carType": "Coupes",
         "amenities": "Sunroof/Moonroof",
@@ -157,7 +157,7 @@
     },
     {
         "id": 14,
-        "price": 330,
+        "price": 37245,
         "duration": "7",
         "carType": "Compacts",
         "amenities": "Heated seats",
@@ -169,7 +169,7 @@
     },
     {
         "id": 15,
-        "price": 410,
+        "price": 55700,
         "duration": "5",
         "carType": "SUVs",
         "amenities": "Sunroof/Moonroof",
@@ -181,7 +181,7 @@
     },
     {
         "id": 16,
-        "price": 340,
+        "price": 53690,
         "duration": "6",
         "carType": "Coupes",
         "amenities": "Heated seats",
@@ -193,7 +193,7 @@
     },
     {
         "id": 17,
-        "price": 470,
+        "price": 30695,
         "duration": "7",
         "carType": "Compacts",
         "amenities": "Sunroof/Moonroof",
@@ -205,7 +205,7 @@
     },
     {
         "id": 18,
-        "price": 530,
+        "price": 51695,
         "duration": "5",
         "carType": "SUVs",
         "amenities": "Heated seats",
@@ -217,7 +217,7 @@
     },
     {
         "id": 19,
-        "price": 490,
+        "price": 47200,
         "duration": "7",
         "carType": "Coupes",
         "amenities": "Sunroof/Moonroof",
@@ -229,7 +229,7 @@
     },
     {
         "id": 20,
-        "price": 380,
+        "price": 31490,
         "duration": "5",
         "carType": "Compacts",
         "amenities": "Heated seats",
@@ -241,7 +241,7 @@
     },
     {
         "id": 21,
-        "price": 185000,
+        "price": 25949,
         "duration": "7",
         "carType": "SUVs",
         "amenities": "Panoramic sunroof",
@@ -253,7 +253,7 @@
     },
     {
         "id": 22,
-        "price": 235000,
+        "price": 42532,
         "duration": "7",
         "carType": "SUVs",
         "amenities": "360-degree camera",
@@ -265,7 +265,7 @@
     },
     {
         "id": 23,
-        "price": 155000,
+        "price": 26582,
         "duration": "5",
         "carType": "SUVs",
         "amenities": "Leather upholstery",
@@ -277,7 +277,7 @@
     },
     {
         "id": 24,
-        "price": 175000,
+        "price": 22152,
         "duration": "6",
         "carType": "SUVs",
         "amenities": "Smart ambient lighting",

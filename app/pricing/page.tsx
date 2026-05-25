@@ -4,7 +4,9 @@ import { swiperGroup3 } from '@/util/swiperOptions'
 import Link from "next/link"
 import { useState } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
+import { useCurrency } from "@/util/currency"
 export default function Pricing() {
+	const { meta, format } = useCurrency()
 	const [isTab, setIsTab] = useState(1)
 	const handleTab = (i: number) => {
 		setIsTab(i)
@@ -60,8 +62,8 @@ export default function Pricing() {
 									<div className="h-100 p-4 border rounded-12">
 										<h6 className="text-lg-bold neutral-1000">Basic</h6>
 										<div className="d-flex">
-											<span className="heading-3 neutral-1000">$</span>
-											<h3 className="neutral-1000 mb-0 text-price-standard">{isTab === 1 ? '19' : '49'}</h3>
+											<span className="heading-3 neutral-1000">{meta.symbol}</span>
+											<h3 className="neutral-1000 mb-0 text-price-standard">{format(isTab === 1 ? 19 : 49, { decimals: 0 }).replace(meta.symbol, '')}</h3>
 											<span className="neutral-500 text-md-medium align-self-end text-type-standard">/{isTab === 1 ? 'month' : 'year'}</span>
 										</div>
 										<p className="text-sm-medium neutral-1000">For most businesses that want to optimize web queries</p>
@@ -103,8 +105,8 @@ export default function Pricing() {
 									<div className="h-100 p-4 border rounded-12">
 										<h6 className="text-lg-bold neutral-1000">Standard</h6>
 										<div className="d-flex">
-											<span className="heading-3 neutral-1000">$</span>
-											<h3 className="neutral-1000 mb-0 text-price-standard">{isTab === 1 ? '39' : '99'}</h3>
+											<span className="heading-3 neutral-1000">{meta.symbol}</span>
+											<h3 className="neutral-1000 mb-0 text-price-standard">{format(isTab === 1 ? 39 : 99, { decimals: 0 }).replace(meta.symbol, '')}</h3>
 											<span className="neutral-500 text-md-medium align-self-end text-type-standard">/{isTab === 1 ? 'month' : 'year'}</span>
 										</div>
 										<p className="text-sm-medium neutral-1000">For most businesses that want to optimize web queries</p>
@@ -146,8 +148,8 @@ export default function Pricing() {
 									<div className="h-100 p-4 border rounded-12">
 										<h6 className="text-lg-bold neutral-1000">Premium</h6>
 										<div className="d-flex">
-											<span className="heading-3 neutral-1000">$</span>
-											<h3 className="neutral-1000 mb-0 text-price-business">{isTab === 1 ? '59' : '199'}</h3>
+											<span className="heading-3 neutral-1000">{meta.symbol}</span>
+											<h3 className="neutral-1000 mb-0 text-price-business">{format(isTab === 1 ? 59 : 199, { decimals: 0 }).replace(meta.symbol, '')}</h3>
 											<span className="neutral-500 text-md-medium align-self-end text-type-business">/{isTab === 1 ? 'month' : 'year'}</span>
 										</div>
 										<p className="text-sm-medium neutral-1000">For most businesses that want to optimize web queries</p>
@@ -189,8 +191,8 @@ export default function Pricing() {
 									<div className="h-100 p-4 border rounded-12">
 										<h6 className="text-lg-bold neutral-1000">VIP</h6>
 										<div className="d-flex">
-											<span className="heading-3 neutral-1000">$</span>
-											<h3 className="neutral-1000 mb-0 text-price-enterprise">{isTab === 1 ? '79' : '299'}</h3>
+											<span className="heading-3 neutral-1000">{meta.symbol}</span>
+											<h3 className="neutral-1000 mb-0 text-price-enterprise">{format(isTab === 1 ? 79 : 299, { decimals: 0 }).replace(meta.symbol, '')}</h3>
 											<span className="neutral-500 text-md-medium align-self-end text-type-enterprise">/{isTab === 1 ? 'month' : 'year'}</span>
 										</div>
 										<p className="text-sm-medium neutral-1000">For most businesses that want to optimize web queries</p>

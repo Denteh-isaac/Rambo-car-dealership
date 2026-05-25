@@ -2,8 +2,10 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { useState } from "react"
+import { useCurrency } from "@/util/currency"
 
 export default function Inquiry() {
+    const { currency, format } = useCurrency()
     const [form, setForm] = useState({
         name: "",
         email: "",
@@ -119,14 +121,14 @@ export default function Inquiry() {
                                                 </select>
                                             </div>
                                             <div className="col-md-6">
-                                                <label className="text-sm-bold neutral-500 mb-2">Budget (GHS or USD)</label>
+                                                <label className="text-sm-bold neutral-500 mb-2">Budget ({currency})</label>
                                                 <input
                                                     className="form-control"
                                                     type="text"
                                                     name="budget"
                                                     value={form.budget}
                                                     onChange={handleChange}
-                                                    placeholder="e.g. GHS 150,000 or USD 12,000"
+                                                    placeholder={`e.g. ${format(12000, { decimals: 0 })}`}
                                                 />
                                             </div>
                                             <div className="col-12">

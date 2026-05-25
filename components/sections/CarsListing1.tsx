@@ -2,6 +2,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link"
 import { swiperGroup3 } from '@/util/swiperOptions'
+import { Price } from '@/util/currency'
 
 export default function CarsListing1() {
 	return (
@@ -62,7 +63,7 @@ export default function CarsListing1() {
 													<div className="endtime">
 														<div className="card-price">
 															<p className="text-md-medium neutral-500 me-2">From</p>
-															<h6 className="heading-6 neutral-1000">$498.25</h6>
+															<h6 className="heading-6 neutral-1000"><Price amount={498.25} /></h6>
 														</div>
 														<div className="card-button"><Link className="btn btn-gray" href="/cars-details-1">Book Now</Link></div>
 													</div>
@@ -97,7 +98,7 @@ export default function CarsListing1() {
 													<div className="endtime">
 														<div className="card-price">
 															<p className="text-md-medium neutral-500 me-2">From</p>
-															<h6 className="heading-6 neutral-1000">$498.25</h6>
+															<h6 className="heading-6 neutral-1000"><Price amount={498.25} /></h6>
 														</div>
 														<div className="card-button"><Link className="btn btn-gray" href="/cars-details-1">Book Now</Link></div>
 													</div>
@@ -134,7 +135,7 @@ export default function CarsListing1() {
 													<div className="endtime">
 														<div className="card-price">
 															<p className="text-md-medium neutral-500 me-2">From</p>
-															<h6 className="heading-6 neutral-1000">$498.25</h6>
+															<h6 className="heading-6 neutral-1000"><Price amount={498.25} /></h6>
 														</div>
 														<div className="card-button"><Link className="btn btn-gray" href="/cars-details-1">Book Now</Link></div>
 													</div>
@@ -169,7 +170,7 @@ export default function CarsListing1() {
 													<div className="endtime">
 														<div className="card-price">
 															<p className="text-md-medium neutral-500 me-2">From</p>
-															<h6 className="heading-6 neutral-1000">$498.25</h6>
+															<h6 className="heading-6 neutral-1000"><Price amount={498.25} /></h6>
 														</div>
 														<div className="card-button"><Link className="btn btn-gray" href="/cars-details-1">Book Now</Link></div>
 													</div>
@@ -206,7 +207,7 @@ export default function CarsListing1() {
 													<div className="endtime">
 														<div className="card-price">
 															<p className="text-md-medium neutral-500 me-2">From</p>
-															<h6 className="heading-6 neutral-1000">$498.25</h6>
+															<h6 className="heading-6 neutral-1000"><Price amount={498.25} /></h6>
 														</div>
 														<div className="card-button"><Link className="btn btn-gray" href="/cars-details-1">Book Now</Link></div>
 													</div>
@@ -241,7 +242,7 @@ export default function CarsListing1() {
 													<div className="endtime">
 														<div className="card-price">
 															<p className="text-md-medium neutral-500 me-2">From</p>
-															<h6 className="heading-6 neutral-1000">$498.25</h6>
+															<h6 className="heading-6 neutral-1000"><Price amount={498.25} /></h6>
 														</div>
 														<div className="card-button"><Link className="btn btn-gray" href="/cars-details-1">Book Now</Link></div>
 													</div>

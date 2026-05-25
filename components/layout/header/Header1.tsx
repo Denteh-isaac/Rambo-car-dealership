@@ -5,7 +5,9 @@ const ThemeSwitch = dynamic(() => import('@/components/elements/ThemeSwitch'), {
 })
 import Link from 'next/link'
 import Dropdown from 'react-bootstrap/Dropdown'
+import { CURRENCIES, CurrencyCode, useCurrency } from '@/util/currency'
 export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handleOffcanvas, isOffcanvas }: any) {
+	const { currency, setCurrency } = useCurrency()
 	return (
 		<>
 			<header className={`header header-fixed sticky-bar ${scroll ? 'stick' : ''}`}>
@@ -49,14 +51,17 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handle
 							</Dropdown>
 							<Dropdown className="d-none d-xl-inline-block box-dropdown-cart align-middle head-currency">
 								<Dropdown.Toggle  as="span" className="text-14-medium icon-list icon-cart">
-									<span className="text-14-medium arrow-down">USD</span>
+									<span className="text-14-medium arrow-down">{currency}</span>
 									</Dropdown.Toggle>
 								<Dropdown.Menu style={{visibility: 'visible'}} className="dropdown-cart">
 									<ul>
-										<li><Link className="text-sm-medium" href="#">GHS (₵)</Link></li>
-										<li><Link className="text-sm-medium" href="#">USD</Link></li>
-										<li><Link className="text-sm-medium" href="#">EUR</Link></li>
-										<li><Link className="text-sm-medium" href="#">SGP</Link></li>
+										{(Object.keys(CURRENCIES) as CurrencyCode[]).map((code) => (
+											<li key={code}>
+												<a className="text-sm-medium" href="#" onClick={(e) => { e.preventDefault(); setCurrency(code) }}>
+													{CURRENCIES[code].label}
+												</a>
+											</li>
+										))}
 									</ul>
 								</Dropdown.Menu>
 							</Dropdown>

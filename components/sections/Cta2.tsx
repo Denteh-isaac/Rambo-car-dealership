@@ -1,7 +1,10 @@
+'use client'
 import CounterUp from '../elements/CounterUp'
+import { useCurrency } from '@/util/currency'
 
 
 export default function Cta2() {
+	const { format } = useCurrency()
 	return (
 		<>
 
@@ -24,7 +27,7 @@ export default function Cta2() {
 										<div className="col-lg-6">
 											<div className="form-group">
 												<label className="text-sm-medium neutral-1000">Price of vehicle</label>
-												<input className="form-control" type="text" placeholder="$20,000" />
+												<input className="form-control" type="text" placeholder={format(20000, { decimals: 0 })} />
 											</div>
 										</div>
 										<div className="col-lg-6">
@@ -42,7 +45,7 @@ export default function Cta2() {
 										<div className="col-lg-6">
 											<div className="form-group">
 												<label className="text-sm-medium neutral-1000">Down payment</label>
-												<input className="form-control" type="text" placeholder="$12,000" />
+												<input className="form-control" type="text" placeholder={format(12000, { decimals: 0 })} />
 											</div>
 										</div>
 										<div className="row py-4">
@@ -52,9 +55,9 @@ export default function Cta2() {
 												<p className="text-sm-bold neutral-1000">Monthly payment</p>
 											</div>
 											<div className="col-md-7 col-4 d-flex flex-column gap-1 align-items-end align-items-md-start">
-												<p className="text-sm-bold neutral-1000">$12,000</p>
-												<p className="text-sm-bold neutral-1000">$800,00</p>
-												<p className="text-sm-bold text-primary-dark">$480,00</p>
+												<p className="text-sm-bold neutral-1000">{format(12000, { decimals: 0 })}</p>
+												<p className="text-sm-bold neutral-1000">{format(8000, { decimals: 0 })}</p>
+												<p className="text-sm-bold text-primary-dark">{format(480, { decimals: 0 })}</p>
 											</div>
 										</div>
 										<div className="col-lg-12">

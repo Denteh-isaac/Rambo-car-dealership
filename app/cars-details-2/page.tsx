@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Marquee from "react-fast-marquee";
 import ModalVideo from "react-modal-video";
+import { Price } from "@/util/currency";
 export default function CarsDetails2() {
     const [isOpen, setOpen] = useState(false);
     const [isAccordion, setIsAccordion] = useState(null);
@@ -263,7 +264,7 @@ export default function CarsDetails2() {
                                                 <div className="card card-body">
                                                     <ul className="list-checked-green">
                                                         <li>Free cancellation up to 48 hours before pick-up</li>
-                                                        <li>Collision Damage Waiver with $700 deductible</li>
+                                                        <li>Collision Damage Waiver with <Price amount={700} /> deductible</li>
                                                         <li>Theft Protection with ₫66,926,626 excess</li>
                                                         <li>Unlimited mileage</li>
                                                     </ul>
@@ -733,7 +734,7 @@ export default function CarsDetails2() {
                                                             </ul>
                                                         </div>
                                                         <div className="include-price">
-                                                            <p className="text-md-bold neutral-1000">$25.00</p>
+                                                            <p className="text-md-bold neutral-1000"><Price amount={25} /></p>
                                                         </div>
                                                     </div>
                                                     <div className="line-booking-tickets">
@@ -750,7 +751,7 @@ export default function CarsDetails2() {
                                                             </ul>
                                                         </div>
                                                         <div className="include-price">
-                                                            <p className="text-md-bold neutral-1000">$32.00</p>
+                                                            <p className="text-md-bold neutral-1000"><Price amount={32} /></p>
                                                         </div>
                                                     </div>
                                                     <div className="line-booking-tickets">
@@ -767,7 +768,7 @@ export default function CarsDetails2() {
                                                             </ul>
                                                         </div>
                                                         <div className="include-price">
-                                                            <p className="text-md-bold neutral-1000">$25.00</p>
+                                                            <p className="text-md-bold neutral-1000"><Price amount={25} /></p>
                                                         </div>
                                                     </div>
                                                     <div className="line-booking-tickets">
@@ -784,7 +785,7 @@ export default function CarsDetails2() {
                                                             </ul>
                                                         </div>
                                                         <div className="include-price">
-                                                            <p className="text-md-bold neutral-1000">$52.00</p>
+                                                            <p className="text-md-bold neutral-1000"><Price amount={52} /></p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -792,19 +793,19 @@ export default function CarsDetails2() {
                                             <div className="item-line-booking last-item pb-0">
                                                 <strong className="text-md-medium neutral-1000">Subtotal</strong>
                                                 <div className="line-booking-right">
-                                                    <p className="text-xl-bold neutral-1000">$124.00</p>
+                                                    <p className="text-xl-bold neutral-1000"><Price amount={124} /></p>
                                                 </div>
                                             </div>
                                             <div className="item-line-booking last-item pb-0">
                                                 <strong className="text-md-medium neutral-1000">Sale discount</strong>
                                                 <div className="line-booking-right">
-                                                    <p className="text-xl-bold neutral-1000">$124.00</p>
+                                                    <p className="text-xl-bold neutral-1000"><Price amount={124} /></p>
                                                 </div>
                                             </div>
                                             <div className="item-line-booking last-item">
                                                 <strong className="text-md-bold neutral-1000">Total Payable</strong>
                                                 <div className="line-booking-right">
-                                                    <p className="text-xl-bold neutral-1000">$124.00</p>
+                                                    <p className="text-xl-bold neutral-1000"><Price amount={124} /></p>
                                                 </div>
                                             </div>
                                             <div className="box-button-book">

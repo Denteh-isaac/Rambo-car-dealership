@@ -8,12 +8,14 @@ import rawCarsData from "@/util/cars.json"
 import useCarFilter from '@/util/useCarFilter'
 import Link from "next/link"
 import Marquee from 'react-fast-marquee'
+import { useCurrency } from '@/util/currency'
 const carsData = rawCarsData.map(car => ({
 	...car,
 	rating: parseFloat(car.rating as string)
 }))
 
 export default function CarsList3() {
+	const { format } = useCurrency()
 	const {
 		filter,
 		setFilter,
@@ -149,7 +151,7 @@ export default function CarsList3() {
 													<div className="pt-20">
 														<div className="box-slider-range">
 															<div id="slider-range" />
-															<div className="box-value-price"><span className="text-md-medium neutral-1000">$0</span><span className="text-md-medium neutral-1000">$500</span></div>
+															<div className="box-value-price"><span className="text-md-medium neutral-1000">{format(0, { decimals: 0 })}</span><span className="text-md-medium neutral-1000">{format(500, { decimals: 0 })}</span></div>
 															<input className="value-money" type="hidden" />
 														</div>
 													</div>
