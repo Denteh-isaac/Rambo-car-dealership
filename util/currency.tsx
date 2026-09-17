@@ -17,7 +17,7 @@ export const CURRENCIES: Record<CurrencyCode, CurrencyMeta> = {
 	SGD: { code: 'SGD', label: 'SGD', symbol: 'S$', rate: 1.34 },
 }
 
-const STORAGE_KEY = 'rambo:currency'
+const STORAGE_KEY = 'gastonsin:currency'
 
 type CurrencyContextValue = {
 	currency: CurrencyCode

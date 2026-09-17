@@ -7,6 +7,9 @@ import Marquee from "react-fast-marquee";
 import ModalVideo from "react-modal-video";
 import Slider from "react-slick";
 import { Price } from "@/util/currency";
+import MailtoForm from "@/components/elements/MailtoForm"
+import ShareButton from "@/components/elements/ShareButton"
+import PhotoGalleryButton from "@/components/elements/PhotoGalleryButton"
 const SlickArrowLeft = ({ currentSlide, slideCount, ...props }: any) => {
     const { className, onClick, ...restProps } = props;
     return (
@@ -104,34 +107,26 @@ export default function CarsDetails1() {
                                 <div className="box-banner-activities">
                                     <Slider {...settingsMain} asNavFor={nav2 as any} ref={(slider) => setSlider1(slider as any)} className="banner-activities-detail">
                                         <div className="banner-slide-activity">
-                                            <img src="/assets/imgs/cars-details/banner.png" alt="Rambo" />
+                                            <img src="/assets/imgs/cars-details/banner.png" alt="Gastonsin" />
                                         </div>
                                         <div className="banner-slide-activity">
-                                            <img src="/assets/imgs/cars-details/banner2.png" alt="Rambo" />
+                                            <img src="/assets/imgs/cars-details/banner2.png" alt="Gastonsin" />
                                         </div>
                                         <div className="banner-slide-activity">
-                                            <img src="/assets/imgs/cars-details/banner3.png" alt="Rambo" />
+                                            <img src="/assets/imgs/cars-details/banner3.png" alt="Gastonsin" />
                                         </div>
                                         <div className="banner-slide-activity">
-                                            <img src="/assets/imgs/cars-details/banner4.png" alt="Rambo" />
+                                            <img src="/assets/imgs/cars-details/banner4.png" alt="Gastonsin" />
                                         </div>
                                         <div className="banner-slide-activity">
-                                            <img src="/assets/imgs/cars-details/banner5.png" alt="Rambo" />
+                                            <img src="/assets/imgs/cars-details/banner5.png" alt="Gastonsin" />
                                         </div>
                                     </Slider>
                                     <div className="box-button-abs">
-                                        <Link className="btn btn-primary rounded-pill" href="#">
-                                            <svg width={22} height={22} viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M20 8V2.75C20 2.3375 19.6625 2 19.25 2H14C13.5875 2 13.25 2.3375 13.25 2.75V8C13.25 8.4125 13.5875 8.75 14 8.75H19.25C19.6625 8.75 20 8.4125 20 8ZM19.25 0.5C20.495 0.5 21.5 1.505 21.5 2.75V8C21.5 9.245 20.495 10.25 19.25 10.25H14C12.755 10.25 11.75 9.245 11.75 8V2.75C11.75 1.505 12.755 0.5 14 0.5H19.25Z" fill="currentColor" />
-                                                <path d="M20 19.25V14C20 13.5875 19.6625 13.25 19.25 13.25H14C13.5875 13.25 13.25 13.5875 13.25 14V19.25C13.25 19.6625 13.5875 20 14 20H19.25C19.6625 20 20 19.6625 20 19.25ZM19.25 11.75C20.495 11.75 21.5 12.755 21.5 14V19.25C21.5 20.495 20.495 21.5 19.25 21.5H14C12.755 21.5 11.75 20.495 11.75 19.25V14C11.75 12.755 12.755 11.75 14 11.75H19.25Z" fill="currentColor" />
-                                                <path d="M8 8.75C8.4125 8.75 8.75 8.4125 8.75 8V2.75C8.75 2.3375 8.4125 2 8 2H2.75C2.3375 2 2 2.3375 2 2.75V8C2 8.4125 2.3375 8.75 2.75 8.75H8ZM8 0.5C9.245 0.5 10.25 1.505 10.25 2.75V8C10.25 9.245 9.245 10.25 8 10.25H2.75C1.505 10.25 0.5 9.245 0.5 8V2.75C0.5 1.505 1.505 0.5 2.75 0.5H8Z" fill="currentColor" />
-                                                <path d="M8 20C8.4125 20 8.75 19.6625 8.75 19.25V14C8.75 13.5875 8.4125 13.25 8 13.25H2.75C2.3375 13.25 2 13.5875 2 14V19.25C2 19.6625 2.3375 20 2.75 20H8ZM8 11.75C9.245 11.75 10.25 12.755 10.25 14V19.25C10.25 20.495 9.245 21.5 8 21.5H2.75C1.505 21.5 0.5 20.495 0.5 19.25V14C0.5 12.755 1.505 11.75 2.75 11.75H8Z" fill="currentColor" />
-                                            </svg>
-                                            See All Photos
-                                        </Link>
+                                        <PhotoGalleryButton images={["/assets/imgs/cars-details/banner.png", "/assets/imgs/cars-details/banner2.png", "/assets/imgs/cars-details/banner3.png", "/assets/imgs/cars-details/banner4.png", "/assets/imgs/cars-details/banner5.png"]} />
                                         <a className="btn btn-white-md popup-youtube" onClick={() => setOpen(true)}>
                                             {" "}
-                                            <img src="/assets/imgs/page/activities/video.svg" alt="Rambo" />
+                                            <img src="/assets/imgs/page/activities/video.svg" alt="Gastonsin" />
                                             Video Clips
                                         </a>
                                     </div>
@@ -139,28 +134,28 @@ export default function CarsDetails1() {
                                 <div className="slider-thumnail-activities">
                                     <Slider {...settingsThumbs} asNavFor={nav1 as any} ref={(slider) => setSlider2(slider as any)} className="slider-nav-thumbnails-activities-detail">
                                         <div className="banner-slide">
-                                            <img src="/assets/imgs/page/car/banner-thumn.png" alt="Rambo" />
+                                            <img src="/assets/imgs/page/car/banner-thumn.png" alt="Gastonsin" />
                                         </div>
                                         <div className="banner-slide">
-                                            <img src="/assets/imgs/page/car/banner-thumn2.png" alt="Rambo" />
+                                            <img src="/assets/imgs/page/car/banner-thumn2.png" alt="Gastonsin" />
                                         </div>
                                         <div className="banner-slide">
-                                            <img src="/assets/imgs/page/car/banner-thumn3.png" alt="Rambo" />
+                                            <img src="/assets/imgs/page/car/banner-thumn3.png" alt="Gastonsin" />
                                         </div>
                                         <div className="banner-slide">
-                                            <img src="/assets/imgs/page/car/banner-thumn4.png" alt="Rambo" />
+                                            <img src="/assets/imgs/page/car/banner-thumn4.png" alt="Gastonsin" />
                                         </div>
                                         <div className="banner-slide">
-                                            <img src="/assets/imgs/page/car/banner-thumn5.png" alt="Rambo" />
+                                            <img src="/assets/imgs/page/car/banner-thumn5.png" alt="Gastonsin" />
                                         </div>
                                         <div className="banner-slide">
-                                            <img src="/assets/imgs/page/car/banner-thumn6.png" alt="Rambo" />
+                                            <img src="/assets/imgs/page/car/banner-thumn6.png" alt="Gastonsin" />
                                         </div>
                                         <div className="banner-slide">
-                                            <img src="/assets/imgs/page/car/banner-thumn.png" alt="Rambo" />
+                                            <img src="/assets/imgs/page/car/banner-thumn.png" alt="Gastonsin" />
                                         </div>
                                         <div className="banner-slide">
-                                            <img src="/assets/imgs/page/car/banner-thumn3.png" alt="Rambo" />
+                                            <img src="/assets/imgs/page/car/banner-thumn3.png" alt="Gastonsin" />
                                         </div>
                                     </Slider>
                                 </div>
@@ -192,7 +187,7 @@ export default function CarsDetails1() {
                                             </svg>
                                             Accra, Ghana
                                         </p>
-                                        <Link className="text-md-medium neutral-1000 mr-30" href="#">
+                                        <Link className="text-md-medium neutral-1000 mr-30" href="/contact">
                                             Show on map
                                         </Link>
                                         <p className="text-md-medium neutral-1000 tour-code mr-15">
@@ -208,23 +203,17 @@ export default function CarsDetails1() {
                                             </svg>
                                             Fleet Code:
                                         </p>
-                                        <Link className="text-md-medium neutral-1000" href="#">
+                                        <span className="text-md-medium neutral-1000">
                                             LVA-4125
-                                        </Link>
+                                        </span>
                                     </div>
                                     <div className="tour-meta-right">
-                                        <Link className="btn btn-share" href="#">
+                                        <ShareButton className="btn btn-share">
                                             <svg width={16} height={18} viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M13 11.5332C12.012 11.5332 11.1413 12.0193 10.5944 12.7584L5.86633 10.3374C5.94483 10.0698 6 9.79249 6 9.49989C6 9.10302 5.91863 8.72572 5.77807 8.37869L10.7262 5.40109C11.2769 6.04735 12.0863 6.46655 13 6.46655C14.6543 6.46655 16 5.12085 16 3.46655C16 1.81225 14.6543 0.466553 13 0.466553C11.3457 0.466553 10 1.81225 10 3.46655C10 3.84779 10.0785 4.20942 10.2087 4.54515L5.24583 7.53149C4.69563 6.90442 3.8979 6.49989 3 6.49989C1.3457 6.49989 0 7.84559 0 9.49989C0 11.1542 1.3457 12.4999 3 12.4999C4.00433 12.4999 4.8897 11.9996 5.4345 11.2397L10.147 13.6529C10.0602 13.9331 10 14.2249 10 14.5332C10 16.1875 11.3457 17.5332 13 17.5332C14.6543 17.5332 16 16.1875 16 14.5332C16 12.8789 14.6543 11.5332 13 11.5332Z" fill="currentColor" />
                                             </svg>
                                             Share
-                                        </Link>
-                                        <Link className="btn btn-wishlish" href="#">
-                                            <svg width={20} height={18} viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fillRule="evenodd" clipRule="evenodd" d="M2.2222 2.3638C4.34203 0.243977 7.65342 0.0419426 10.0004 1.7577C12.3473 0.0419426 15.6587 0.243977 17.7786 2.3638C20.1217 4.70695 20.1217 8.50594 17.7786 10.8491L12.1217 16.5059C10.9501 17.6775 9.05063 17.6775 7.87906 16.5059L2.2222 10.8491C-0.120943 8.50594 -0.120943 4.70695 2.2222 2.3638Z" fill="currentColor" />
-                                            </svg>
-                                            Wishlish
-                                        </Link>
+                                        </ShareButton>
                                     </div>
                                 </div>
                             </div>
@@ -235,7 +224,7 @@ export default function CarsDetails1() {
                                             <div className="item-feature-car w-md-25">
                                                 <div className="item-feature-car-inner">
                                                     <div className="feature-image">
-                                                        <img src="/assets/imgs/page/car/km.svg" alt="Rambo" />
+                                                        <img src="/assets/imgs/page/car/km.svg" alt="Gastonsin" />
                                                     </div>
                                                     <div className="feature-info">
                                                         <p className="text-md-medium neutral-1000">56,500</p>
@@ -245,7 +234,7 @@ export default function CarsDetails1() {
                                             <div className="item-feature-car w-md-25">
                                                 <div className="item-feature-car-inner">
                                                     <div className="feature-image">
-                                                        <img src="/assets/imgs/page/car/diesel.svg" alt="Rambo" />
+                                                        <img src="/assets/imgs/page/car/diesel.svg" alt="Gastonsin" />
                                                     </div>
                                                     <div className="feature-info">
                                                         <p className="text-md-medium neutral-1000">Diesel</p>
@@ -255,7 +244,7 @@ export default function CarsDetails1() {
                                             <div className="item-feature-car w-md-25">
                                                 <div className="item-feature-car-inner">
                                                     <div className="feature-image">
-                                                        <img src="/assets/imgs/page/car/auto.svg" alt="Rambo" />
+                                                        <img src="/assets/imgs/page/car/auto.svg" alt="Gastonsin" />
                                                     </div>
                                                     <div className="feature-info">
                                                         <p className="text-md-medium neutral-1000">Automatic</p>
@@ -265,7 +254,7 @@ export default function CarsDetails1() {
                                             <div className="item-feature-car w-md-25">
                                                 <div className="item-feature-car-inner">
                                                     <div className="feature-image">
-                                                        <img src="/assets/imgs/page/car/seat.svg" alt="Rambo" />
+                                                        <img src="/assets/imgs/page/car/seat.svg" alt="Gastonsin" />
                                                     </div>
                                                     <div className="feature-info">
                                                         <p className="text-md-medium neutral-1000">7 seats</p>
@@ -275,7 +264,7 @@ export default function CarsDetails1() {
                                             <div className="item-feature-car w-md-25">
                                                 <div className="item-feature-car-inner">
                                                     <div className="feature-image">
-                                                        <img src="/assets/imgs/page/car/bag.svg" alt="Rambo" />
+                                                        <img src="/assets/imgs/page/car/bag.svg" alt="Gastonsin" />
                                                     </div>
                                                     <div className="feature-info">
                                                         <p className="text-md-medium neutral-1000">3 Large bags</p>
@@ -285,7 +274,7 @@ export default function CarsDetails1() {
                                             <div className="item-feature-car w-md-25">
                                                 <div className="item-feature-car-inner">
                                                     <div className="feature-image">
-                                                        <img src="/assets/imgs/page/car/suv.svg" alt="Rambo" />
+                                                        <img src="/assets/imgs/page/car/suv.svg" alt="Gastonsin" />
                                                     </div>
                                                     <div className="feature-info">
                                                         <p className="text-md-medium neutral-1000">SUVs</p>
@@ -295,7 +284,7 @@ export default function CarsDetails1() {
                                             <div className="item-feature-car w-md-25">
                                                 <div className="item-feature-car-inner">
                                                     <div className="feature-image">
-                                                        <img src="/assets/imgs/page/car/door.svg" alt="Rambo" />
+                                                        <img src="/assets/imgs/page/car/door.svg" alt="Gastonsin" />
                                                     </div>
                                                     <div className="feature-info">
                                                         <p className="text-md-medium neutral-1000">4 Doors</p>
@@ -305,7 +294,7 @@ export default function CarsDetails1() {
                                             <div className="item-feature-car w-md-25">
                                                 <div className="item-feature-car-inner">
                                                     <div className="feature-image">
-                                                        <img src="/assets/imgs/page/car/lit.svg" alt="Rambo" />
+                                                        <img src="/assets/imgs/page/car/lit.svg" alt="Gastonsin" />
                                                     </div>
                                                     <div className="feature-info">
                                                         <p className="text-md-medium neutral-1000">2.5L</p>
@@ -324,8 +313,8 @@ export default function CarsDetails1() {
                                             </button>
                                             <div className={isAccordion == 1 ? "collapse" : "collapse show"} id="collapseOverview">
                                                 <div className="card card-body">
-                                                    <p>Elevate your Accra experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Accra Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below.</p>
-                                                    <p>Whether you're a first-time visitor or a seasoned Accra aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Accra from a whole new perspective, while learning about its rich history and famous landmarks along the way.</p>
+                                                    <p>Every vehicle listed here is inspected before it leaves the source market and again when it lands in Ghana. You are looking at the exact car we will hand over — not a stock photo of a similar model. If it is marked as available at our Esiama warehouse, it is already cleared, duty-paid and registered, and you can come and drive it before you commit to anything.</p>
+                                                    <p>We buy on three routes — China, the USA and Dubai — and we clear our own containers at Tema and Takoradi, so the price you see already includes freight, duty, clearing and delivery anywhere in Ghana. If this particular car is not in the yard, tell us the specification you want and we will source it and quote you landed, in writing, before you pay anything.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -359,26 +348,26 @@ export default function CarsDetails1() {
                                                     <div className="list-questions">
                                                         <div className="item-question">
                                                             <div className="head-question">
-                                                                <p className="text-md-bold neutral-1000">Is The High Roller suitable for all ages?</p>
+                                                                <p className="text-md-bold neutral-1000">Is this vehicle already in Ghana?</p>
                                                             </div>
                                                             <div className="content-question">
-                                                                <p className="text-sm-medium neutral-800">Absolutely! The High Roller offers a family-friendly experience suitable for visitors of all ages. Children must be accompanied by an adult.</p>
+                                                                <p className="text-sm-medium neutral-800">If the listing shows it at our Esiama warehouse, yes — it is cleared, duty-paid, registered and ready to drive away. Anything else is available to order on one of our import routes, which takes roughly 5 to 8 weeks from Dubai, 6 to 10 from China and 8 to 12 from the USA.</p>
                                                             </div>
                                                         </div>
                                                         <div className="item-question active">
                                                             <div className="head-question">
-                                                                <p className="text-md-bold neutral-1000">Can I bring food or drinks aboard The High Roller?</p>
+                                                                <p className="text-md-bold neutral-1000">Can I inspect and test drive it first?</p>
                                                             </div>
                                                             <div className="content-question">
-                                                                <p className="text-sm-medium neutral-800">Outside food and beverages are not permitted on The High Roller. However, there are nearby dining options at The LINQ Promenade where you can enjoy a meal before or after your ride.</p>
+                                                                <p className="text-sm-medium neutral-800">Always. Come to the Esiama warehouse between 8:00 and 18:00, Monday to Saturday, and drive it yourself. For buyers in Accra, Kumasi or Takoradi we can bring the car to you by arrangement. We never ask for the balance before you have seen the vehicle.</p>
                                                             </div>
                                                         </div>
                                                         <div className="item-question">
                                                             <div className="head-question">
-                                                                <p className="text-md-bold neutral-1000">Is The High Roller wheelchair accessible?</p>
+                                                                <p className="text-md-bold neutral-1000">Does the price include duty and clearing?</p>
                                                             </div>
                                                             <div className="content-question">
-                                                                <p className="text-sm-medium neutral-800">es, The High Roller cabins are wheelchair accessible, making it possible for everyone to enjoy the breathtaking views of Accra.</p>
+                                                                <p className="text-sm-medium neutral-800">Yes. The figure shown is a landed price covering the vehicle, freight, duty, clearing and delivery within Ghana. It moves with the exchange rate and GRA valuation, so we confirm the final amount in writing before any payment is made.</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -523,7 +512,7 @@ export default function CarsDetails1() {
                                                                 </div>
                                                             </div>
                                                             <div className="content-review">
-                                                                <p className="text-sm-medium neutral-800">The views from The High Roller were absolutely stunning! It's a fantastic way to see the Strip and the surrounding area. The cabins are spacious and comfortable, and the audio commentary adds an extra layer of enjoyment. Highly recommend!</p>
+                                                                <p className="text-sm-medium neutral-800">Bought this exact model from the Esiama yard. It was already cleared and registered, so I drove it home the same afternoon. No surprise duty bill afterwards.</p>
                                                             </div>
                                                         </div>
                                                         <div className="item-review">
@@ -546,7 +535,7 @@ export default function CarsDetails1() {
                                                                 </div>
                                                             </div>
                                                             <div className="content-review">
-                                                                <p className="text-sm-medium neutral-800">The views from The High Roller were absolutely stunning! It's a fantastic way to see the Strip and the surrounding area. The cabins are spacious and comfortable, and the audio commentary adds an extra layer of enjoyment. Highly recommend!</p>
+                                                                <p className="text-sm-medium neutral-800">I ordered mine on the Dubai route. They sent photos and the VIN before it loaded and kept me updated until it landed at Takoradi. Arrived exactly as described.</p>
                                                             </div>
                                                         </div>
                                                         <div className="item-review">
@@ -569,62 +558,10 @@ export default function CarsDetails1() {
                                                                 </div>
                                                             </div>
                                                             <div className="content-review">
-                                                                <p className="text-sm-medium neutral-800">The views from The High Roller were absolutely stunning! It's a fantastic way to see the Strip and the surrounding area. The cabins are spacious and comfortable, and the audio commentary adds an extra layer of enjoyment. Highly recommend!</p>
+                                                                <p className="text-sm-medium neutral-800">Service has been solid since I bought it. They handled the registration paperwork themselves and the workshop knows the car properly.</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <nav aria-label="Page navigation example">
-                                                        <ul className="pagination">
-                                                            <li className="page-item">
-                                                                <Link className="page-link" href="#" aria-label="Previous">
-                                                                    <span aria-hidden="true">
-                                                                        <svg width={12} height={12} viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                                                                            <path d="M6.00016 1.33325L1.3335 5.99992M1.3335 5.99992L6.00016 10.6666M1.3335 5.99992H10.6668" strokeLinecap="round" strokeLinejoin="round" />
-                                                                        </svg>
-                                                                    </span>
-                                                                </Link>
-                                                            </li>
-                                                            <li className="page-item">
-                                                                <Link className="page-link" href="#">
-                                                                    1
-                                                                </Link>
-                                                            </li>
-                                                            <li className="page-item">
-                                                                <Link className="page-link active" href="#">
-                                                                    2
-                                                                </Link>
-                                                            </li>
-                                                            <li className="page-item">
-                                                                <Link className="page-link" href="#">
-                                                                    3
-                                                                </Link>
-                                                            </li>
-                                                            <li className="page-item">
-                                                                <Link className="page-link" href="#">
-                                                                    4
-                                                                </Link>
-                                                            </li>
-                                                            <li className="page-item">
-                                                                <Link className="page-link" href="#">
-                                                                    5
-                                                                </Link>
-                                                            </li>
-                                                            <li className="page-item">
-                                                                <Link className="page-link" href="#">
-                                                                    ...
-                                                                </Link>
-                                                            </li>
-                                                            <li className="page-item">
-                                                                <Link className="page-link" href="#" aria-label="Next">
-                                                                    <span aria-hidden="true">
-                                                                        <svg width={12} height={12} viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                                                                            <path d="M5.99967 10.6666L10.6663 5.99992L5.99968 1.33325M10.6663 5.99992L1.33301 5.99992" strokeLinecap="round" strokeLinejoin="round" />
-                                                                        </svg>
-                                                                    </span>
-                                                                </Link>
-                                                            </li>
-                                                        </ul>
-                                                    </nav>
                                                 </div>
                                             </div>
                                         </div>
@@ -713,26 +650,26 @@ export default function CarsDetails1() {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className="box-form-reviews">
+                                                    <MailtoForm className="box-form-reviews" subject="Customer review from the website" intro="A customer left a review on a vehicle page.">
                                                         <h6 className="text-md-bold neutral-1000 mb-15">Leave feedback</h6>
                                                         <div className="row">
                                                             <div className="col-md-6">
                                                                 <div className="form-group">
-                                                                    <input className="form-control" type="text" placeholder="Your name" />
+                                                                    <input className="form-control" type="text" name="name" aria-label="Name" placeholder="Your name" required />
                                                                 </div>
                                                             </div>
                                                             <div className="col-md-6">
                                                                 <div className="form-group">
-                                                                    <input className="form-control" type="text" placeholder="Email address" />
+                                                                    <input className="form-control" type="email" name="email" aria-label="Email" placeholder="Email address" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-md-12">
                                                                 <div className="form-group">
-                                                                    <textarea className="form-control" placeholder="Your comment" defaultValue={""} />
+                                                                    <textarea className="form-control" name="review" aria-label="Review" placeholder="Your comment" required defaultValue={""} />
                                                                 </div>
                                                             </div>
                                                             <div className="col-md-12">
-                                                                <button className="btn btn-black-lg-square">
+                                                                <button type="submit" className="btn btn-black-lg-square">
                                                                     Submit review
                                                                     <svg width={16} height={16} viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M8 15L15 8L8 1M15 8L1 8" stroke="" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
@@ -740,7 +677,7 @@ export default function CarsDetails1() {
                                                                 </button>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </MailtoForm>
                                                 </div>
                                             </div>
                                         </div>
@@ -750,13 +687,13 @@ export default function CarsDetails1() {
                                     <div className="sidebar-banner">
                                         <div className="p-4 background-body border rounded-3">
                                             <p className="text-xl-bold neutral-1000 mb-4">Get Started</p>
-                                            <Link href="#" className="btn btn-primary w-100 rounded-3 py-3 mb-3">
+                                            <Link href="/inquiry" className="btn btn-primary w-100 rounded-3 py-3 mb-3">
                                                 Schedule Test Drive
                                                 <svg width={17} height={16} viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8.5 15L15.5 8L8.5 1M15.5 8L1.5 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
                                             </Link>
-                                            <Link href="#" className="btn btn-book bg-2">
+                                            <Link href="/inquiry" className="btn btn-book bg-2">
                                                 Make An Offer Price
                                                 <svg width={17} height={16} viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8.5 15L15.5 8L8.5 1M15.5 8L1.5 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -885,7 +822,7 @@ export default function CarsDetails1() {
                                                 </div>
                                             </div>
                                             <div className="box-button-book">
-                                                <Link className="btn btn-book" href="#">
+                                                <Link className="btn btn-book" href="/inquiry">
                                                     Book Now
                                                     <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M8 15L15 8L8 1M15 8L1 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -893,7 +830,7 @@ export default function CarsDetails1() {
                                                 </Link>
                                             </div>
                                             <div className="box-need-help">
-                                                <Link href="#">
+                                                <Link href="/contact">
                                                     <svg width={12} height={14} viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M2.83366 3.66667C2.83366 1.92067 4.25433 0.5 6.00033 0.5C7.74633 0.5 9.16699 1.92067 9.16699 3.66667C9.16699 5.41267 7.74633 6.83333 6.00033 6.83333C4.25433 6.83333 2.83366 5.41267 2.83366 3.66667ZM8.00033 7.83333H4.00033C1.88699 7.83333 0.166992 9.55333 0.166992 11.6667C0.166992 12.678 0.988992 13.5 2.00033 13.5H10.0003C11.0117 13.5 11.8337 12.678 11.8337 11.6667C11.8337 9.55333 10.1137 7.83333 8.00033 7.83333Z" fill="currentColor" />
                                                     </svg>
@@ -908,7 +845,7 @@ export default function CarsDetails1() {
                                             <div className="box-agent-support border-bottom pb-3 mb-3">
                                                 <div className="card-author">
                                                     <div className="me-2">
-                                                        <img src="/assets/imgs/template/icons/car-1.png" alt="Rambo" />
+                                                        <img src="/assets/imgs/template/icons/car-1.png" alt="Gastonsin" />
                                                     </div>
                                                     <div className="card-author-info">
                                                         <p className="text-lg-bold neutral-1000">Emily Rose</p>
@@ -931,7 +868,7 @@ export default function CarsDetails1() {
                                                 </p>
                                             </div>
                                             <div className="box-link-bottom">
-                                                <Link className="btn btn-primary py-3 w-100 rounded-3" href="#">
+                                                <Link className="btn btn-primary py-3 w-100 rounded-3" href="/cars-list-1">
                                                     All items by this dealer
                                                     <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M8 15L15 8L8 1M15 8L1 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -949,74 +886,74 @@ export default function CarsDetails1() {
                                     <ul className="carouselTicker__list">
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/jaguar.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/jaguar-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/jaguar.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/jaguar-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/honda.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/honda-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/honda.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/honda-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/chevrolet.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/chevrolet-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/chevrolet.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/chevrolet-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/acura.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/acura-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/acura.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/acura-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/bmw.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/bmw-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/bmw.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/bmw-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/toyota.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/toyota-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/toyota.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/toyota-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                     </ul>

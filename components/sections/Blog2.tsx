@@ -36,13 +36,13 @@ export default function Blog2() {
 									<SwiperSlide className="swiper-slide pb-4 pt-2">
 										<div className="card-news background-card hover-up d-md-flex mb-4">
 											<div className="card-image">
-												<Link href="/blog-details">
-													<img className="w-100" src="/assets/imgs/blog/blog-2/img-1.png" alt="Rambo" />
+												<Link href="/cars-list-1">
+													<img className="w-100" src="/assets/imgs/blog/blog-2/img-1.png" alt="Gastonsin" />
 												</Link>
 											</div>
 											<div className="card-info mt-0 w-68 px-4">
 												<div className="card-title mb-2">
-													<Link className="text-xl-bold neutral-1000" href="/blog-details">
+													<Link className="text-xl-bold neutral-1000" href="/cars-list-1">
 														<h6>The Art of Living: A Stylish Tech Odyssey</h6>
 													</Link>
 												</div>
@@ -50,20 +50,20 @@ export default function Blog2() {
 												<p className="text-md-medium neutral-500">The dark wood paneling and furnishings, deluxe red-draped</p>
 												<div className="card-program">
 													<div className="endtime mt-4">
-														<div className="card-button"><Link className="btn btn-gray" href="/blog-details">Keep Reading</Link></div>
+														<div className="card-button"><Link className="btn btn-gray" href="/cars-list-1">Keep Reading</Link></div>
 													</div>
 												</div>
 											</div>
 										</div>
 										<div className="card-news background-card hover-up d-md-flex mb-4">
 											<div className="card-image">
-												<Link href="/blog-details">
-													<img className="w-100" src="/assets/imgs/blog/blog-2/img-2.png" alt="Rambo" />
+												<Link href="/cars-list-1">
+													<img className="w-100" src="/assets/imgs/blog/blog-2/img-2.png" alt="Gastonsin" />
 												</Link>
 											</div>
 											<div className="card-info mt-0 w-68 px-4">
 												<div className="card-title mb-2">
-													<Link className="text-xl-bold neutral-1000" href="/blog-details">
+													<Link className="text-xl-bold neutral-1000" href="/cars-list-1">
 														<h6>The Art of Living: A Stylish Tech Odyssey</h6>
 													</Link>
 												</div>
@@ -71,51 +71,7 @@ export default function Blog2() {
 												<p className="text-md-medium neutral-500">The dark wood paneling and furnishings, deluxe red-draped</p>
 												<div className="card-program">
 													<div className="endtime mt-4">
-														<div className="card-button"><Link className="btn btn-gray" href="/blog-details">Keep Reading</Link></div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</SwiperSlide>
-									<SwiperSlide className="swiper-slide pb-4 pt-2">
-										<div className="card-news background-card hover-up d-md-flex mb-4">
-											<div className="card-image">
-												<Link href="/blog-details">
-													<img className="w-100" src="/assets/imgs/blog/blog-2/img-3.png" alt="Rambo" />
-												</Link>
-											</div>
-											<div className="card-info mt-0 w-68 px-4">
-												<div className="card-title mb-2">
-													<Link className="text-xl-bold neutral-1000" href="/blog-details">
-														<h6>The Art of Living: A Stylish Tech Odyssey</h6>
-													</Link>
-												</div>
-												<div className="card-meta"><span className="post-date neutral-1000">18 Sep 2024</span><span className="post-time neutral-1000">6 mins</span><span className="post-comment neutral-1000">38 comments</span></div>
-												<p className="text-md-medium neutral-500">The dark wood paneling and furnishings, deluxe red-draped</p>
-												<div className="card-program">
-													<div className="endtime mt-4">
-														<div className="card-button"><Link className="btn btn-gray" href="/blog-details">Keep Reading</Link></div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div className="card-news background-card hover-up d-md-flex mb-4">
-											<div className="card-image">
-												<Link href="/blog-details">
-													<img className="w-100" src="/assets/imgs/blog/blog-2/img-4.png" alt="Rambo" />
-												</Link>
-											</div>
-											<div className="card-info mt-0 w-68 px-4">
-												<div className="card-title mb-2">
-													<Link className="text-xl-bold neutral-1000" href="/blog-details">
-														<h6>The Art of Living: A Stylish Tech Odyssey</h6>
-													</Link>
-												</div>
-												<div className="card-meta"><span className="post-date neutral-1000">18 Sep 2024</span><span className="post-time neutral-1000">6 mins</span><span className="post-comment neutral-1000">38 comments</span></div>
-												<p className="text-md-medium neutral-500">The dark wood paneling and furnishings, deluxe red-draped</p>
-												<div className="card-program">
-													<div className="endtime mt-4">
-														<div className="card-button"><Link className="btn btn-gray" href="/blog-details">Keep Reading</Link></div>
+														<div className="card-button"><Link className="btn btn-gray" href="/cars-list-1">Keep Reading</Link></div>
 													</div>
 												</div>
 											</div>
@@ -124,13 +80,13 @@ export default function Blog2() {
 									<SwiperSlide className="swiper-slide pb-4 pt-2">
 										<div className="card-news background-card hover-up d-md-flex mb-4">
 											<div className="card-image">
-												<Link href="/blog-details">
-													<img className="w-100" src="/assets/imgs/blog/blog-2/img-1.png" alt="Rambo" />
+												<Link href="/cars-list-1">
+													<img className="w-100" src="/assets/imgs/blog/blog-2/img-3.png" alt="Gastonsin" />
 												</Link>
 											</div>
 											<div className="card-info mt-0 w-68 px-4">
 												<div className="card-title mb-2">
-													<Link className="text-xl-bold neutral-1000" href="/blog-details">
+													<Link className="text-xl-bold neutral-1000" href="/cars-list-1">
 														<h6>The Art of Living: A Stylish Tech Odyssey</h6>
 													</Link>
 												</div>
@@ -138,20 +94,20 @@ export default function Blog2() {
 												<p className="text-md-medium neutral-500">The dark wood paneling and furnishings, deluxe red-draped</p>
 												<div className="card-program">
 													<div className="endtime mt-4">
-														<div className="card-button"><Link className="btn btn-gray" href="/blog-details">Keep Reading</Link></div>
+														<div className="card-button"><Link className="btn btn-gray" href="/cars-list-1">Keep Reading</Link></div>
 													</div>
 												</div>
 											</div>
 										</div>
 										<div className="card-news background-card hover-up d-md-flex mb-4">
 											<div className="card-image">
-												<Link href="/blog-details">
-													<img className="w-100" src="/assets/imgs/blog/blog-2/img-2.png" alt="Rambo" />
+												<Link href="/cars-list-1">
+													<img className="w-100" src="/assets/imgs/blog/blog-2/img-4.png" alt="Gastonsin" />
 												</Link>
 											</div>
 											<div className="card-info mt-0 w-68 px-4">
 												<div className="card-title mb-2">
-													<Link className="text-xl-bold neutral-1000" href="/blog-details">
+													<Link className="text-xl-bold neutral-1000" href="/cars-list-1">
 														<h6>The Art of Living: A Stylish Tech Odyssey</h6>
 													</Link>
 												</div>
@@ -159,7 +115,7 @@ export default function Blog2() {
 												<p className="text-md-medium neutral-500">The dark wood paneling and furnishings, deluxe red-draped</p>
 												<div className="card-program">
 													<div className="endtime mt-4">
-														<div className="card-button"><Link className="btn btn-gray" href="/blog-details">Keep Reading</Link></div>
+														<div className="card-button"><Link className="btn btn-gray" href="/cars-list-1">Keep Reading</Link></div>
 													</div>
 												</div>
 											</div>
@@ -168,13 +124,13 @@ export default function Blog2() {
 									<SwiperSlide className="swiper-slide pb-4 pt-2">
 										<div className="card-news background-card hover-up d-md-flex mb-4">
 											<div className="card-image">
-												<Link href="/blog-details">
-													<img className="w-100" src="/assets/imgs/blog/blog-2/img-3.png" alt="Rambo" />
+												<Link href="/cars-list-1">
+													<img className="w-100" src="/assets/imgs/blog/blog-2/img-1.png" alt="Gastonsin" />
 												</Link>
 											</div>
 											<div className="card-info mt-0 w-68 px-4">
 												<div className="card-title mb-2">
-													<Link className="text-xl-bold neutral-1000" href="/blog-details">
+													<Link className="text-xl-bold neutral-1000" href="/cars-list-1">
 														<h6>The Art of Living: A Stylish Tech Odyssey</h6>
 													</Link>
 												</div>
@@ -182,20 +138,20 @@ export default function Blog2() {
 												<p className="text-md-medium neutral-500">The dark wood paneling and furnishings, deluxe red-draped</p>
 												<div className="card-program">
 													<div className="endtime mt-4">
-														<div className="card-button"><Link className="btn btn-gray" href="/blog-details">Keep Reading</Link></div>
+														<div className="card-button"><Link className="btn btn-gray" href="/cars-list-1">Keep Reading</Link></div>
 													</div>
 												</div>
 											</div>
 										</div>
 										<div className="card-news background-card hover-up d-md-flex mb-4">
 											<div className="card-image">
-												<Link href="/blog-details">
-													<img className="w-100" src="/assets/imgs/blog/blog-2/img-4.png" alt="Rambo" />
+												<Link href="/cars-list-1">
+													<img className="w-100" src="/assets/imgs/blog/blog-2/img-2.png" alt="Gastonsin" />
 												</Link>
 											</div>
 											<div className="card-info mt-0 w-68 px-4">
 												<div className="card-title mb-2">
-													<Link className="text-xl-bold neutral-1000" href="/blog-details">
+													<Link className="text-xl-bold neutral-1000" href="/cars-list-1">
 														<h6>The Art of Living: A Stylish Tech Odyssey</h6>
 													</Link>
 												</div>
@@ -203,7 +159,51 @@ export default function Blog2() {
 												<p className="text-md-medium neutral-500">The dark wood paneling and furnishings, deluxe red-draped</p>
 												<div className="card-program">
 													<div className="endtime mt-4">
-														<div className="card-button"><Link className="btn btn-gray" href="/blog-details">Keep Reading</Link></div>
+														<div className="card-button"><Link className="btn btn-gray" href="/cars-list-1">Keep Reading</Link></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</SwiperSlide>
+									<SwiperSlide className="swiper-slide pb-4 pt-2">
+										<div className="card-news background-card hover-up d-md-flex mb-4">
+											<div className="card-image">
+												<Link href="/cars-list-1">
+													<img className="w-100" src="/assets/imgs/blog/blog-2/img-3.png" alt="Gastonsin" />
+												</Link>
+											</div>
+											<div className="card-info mt-0 w-68 px-4">
+												<div className="card-title mb-2">
+													<Link className="text-xl-bold neutral-1000" href="/cars-list-1">
+														<h6>The Art of Living: A Stylish Tech Odyssey</h6>
+													</Link>
+												</div>
+												<div className="card-meta"><span className="post-date neutral-1000">18 Sep 2024</span><span className="post-time neutral-1000">6 mins</span><span className="post-comment neutral-1000">38 comments</span></div>
+												<p className="text-md-medium neutral-500">The dark wood paneling and furnishings, deluxe red-draped</p>
+												<div className="card-program">
+													<div className="endtime mt-4">
+														<div className="card-button"><Link className="btn btn-gray" href="/cars-list-1">Keep Reading</Link></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div className="card-news background-card hover-up d-md-flex mb-4">
+											<div className="card-image">
+												<Link href="/cars-list-1">
+													<img className="w-100" src="/assets/imgs/blog/blog-2/img-4.png" alt="Gastonsin" />
+												</Link>
+											</div>
+											<div className="card-info mt-0 w-68 px-4">
+												<div className="card-title mb-2">
+													<Link className="text-xl-bold neutral-1000" href="/cars-list-1">
+														<h6>The Art of Living: A Stylish Tech Odyssey</h6>
+													</Link>
+												</div>
+												<div className="card-meta"><span className="post-date neutral-1000">18 Sep 2024</span><span className="post-time neutral-1000">6 mins</span><span className="post-comment neutral-1000">38 comments</span></div>
+												<p className="text-md-medium neutral-500">The dark wood paneling and furnishings, deluxe red-draped</p>
+												<div className="card-program">
+													<div className="endtime mt-4">
+														<div className="card-button"><Link className="btn btn-gray" href="/cars-list-1">Keep Reading</Link></div>
 													</div>
 												</div>
 											</div>

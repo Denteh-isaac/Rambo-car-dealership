@@ -1,0 +1,162 @@
+
+/* --------------------------------------------------------------------------
+   Sale / rental tabs on the vehicle listing.
+   -------------------------------------------------------------------------- */
+.listing-tabs { display: flex; gap: 10px; flex-wrap: wrap; }
+.listing-tab {
+	display: inline-flex; align-items: center; gap: 8px;
+	background: #fff; border: 1.5px solid #e2ece6; color: #35473c;
+	font-size: 14px; font-weight: 600; padding: 10px 18px; min-height: 44px;
+	border-radius: 999px; cursor: pointer; transition: all .16s ease;
+}
+.listing-tab:hover { border-color: #70f46d; color: #0f1e14; }
+.listing-tab.active { background: #0f1e14; border-color: #0f1e14; color: #fff; }
+.listing-tab-count {
+	background: #eefdee; color: #0b7a3f; font-size: 12px; font-weight: 700;
+	padding: 1px 8px; border-radius: 999px;
+}
+.listing-tab.active .listing-tab-count { background: rgba(255,255,255,.18); color: #fff; }
+.listing-tab:focus-visible { outline: 3px solid #70f46d; outline-offset: 2px; }
+
+/* sale / rental badge on the card image */
+.card-journey-small .card-image { position: relative; }
+.listing-badge {
+	position: absolute; top: 12px; left: 12px; z-index: 2;
+	font-size: 11px; font-weight: 700; letter-spacing: .4px; text-transform: uppercase;
+	padding: 5px 11px; border-radius: 999px;
+	background: rgba(255,255,255,.94); color: #0f1e14; box-shadow: 0 1px 3px rgba(0,0,0,.12);
+}
+/* Sales are the main business, so they carry the brand green. */
+.listing-badge-sale { background: #70f46d; color: #08351b; }
+.listing-badge-both { background: #d8ecff; color: #0b4a7a; }
+
+/* --------------------------------------------------------------------------
+   Page-header banners are ~3.27 wide, but on a phone the container is nearer
+   1.7 — object-fit:cover then crops a lot off each side. Shortening the band
+   brings the container closer to the artwork's own ratio, so less is lost,
+   while still leaving room for the title sitting over it.
+   -------------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+	.page-header .custom-container { min-height: 180px; }
+}
+@media (max-width: 575.98px) {
+	.page-header .custom-container { min-height: 160px; }
+}
+
+/* --------------------------------------------------------------------------
+   Equal-height cards.
+   Bootstrap stretches the columns, but the card inside keeps its content
+   height — so a row of cards with different amounts of text ends up ragged
+   along the bottom. Making the card fill its column fixes the whole family.
+   -------------------------------------------------------------------------- */
+.card-contact,
+.card-offer,
+.card-why,
+.card-why-choose-us,
+.card-news,
+.card-feature-2,
+.card-dealer {
+	height: 100%;
+}
+
+/* Vehicle cards sit in grids and in swiper slides; longer names and the
+   "or $70 / day" second price line make some taller than others. Fill the
+   slot and push the price/CTA row to the bottom so every card lines up. */
+.card-journey-small,
+.card-grid-video {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.card-journey-small .card-info {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+.card-journey-small .card-program {
+	margin-top: auto;
+}
+.swiper-slide { height: auto; }
+
+/* --------------------------------------------------------------------------
+   Long, unbreakable strings (emails, URLs) inside flex rows.
+   A flex item defaults to min-width:auto, so it refuses to shrink below its
+   content width — and an address like china@gastonsincardealership.com has no
+   space or hyphen to wrap at. The result is text spilling out of the card.
+   Let the item shrink, and allow the string itself to break.
+   -------------------------------------------------------------------------- */
+.card-contact .card-method-contact > div,
+.box-info-contact > div,
+.card-info .card-method-contact > div {
+	min-width: 0;
+}
+
+.card-contact .email,
+.card-contact .phone,
+.card-contact .location,
+.card-method-contact .email,
+.card-method-contact .phone,
+.box-info-contact .email,
+a[href^="mailto:"] {
+	min-width: 0;
+	overflow-wrap: anywhere;
+	word-break: break-word;
+}
+
+/* Cards should clip rather than leak if anything else ever overflows. */
+.card-contact {
+	overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   Vehicle card footer: price and button on one line.
+   "View Details" is a wider label than the template's "Book Now", and the
+   dual-purpose cars carry a second price line ("or $70 / day"), so the pair
+   could exceed the card. Let the price column shrink, keep the button whole,
+   and allow the pair to stack rather than spill.
+   -------------------------------------------------------------------------- */
+.card-journey-small .endtime {
+	flex-wrap: wrap;
+	gap: 10px;
+	align-items: center;
+}
+.card-journey-small .endtime .card-price {
+	min-width: 0;
+	flex: 1 1 auto;
+}
+.card-journey-small .endtime .card-button {
+	flex: 0 0 auto;
+	margin-left: auto;
+}
+.card-journey-small .endtime .card-button .btn {
+	white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------------
+   Dealer detail panels put a content-width column in a no-wrap row, so a long
+   service list pushed straight out through the side of the card. Let the row
+   wrap instead — the column drops below rather than overflowing.
+   -------------------------------------------------------------------------- */
+/* Bootstrap's flex-*-nowrap utilities are declared !important, so a plain
+   override loses — this one has to match it. */
+.card-body .row.flex-lg-nowrap {
+	flex-wrap: wrap !important;
+}
+.card-body .row.flex-lg-nowrap > [class*="col-"] {
+	min-width: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Terms of Service anchors (#privacy, #cancellation, #rentals …) are linked
+   from the table of contents and from the footer. The header is fixed, so
+   without an offset the section heading lands hidden underneath it.
+   -------------------------------------------------------------------------- */
+/* Header bottom measures 146px at desktop, so 140px left headings ~6px underneath. */
+.box-section-term [id] {
+	scroll-margin-top: 170px;
+}
+@media (max-width: 991.98px) {
+	.box-section-term [id] {
+		scroll-margin-top: 120px;
+	}
+}

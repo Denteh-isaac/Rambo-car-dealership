@@ -9,7 +9,7 @@ export default function WhyUs1({cls}:any) {
 					<div className="text-center wow fadeInUp">
 						<p className="text-xl-medium neutral-500 wow fadeInUp">HOW IT WORKS</p>
 						<h3 className="neutral-1000 wow fadeInUp">
-							Getting Your Car from Rambo <br className="d-none d-lg-block" />
+							Getting Your Car from Gastonsin <br className="d-none d-lg-block" />
 							is Simple &amp; Stress-Free
 						</h3>
 					</div>
@@ -87,7 +87,7 @@ export default function WhyUs1({cls}:any) {
 								</div>
 								<div className="card-info">
 									<h6 className="text-xl-bold neutral-1000">Pick Up &amp; Drive Away</h6>
-									<p className="text-md-medium neutral-500">Collect from our Nzema warehouse or arrange delivery. Your car arrives roadworthy and ready to go.</p>
+									<p className="text-md-medium neutral-500">Collect from our Esiama warehouse or arrange delivery. Your car arrives roadworthy and ready to go.</p>
 								</div>
 							</div>
 						</div>

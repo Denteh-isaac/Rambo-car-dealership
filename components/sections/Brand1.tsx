@@ -23,75 +23,75 @@ export default function Brand1() {
 						<Marquee direction='left' pauseOnHover={true} className="carouselTicker carouselTicker-left box-list-brand-car justify-content-center  wow fadeIn">
 							<ul className="carouselTicker__list">
 								<li className="carouselTicker__item">
-									<Link href="/cars-list-2" className="item-brand">
-										<img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Rambo" />
-										<img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Rambo" />
+									<Link href="/cars-list-1" className="item-brand">
+										<img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Gastonsin" />
+										<img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Gastonsin" />
 									</Link>
 								</li>
 								<li className="carouselTicker__item">
-									<Link href="/cars-list-2" className="item-brand">
-										<img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Rambo" />
-										<img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Rambo" />
+									<Link href="/cars-list-1" className="item-brand">
+										<img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Gastonsin" />
+										<img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Gastonsin" />
 									</Link>
 								</li>
 								<li className="carouselTicker__item">
-									<Link href="/cars-list-2" className="item-brand">
-										<img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Rambo" />
-										<img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Rambo" />
+									<Link href="/cars-list-1" className="item-brand">
+										<img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Gastonsin" />
+										<img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Gastonsin" />
 									</Link>
 								</li>
 								<li className="carouselTicker__item">
-									<Link href="/cars-list-2" className="item-brand">
-										<img className="light-mode" src="/assets/imgs/page/homepage2/jaguar.png" alt="Rambo" />
-										<img className="dark-mode" src="/assets/imgs/page/homepage2/jaguar-w.png" alt="Rambo" />
+									<Link href="/cars-list-1" className="item-brand">
+										<img className="light-mode" src="/assets/imgs/page/homepage2/jaguar.png" alt="Gastonsin" />
+										<img className="dark-mode" src="/assets/imgs/page/homepage2/jaguar-w.png" alt="Gastonsin" />
 									</Link>
 								</li>
 								<li className="carouselTicker__item">
-									<Link href="/cars-list-2" className="item-brand">
-										<img className="light-mode" src="/assets/imgs/page/homepage2/honda.png" alt="Rambo" />
-										<img className="dark-mode" src="/assets/imgs/page/homepage2/honda-w.png" alt="Rambo" />
+									<Link href="/cars-list-1" className="item-brand">
+										<img className="light-mode" src="/assets/imgs/page/homepage2/honda.png" alt="Gastonsin" />
+										<img className="dark-mode" src="/assets/imgs/page/homepage2/honda-w.png" alt="Gastonsin" />
 									</Link>
 								</li>
 								<li className="carouselTicker__item">
-									<Link href="/cars-list-2" className="item-brand">
-										<img className="light-mode" src="/assets/imgs/page/homepage2/chevrolet.png" alt="Rambo" />
-										<img className="dark-mode" src="/assets/imgs/page/homepage2/chevrolet-w.png" alt="Rambo" />
+									<Link href="/cars-list-1" className="item-brand">
+										<img className="light-mode" src="/assets/imgs/page/homepage2/chevrolet.png" alt="Gastonsin" />
+										<img className="dark-mode" src="/assets/imgs/page/homepage2/chevrolet-w.png" alt="Gastonsin" />
 									</Link>
 								</li>
 								<li className="carouselTicker__item">
-									<Link href="/cars-list-2" className="item-brand">
-										<img className="light-mode" src="/assets/imgs/page/homepage2/acura.png" alt="Rambo" />
-										<img className="dark-mode" src="/assets/imgs/page/homepage2/acura-w.png" alt="Rambo" />
+									<Link href="/cars-list-1" className="item-brand">
+										<img className="light-mode" src="/assets/imgs/page/homepage2/acura.png" alt="Gastonsin" />
+										<img className="dark-mode" src="/assets/imgs/page/homepage2/acura-w.png" alt="Gastonsin" />
 									</Link>
 								</li>
 								<li className="carouselTicker__item">
-									<Link href="/cars-list-2" className="item-brand">
-										<img className="light-mode" src="/assets/imgs/page/homepage2/bmw.png" alt="Rambo" />
-										<img className="dark-mode" src="/assets/imgs/page/homepage2/bmw-w.png" alt="Rambo" />
+									<Link href="/cars-list-1" className="item-brand">
+										<img className="light-mode" src="/assets/imgs/page/homepage2/bmw.png" alt="Gastonsin" />
+										<img className="dark-mode" src="/assets/imgs/page/homepage2/bmw-w.png" alt="Gastonsin" />
 									</Link>
 								</li>
 								<li className="carouselTicker__item">
-									<Link href="/cars-list-2" className="item-brand">
-										<img className="light-mode" src="/assets/imgs/page/homepage2/toyota.png" alt="Rambo" />
-										<img className="dark-mode" src="/assets/imgs/page/homepage2/toyota-w.png" alt="Rambo" />
+									<Link href="/cars-list-1" className="item-brand">
+										<img className="light-mode" src="/assets/imgs/page/homepage2/toyota.png" alt="Gastonsin" />
+										<img className="dark-mode" src="/assets/imgs/page/homepage2/toyota-w.png" alt="Gastonsin" />
 									</Link>
 								</li>
 								<li className="carouselTicker__item">
-									<Link href="/cars-list-2" className="item-brand">
-										<img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Rambo" />
-										<img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Rambo" />
+									<Link href="/cars-list-1" className="item-brand">
+										<img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Gastonsin" />
+										<img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Gastonsin" />
 									</Link>
 								</li>
 								<li className="carouselTicker__item">
-									<Link href="/cars-list-2" className="item-brand">
-										<img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Rambo" />
-										<img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Rambo" />
+									<Link href="/cars-list-1" className="item-brand">
+										<img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Gastonsin" />
+										<img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Gastonsin" />
 									</Link>
 								</li>
 								<li className="carouselTicker__item">
-									<Link href="/cars-list-2" className="item-brand">
-										<img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Rambo" />
-										<img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Rambo" />
+									<Link href="/cars-list-1" className="item-brand">
+										<img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Gastonsin" />
+										<img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Gastonsin" />
 									</Link>
 								</li>
 							</ul>

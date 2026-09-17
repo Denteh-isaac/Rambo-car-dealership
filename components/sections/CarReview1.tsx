@@ -34,7 +34,7 @@ export default function CarReview1() {
                                         <a className="btn btn-play popup-youtube" onClick={() => setOpen(true)}>
                                             {" "}
                                         </a>
-                                        <img className="mr-10" src="/assets/imgs/car-review/car-review-1/img-video-1.png" alt="Rambo" />
+                                        <img className="mr-10" src="/assets/imgs/car-review/car-review-1/img-video-1.png" alt="Gastonsin" />
                                     </div>
                                     <div className="card-info">
                                         <h4 className="text-white">Farewell, BMW M2: will this be the last M car of its kind</h4>
@@ -49,7 +49,7 @@ export default function CarReview1() {
                                             <a className="btn-play-sm popup-youtube" onClick={() => setOpen(true)}>
                                                 {" "}
                                             </a>
-                                            <img className="mr-10" src="/assets/imgs/car-review/car-review-1/img-video-2.png" alt="Rambo" />
+                                            <img className="mr-10" src="/assets/imgs/car-review/car-review-1/img-video-2.png" alt="Gastonsin" />
                                         </div>
                                         <div className="item-info">
                                             <Link className="heading-6" href="/cars-details-1">
@@ -63,7 +63,7 @@ export default function CarReview1() {
                                             <a className="btn-play-sm popup-youtube" onClick={() => setOpen(true)}>
                                                 {" "}
                                             </a>
-                                            <img className="mr-10" src="/assets/imgs/car-review/car-review-1/img-video-3.png" alt="Rambo" />
+                                            <img className="mr-10" src="/assets/imgs/car-review/car-review-1/img-video-3.png" alt="Gastonsin" />
                                         </div>
                                         <div className="item-info">
                                             <Link className="heading-6" href="/cars-details-1">
@@ -77,7 +77,7 @@ export default function CarReview1() {
                                             <a className="btn-play-sm popup-youtube" onClick={() => setOpen(true)}>
                                                 {" "}
                                             </a>
-                                            <img className="mr-10" src="/assets/imgs/car-review/car-review-1/img-video-4.png" alt="Rambo" />
+                                            <img className="mr-10" src="/assets/imgs/car-review/car-review-1/img-video-4.png" alt="Gastonsin" />
                                         </div>
                                         <div className="item-info">
                                             <Link className="heading-6" href="/cars-details-1">

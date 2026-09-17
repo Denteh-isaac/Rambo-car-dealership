@@ -7,6 +7,13 @@ import Marquee from "react-fast-marquee";
 import ModalVideo from "react-modal-video";
 import Slider from "react-slick";
 import { Price } from "@/util/currency";
+import MailtoForm from "@/components/elements/MailtoForm"
+import ShareButton from "@/components/elements/ShareButton"
+
+/** react-slick passes currentSlide/slideCount to custom arrows; keep them off the DOM button. */
+const SlickButton = ({ currentSlide, slideCount, children, ...props }: any) => (
+	<button type="button" {...props}>{children}</button>
+)
 export default function ShopDetails() {
     const [isOpen, setOpen] = useState(false);
     const [nav1, setNav1] = useState(null);
@@ -25,18 +32,18 @@ export default function ShopDetails() {
         arrows: true,
         fade: false,
         prevArrow: (
-            <button type="button" className="slick-prev">
+            <SlickButton className="slick-prev">
                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" width={16} height={16}>
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                 </svg>
-            </button>
+            </SlickButton>
         ),
         nextArrow: (
-            <button type="button" className="slick-next">
+            <SlickButton className="slick-next">
                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" width={16} height={16}>
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
-            </button>
+            </SlickButton>
         ),
     };
 
@@ -54,18 +61,18 @@ export default function ShopDetails() {
             { breakpoint: 480, settings: { slidesToShow: 2 } },
         ],
         prevArrow: (
-            <button type="button" className="slick-prev">
+            <SlickButton className="slick-prev">
                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                 </svg>
-            </button>
+            </SlickButton>
         ),
         nextArrow: (
-            <button type="button" className="slick-next">
+            <SlickButton className="slick-next">
                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
-            </button>
+            </SlickButton>
         ),
     };
     return (
@@ -105,25 +112,25 @@ export default function ShopDetails() {
                                         <div className="box-banner-activities border rounded-3 overflow-hidden">
                                             <Slider {...settingsMain} asNavFor={nav2 as any} ref={(slider) => setSlider1(slider as any)} className="banner-activities-detail">
                                                 <div className="banner-slide-activity">
-                                                    <img src="/assets/imgs/shop/shop-details/img-1.png" alt="Rambo" />
+                                                    <img src="/assets/imgs/shop/shop-details/img-1.png" alt="Gastonsin" />
                                                 </div>
                                                 <div className="banner-slide-activity">
-                                                    <img src="/assets/imgs/shop/shop-details/img-1.png" alt="Rambo" />
+                                                    <img src="/assets/imgs/shop/shop-details/img-1.png" alt="Gastonsin" />
                                                 </div>
                                                 <div className="banner-slide-activity">
-                                                    <img src="/assets/imgs/shop/shop-details/img-1.png" alt="Rambo" />
+                                                    <img src="/assets/imgs/shop/shop-details/img-1.png" alt="Gastonsin" />
                                                 </div>
                                                 <div className="banner-slide-activity">
-                                                    <img src="/assets/imgs/shop/shop-details/img-1.png" alt="Rambo" />
+                                                    <img src="/assets/imgs/shop/shop-details/img-1.png" alt="Gastonsin" />
                                                 </div>
                                                 <div className="banner-slide-activity">
-                                                    <img src="/assets/imgs/shop/shop-details/img-1.png" alt="Rambo" />
+                                                    <img src="/assets/imgs/shop/shop-details/img-1.png" alt="Gastonsin" />
                                                 </div>
                                             </Slider>
                                             <div className="box-button-abs">
                                                 <a className="btn btn-white-md popup-youtube" onClick={() => setOpen(true)}>
                                                     {" "}
-                                                    <img src="/assets/imgs/page/activities/video.svg" alt="Rambo" />
+                                                    <img src="/assets/imgs/page/activities/video.svg" alt="Gastonsin" />
                                                     Video Clips
                                                 </a>
                                             </div>
@@ -131,28 +138,28 @@ export default function ShopDetails() {
                                         <div className="slider-thumnail-activities">
                                             <Slider {...settingsThumbs} asNavFor={nav1 as any} ref={(slider) => setSlider2(slider as any)} className="slider-nav-thumbnails-activities-detail shop-thumb-nav">
                                                 <div className="banner-slide border p-0 mx-2 rounded-3">
-                                                    <img src="/assets/imgs/shop/shop-details/thumb-1.png" alt="Rambo" />
+                                                    <img src="/assets/imgs/shop/shop-details/thumb-1.png" alt="Gastonsin" />
                                                 </div>
                                                 <div className="banner-slide border p-0 mx-2 rounded-3">
-                                                    <img src="/assets/imgs/shop/shop-details/thumb-2.png" alt="Rambo" />
+                                                    <img src="/assets/imgs/shop/shop-details/thumb-2.png" alt="Gastonsin" />
                                                 </div>
                                                 <div className="banner-slide border p-0 mx-2 rounded-3">
-                                                    <img src="/assets/imgs/shop/shop-details/thumb-3.png" alt="Rambo" />
+                                                    <img src="/assets/imgs/shop/shop-details/thumb-3.png" alt="Gastonsin" />
                                                 </div>
                                                 <div className="banner-slide border p-0 mx-2 rounded-3">
-                                                    <img src="/assets/imgs/shop/shop-details/thumb-4.png" alt="Rambo" />
+                                                    <img src="/assets/imgs/shop/shop-details/thumb-4.png" alt="Gastonsin" />
                                                 </div>
                                                 <div className="banner-slide border p-0 mx-2 rounded-3">
-                                                    <img src="/assets/imgs/shop/shop-details/thumb-1.png" alt="Rambo" />
+                                                    <img src="/assets/imgs/shop/shop-details/thumb-1.png" alt="Gastonsin" />
                                                 </div>
                                                 <div className="banner-slide border p-0 mx-2 rounded-3">
-                                                    <img src="/assets/imgs/shop/shop-details/thumb-2.png" alt="Rambo" />
+                                                    <img src="/assets/imgs/shop/shop-details/thumb-2.png" alt="Gastonsin" />
                                                 </div>
                                                 <div className="banner-slide border p-0 mx-2 rounded-3">
-                                                    <img src="/assets/imgs/shop/shop-details/thumb-3.png" alt="Rambo" />
+                                                    <img src="/assets/imgs/shop/shop-details/thumb-3.png" alt="Gastonsin" />
                                                 </div>
                                                 <div className="banner-slide border p-0 mx-2 rounded-3">
-                                                    <img src="/assets/imgs/shop/shop-details/thumb-4.png" alt="Rambo" />
+                                                    <img src="/assets/imgs/shop/shop-details/thumb-4.png" alt="Gastonsin" />
                                                 </div>
                                             </Slider>
                                         </div>
@@ -168,12 +175,10 @@ export default function ShopDetails() {
                                                     </span>
                                                 </div>
                                             </div>
-                                            <Link href="#" className="text-md-medium neutral-500">
+                                            <span className="text-md-medium neutral-500">
                                                 SKU <span className="text-md-bold neutral-1000 ms-1 text-decoration-underline">LVA-4125</span>{" "}
-                                            </Link>
-                                            <Link href="#">
-                                                <img src="/assets/imgs/shop/shop-list/stock.png" alt="Rambo" />
-                                            </Link>
+                                            </span>
+                                            <img src="/assets/imgs/shop/shop-list/stock.png" alt="Gastonsin" />
                                         </div>
                                         <div className="tour-title-main">
                                             <h5 className="neutral-1000">
@@ -195,7 +200,7 @@ export default function ShopDetails() {
                                                 <div className="add-to-cart me-3">
                                                     <QuantityControl />
                                                 </div>
-                                                <button type="submit" className="btn btn-primary rounded-3 gap-2 button-add-to-cart">
+                                                <a className="btn btn-primary rounded-3 gap-2 button-add-to-cart" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Mobil%20Delvac%201300%20Super%20Heavy%20Duty%20Synthetic%20Blend%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} viewBox="0 0 16 16" fill="none">
                                                         <g clipPath="url(#clip0_20_23536)">
                                                             <path d="M16 2H2.828L2.8 1.766C2.7427 1.27961 2.50892 0.831155 2.14299 0.505652C1.77706 0.180149 1.30442 0.000227862 0.814667 0L0 0V1.33333H0.814667C0.977956 1.33335 1.13556 1.3933 1.25758 1.50181C1.3796 1.61032 1.45756 1.75983 1.47667 1.922L2.53333 10.9007C2.59063 11.3871 2.82441 11.8355 3.19034 12.161C3.55627 12.4865 4.02891 12.6664 4.51867 12.6667H13.3333V11.3333H4.51867C4.35528 11.3333 4.19759 11.2733 4.07555 11.1646C3.95351 11.056 3.87562 10.9063 3.85667 10.744L3.76933 10H14.5573L16 2ZM13.4427 8.66667H3.61267L2.98533 3.33333H14.4047L13.4427 8.66667Z" fill="#101010" />
@@ -203,22 +208,16 @@ export default function ShopDetails() {
                                                             <path d="M11.3333 15.9997C12.0697 15.9997 12.6667 15.4027 12.6667 14.6663C12.6667 13.93 12.0697 13.333 11.3333 13.333C10.597 13.333 10 13.93 10 14.6663C10 15.4027 10.597 15.9997 11.3333 15.9997Z" fill="#101010" />
                                                         </g>
                                                     </svg>
-                                                    Add to cart
-                                                </button>
+                                                    Order on WhatsApp
+</a>
                                             </div>
                                             <div className="tour-meta-right mb-0 mt-3 mt-md-0">
-                                                <Link className="btn btn-share" href="#">
+                                                <ShareButton className="btn btn-share">
                                                     <svg width={16} height={18} viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M13 11.5332C12.012 11.5332 11.1413 12.0193 10.5944 12.7584L5.86633 10.3374C5.94483 10.0698 6 9.79249 6 9.49989C6 9.10302 5.91863 8.72572 5.77807 8.37869L10.7262 5.40109C11.2769 6.04735 12.0863 6.46655 13 6.46655C14.6543 6.46655 16 5.12085 16 3.46655C16 1.81225 14.6543 0.466553 13 0.466553C11.3457 0.466553 10 1.81225 10 3.46655C10 3.84779 10.0785 4.20942 10.2087 4.54515L5.24583 7.53149C4.69563 6.90442 3.8979 6.49989 3 6.49989C1.3457 6.49989 0 7.84559 0 9.49989C0 11.1542 1.3457 12.4999 3 12.4999C4.00433 12.4999 4.8897 11.9996 5.4345 11.2397L10.147 13.6529C10.0602 13.9331 10 14.2249 10 14.5332C10 16.1875 11.3457 17.5332 13 17.5332C14.6543 17.5332 16 16.1875 16 14.5332C16 12.8789 14.6543 11.5332 13 11.5332Z" fill="#101010" />
                                                     </svg>
                                                     Share
-                                                </Link>
-                                                <Link className="btn btn-wishlish" href="#">
-                                                    <svg width={20} height={18} viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M2.2222 2.3638C4.34203 0.243977 7.65342 0.0419426 10.0004 1.7577C12.3473 0.0419426 15.6587 0.243977 17.7786 2.3638C20.1217 4.70695 20.1217 8.50594 17.7786 10.8491L12.1217 16.5059C10.9501 17.6775 9.05063 17.6775 7.87906 16.5059L2.2222 10.8491C-0.120943 8.50594 -0.120943 4.70695 2.2222 2.3638Z" fill="#101010" />
-                                                    </svg>
-                                                    Wishlish
-                                                </Link>
+                                                </ShareButton>
                                             </div>
                                         </div>
                                         <div className="d-flex align-items-center gap-2 mt-4">
@@ -279,26 +278,26 @@ export default function ShopDetails() {
                                                     <div className="list-questions">
                                                         <div className="item-question">
                                                             <div className="head-question">
-                                                                <p className="text-md-bold neutral-1000">Is The High Roller suitable for all ages?</p>
+                                                                <p className="text-md-bold neutral-1000">Fitted these on my Hilux before a run up north. Quality is genuine and they have held up on rough roads without any complaints.</p>
                                                             </div>
                                                             <div className="content-question">
-                                                                <p className="text-sm-medium neutral-800">Absolutely! The High Roller offers a family-friendly experience suitable for visitors of all ages. Children must be accompanied by an adult.</p>
+                                                                <p className="text-sm-medium neutral-800">Fitted these on my Hilux before a run up north. Quality is genuine and they have held up on rough roads without any complaints.</p>
                                                             </div>
                                                         </div>
                                                         <div className="item-question active">
                                                             <div className="head-question">
-                                                                <p className="text-md-bold neutral-1000">Can I bring food or drinks aboard The High Roller?</p>
+                                                                <p className="text-md-bold neutral-1000">Fitted these on my Hilux before a run up north. Quality is genuine and they have held up on rough roads without any complaints.</p>
                                                             </div>
                                                             <div className="content-question">
-                                                                <p className="text-sm-medium neutral-800">Outside food and beverages are not permitted on The High Roller. However, there are nearby dining options at The LINQ Promenade where you can enjoy a meal before or after your ride.</p>
+                                                                <p className="text-sm-medium neutral-800">Fitted these on my Hilux before a run up north. Quality is genuine and they have held up on rough roads without any complaints.</p>
                                                             </div>
                                                         </div>
                                                         <div className="item-question">
                                                             <div className="head-question">
-                                                                <p className="text-md-bold neutral-1000">Is The High Roller wheelchair accessible?</p>
+                                                                <p className="text-md-bold neutral-1000">Fitted these on my Hilux before a run up north. Quality is genuine and they have held up on rough roads without any complaints.</p>
                                                             </div>
                                                             <div className="content-question">
-                                                                <p className="text-sm-medium neutral-800">es, The High Roller cabins are wheelchair accessible, making it possible for everyone to enjoy the breathtaking views of Accra.</p>
+                                                                <p className="text-sm-medium neutral-800">Fitted these on my Hilux before a run up north. Quality is genuine and they have held up on rough roads without any complaints.</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -320,11 +319,11 @@ export default function ShopDetails() {
                                                                 <h6 className="neutral-1000">4.95 / 5</h6>
                                                                 <p className="text-sm-medium neutral-400">(672 reviews)</p>
                                                                 <div className="review-rate">
-                                                                    <img src="/assets/imgs/page/tour-detail/star.svg" alt="Rambo" />
-                                                                    <img src="/assets/imgs/page/tour-detail/star.svg" alt="Rambo" />
-                                                                    <img src="/assets/imgs/page/tour-detail/star.svg" alt="Rambo" />
-                                                                    <img src="/assets/imgs/page/tour-detail/star.svg" alt="Rambo" />
-                                                                    <img src="/assets/imgs/page/tour-detail/star.svg" alt="Rambo" />
+                                                                    <img src="/assets/imgs/page/tour-detail/star.svg" alt="Gastonsin" />
+                                                                    <img src="/assets/imgs/page/tour-detail/star.svg" alt="Gastonsin" />
+                                                                    <img src="/assets/imgs/page/tour-detail/star.svg" alt="Gastonsin" />
+                                                                    <img src="/assets/imgs/page/tour-detail/star.svg" alt="Gastonsin" />
+                                                                    <img src="/assets/imgs/page/tour-detail/star.svg" alt="Gastonsin" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -415,107 +414,55 @@ export default function ShopDetails() {
                                                         <div className="item-review">
                                                             <div className="head-review">
                                                                 <div className="author-review">
-                                                                    <img src="/assets/imgs/blog/blog-details/avatar-1.png" alt="Rambo" />
+                                                                    <img src="/assets/imgs/blog/blog-details/avatar-1.png" alt="Gastonsin" />
                                                                     <div className="author-info">
                                                                         <p className="text-lg-bold">Sarah Johnson</p>
                                                                         <p className="text-sm-medium neutral-500">December 4, 2024 at 3:12 pm</p>
                                                                     </div>
                                                                 </div>
                                                                 <div className="rate-review">
-                                                                    <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Rambo" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Rambo" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Rambo" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Rambo" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Rambo" />
+                                                                    <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Gastonsin" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Gastonsin" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Gastonsin" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Gastonsin" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Gastonsin" />
                                                                 </div>
                                                             </div>
                                                             <div className="content-review">
-                                                                <p className="text-sm-medium neutral-800">We had a fantastic time on The High Roller. The views were amazing, and the ride was very smooth. It's a great way to see Accra from a different perspective. The staff were friendly and helpful. Definitely worth it! The High Roller was one of the highlights of our Accra trip.</p>
+                                                                <p className="text-sm-medium neutral-800">Fitted these on my Hilux before a run up north. Quality is genuine and they have held up on rough roads without any complaints.</p>
                                                             </div>
                                                         </div>
                                                         <div className="item-review">
                                                             <div className="head-review">
                                                                 <div className="author-review">
-                                                                    <img src="/assets/imgs/blog/blog-details/avatar-2.png" alt="Rambo" />
+                                                                    <img src="/assets/imgs/blog/blog-details/avatar-2.png" alt="Gastonsin" />
                                                                     <div className="author-info">
                                                                         <p className="text-lg-bold">Michael Smith</p>
                                                                         <p className="text-sm-medium neutral-500">December 4, 2024 at 3:12 pm</p>
                                                                     </div>
                                                                 </div>
                                                                 <div className="rate-review">
-                                                                    <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Rambo" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Rambo" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Rambo" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Rambo" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Rambo" />
+                                                                    <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Gastonsin" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Gastonsin" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Gastonsin" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Gastonsin" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Gastonsin" />
                                                                 </div>
                                                             </div>
                                                             <div className="content-review">
-                                                                <p className="text-sm-medium neutral-800">Took my family on The High Roller, and we all loved it! The kids were amazed by the views, and the adults enjoyed the experience just as much. It's suitable for all ages and definitely a highlight of our trip to Vegas. Don't miss your chance to see Accra from a whole new perspective and create memories that will last a lifetime!</p>
+                                                                <p className="text-sm-medium neutral-800">Fitted these on my Hilux before a run up north. Quality is genuine and they have held up on rough roads without any complaints.</p>
                                                             </div>
                                                         </div>
                                                         <div className="item-review">
                                                             <div className="head-review">
                                                                 <div className="author-review">
-                                                                    <img src="/assets/imgs/blog/blog-details/avatar-3.png" alt="Rambo" />
+                                                                    <img src="/assets/imgs/blog/blog-details/avatar-3.png" alt="Gastonsin" />
                                                                     <div className="author-info">
                                                                         <p className="text-lg-bold">Emily Williams</p>
                                                                         <p className="text-sm-medium neutral-500">December 4, 2024 at 3:12 pm</p>
                                                                     </div>
                                                                 </div>
                                                                 <div className="rate-review">
-                                                                    <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Rambo" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Rambo" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Rambo" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Rambo" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Rambo" />
+                                                                    <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Gastonsin" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Gastonsin" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Gastonsin" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Gastonsin" /> <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-white.svg" alt="Gastonsin" />
                                                                 </div>
                                                             </div>
                                                             <div className="content-review">
-                                                                <p className="text-sm-medium neutral-800">The views from The High Roller were absolutely stunning! It's a fantastic way to see the Strip and the surrounding area. The cabins are spacious and comfortable, and the audio commentary adds an extra layer of enjoyment. Highly recommend!</p>
+                                                                <p className="text-sm-medium neutral-800">Fitted these on my Hilux before a run up north. Quality is genuine and they have held up on rough roads without any complaints.</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <nav aria-label="Page navigation example">
-                                                        <ul className="pagination">
-                                                            <li className="page-item">
-                                                                <Link className="page-link" href="#" aria-label="Previous">
-                                                                    <span aria-hidden="true">
-                                                                        <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                            <path d="M6.00016 1.33325L1.3335 5.99992M1.3335 5.99992L6.00016 10.6666M1.3335 5.99992H10.6668" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
-                                                                        </svg>
-                                                                    </span>
-                                                                </Link>
-                                                            </li>
-                                                            <li className="page-item">
-                                                                <Link className="page-link" href="#">
-                                                                    1
-                                                                </Link>
-                                                            </li>
-                                                            <li className="page-item">
-                                                                <Link className="page-link active" href="#">
-                                                                    2
-                                                                </Link>
-                                                            </li>
-                                                            <li className="page-item">
-                                                                <Link className="page-link" href="#">
-                                                                    3
-                                                                </Link>
-                                                            </li>
-                                                            <li className="page-item">
-                                                                <Link className="page-link" href="#">
-                                                                    4
-                                                                </Link>
-                                                            </li>
-                                                            <li className="page-item">
-                                                                <Link className="page-link" href="#">
-                                                                    5
-                                                                </Link>
-                                                            </li>
-                                                            <li className="page-item">
-                                                                <Link className="page-link" href="#">
-                                                                    ...
-                                                                </Link>
-                                                            </li>
-                                                            <li className="page-item">
-                                                                <Link className="page-link" href="#" aria-label="Next">
-                                                                    <span aria-hidden="true">
-                                                                        <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                            <path d="M5.99967 10.6666L10.6663 5.99992L5.99968 1.33325M10.6663 5.99992L1.33301 5.99992" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
-                                                                        </svg>
-                                                                    </span>
-                                                                </Link>
-                                                            </li>
-                                                        </ul>
-                                                    </nav>
                                                 </div>
                                             </div>
                                         </div>
@@ -534,21 +481,21 @@ export default function ShopDetails() {
                                                                 <div className="box-type-review">
                                                                     <p className="text-sm-bold text-type-rv">Price</p>
                                                                     <p className="rate-type-review">
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
                                                                     </p>
                                                                 </div>
                                                                 <div className="box-type-review">
                                                                     <p className="text-sm-bold text-type-rv">Service</p>
                                                                     <p className="rate-type-review">
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -556,21 +503,21 @@ export default function ShopDetails() {
                                                                 <div className="box-type-review">
                                                                     <p className="text-sm-bold text-type-rv">Safety</p>
                                                                     <p className="rate-type-review">
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
                                                                     </p>
                                                                 </div>
                                                                 <div className="box-type-review">
                                                                     <p className="text-sm-bold text-type-rv">Entertainment</p>
                                                                     <p className="rate-type-review">
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -578,46 +525,46 @@ export default function ShopDetails() {
                                                                 <div className="box-type-review">
                                                                     <p className="text-sm-bold text-type-rv">Accessibility</p>
                                                                     <p className="rate-type-review">
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
                                                                     </p>
                                                                 </div>
                                                                 <div className="box-type-review">
                                                                     <p className="text-sm-bold text-type-rv">Support</p>
                                                                     <p className="rate-type-review">
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
-                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Rambo" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
+                                                                        <img src="/assets/imgs/page/tour-detail/star-big.svg" alt="Gastonsin" />
                                                                     </p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className="box-form-reviews">
+                                                    <MailtoForm className="box-form-reviews" subject="Product review from the website" intro="A customer left a review on a shop product page.">
                                                         <h6 className="text-md-bold neutral-1000 mb-15">Leave feedback</h6>
                                                         <div className="row">
                                                             <div className="col-md-6">
                                                                 <div className="form-group">
-                                                                    <input className="form-control" type="text" placeholder="Your name" />
+                                                                    <input className="form-control" type="text" name="name" aria-label="Name" placeholder="Your name" required />
                                                                 </div>
                                                             </div>
                                                             <div className="col-md-6">
                                                                 <div className="form-group">
-                                                                    <input className="form-control" type="text" placeholder="Email address" />
+                                                                    <input className="form-control" type="email" name="email" aria-label="Email" placeholder="Email address" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-md-12">
                                                                 <div className="form-group">
-                                                                    <textarea className="form-control" placeholder="Your comment" />
+                                                                    <textarea className="form-control" name="review" aria-label="Review" placeholder="Your comment" required />
                                                                 </div>
                                                             </div>
                                                             <div className="col-md-12">
-                                                                <button className="btn btn-primary">
+                                                                <button type="submit" className="btn btn-primary">
                                                                     Submit review
                                                                     <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M8 15L15 8L8 1M15 8L1 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -625,7 +572,7 @@ export default function ShopDetails() {
                                                                 </button>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </MailtoForm>
                                                 </div>
                                             </div>
                                         </div>
@@ -638,7 +585,7 @@ export default function ShopDetails() {
                                             <div className="box-agent-support border-bottom pb-3 mb-3">
                                                 <div className="card-author">
                                                     <div className="me-2">
-                                                        <img src="/assets/imgs/template/icons/car-1.png" alt="Rambo" />
+                                                        <img src="/assets/imgs/template/icons/car-1.png" alt="Gastonsin" />
                                                     </div>
                                                     <div className="card-author-info">
                                                         <p className="text-lg-bold neutral-1000">Emily Rose</p>
@@ -661,7 +608,7 @@ export default function ShopDetails() {
                                                 </p>
                                             </div>
                                             <div className="box-link-bottom">
-                                                <Link className="btn btn-primary py-3 w-100 rounded-3" href="#">
+                                                <Link className="btn btn-primary py-3 w-100 rounded-3" href="/shop-list">
                                                     All items by this dealer
                                                     <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M8 15L15 8L8 1M15 8L1 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -675,12 +622,12 @@ export default function ShopDetails() {
                                             <p className="text-xl-bold neutral-1000 mb-4">Related Products</p>
                                             <div className="d-flex align-items-center mb-3">
                                                 <div className="me-3 border rounded-3 overflow-hidden">
-                                                    <Link href="#">
-                                                        <img src="/assets/imgs/shop/shop-details/other-item1.png" alt="Rambo" />
+                                                    <Link href="/shop-details">
+                                                        <img src="/assets/imgs/shop/shop-details/other-item1.png" alt="Gastonsin" />
                                                     </Link>
                                                 </div>
                                                 <div className="position-relative">
-                                                    <Link href="#" className="text-md-bold neutral-1000">
+                                                    <Link href="/shop-details" className="text-md-bold neutral-1000">
                                                         R1 Concepts® – eLINE Series Plain Brake Rotors
                                                     </Link>
                                                     <p className="text-md-bold text-success"><Price amount={20} /></p>
@@ -688,12 +635,12 @@ export default function ShopDetails() {
                                             </div>
                                             <div className="d-flex align-items-center mb-3">
                                                 <div className="me-3 border rounded-3 overflow-hidden">
-                                                    <Link href="#">
-                                                        <img src="/assets/imgs/shop/shop-details/other-item2.png" alt="Rambo" />
+                                                    <Link href="/shop-details">
+                                                        <img src="/assets/imgs/shop/shop-details/other-item2.png" alt="Gastonsin" />
                                                     </Link>
                                                 </div>
                                                 <div className="position-relative">
-                                                    <Link href="#" className="text-md-bold neutral-1000">
+                                                    <Link href="/shop-details" className="text-md-bold neutral-1000">
                                                         PIRELLI TIRES® – P4 FOUR SEASONS PLUS
                                                     </Link>
                                                     <p className="text-md-bold text-success"><Price amount={160} /></p>
@@ -701,12 +648,12 @@ export default function ShopDetails() {
                                             </div>
                                             <div className="d-flex align-items-center mb-3">
                                                 <div className="me-3 border rounded-3 overflow-hidden">
-                                                    <Link href="#">
-                                                        <img src="/assets/imgs/shop/shop-details/other-item3.png" alt="Rambo" />
+                                                    <Link href="/shop-details">
+                                                        <img src="/assets/imgs/shop/shop-details/other-item3.png" alt="Gastonsin" />
                                                     </Link>
                                                 </div>
                                                 <div className="position-relative">
-                                                    <Link href="#" className="text-md-bold neutral-1000">
+                                                    <Link href="/shop-details" className="text-md-bold neutral-1000">
                                                         Mobil 1 Extended Performance Full Synthetic Motor Oil
                                                     </Link>
                                                     <p className="text-md-bold text-success"><Price amount={33} /></p>
@@ -714,12 +661,12 @@ export default function ShopDetails() {
                                             </div>
                                             <div className="d-flex align-items-center mb-3">
                                                 <div className="me-3 border rounded-3 overflow-hidden">
-                                                    <Link href="#">
-                                                        <img src="/assets/imgs/shop/shop-details/other-item4.png" alt="Rambo" />
+                                                    <Link href="/shop-details">
+                                                        <img src="/assets/imgs/shop/shop-details/other-item4.png" alt="Gastonsin" />
                                                     </Link>
                                                 </div>
                                                 <div className="position-relative">
-                                                    <Link href="#" className="text-md-bold neutral-1000">
+                                                    <Link href="/shop-details" className="text-md-bold neutral-1000">
                                                         HRE FlowForm® – FT01 Tarma Honda 2024
                                                     </Link>
                                                     <p className="text-md-bold text-success"><Price amount={250} /></p>
@@ -727,12 +674,12 @@ export default function ShopDetails() {
                                             </div>
                                             <div className="d-flex align-items-center mb-3">
                                                 <div className="me-3 border rounded-3 overflow-hidden">
-                                                    <Link href="#">
-                                                        <img src="/assets/imgs/shop/shop-details/other-item5.png" alt="Rambo" />
+                                                    <Link href="/shop-details">
+                                                        <img src="/assets/imgs/shop/shop-details/other-item5.png" alt="Gastonsin" />
                                                     </Link>
                                                 </div>
                                                 <div className="position-relative">
-                                                    <Link href="#" className="text-md-bold neutral-1000">
+                                                    <Link href="/shop-details" className="text-md-bold neutral-1000">
                                                         Mobil Delvac 1300 Super Heavy Duty Synthetic
                                                     </Link>
                                                     <p className="text-md-bold text-success"><Price amount={44} /></p>
@@ -749,74 +696,74 @@ export default function ShopDetails() {
                                     <ul className="carouselTicker__list">
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/jaguar.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/jaguar-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/jaguar.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/jaguar-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/honda.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/honda-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/honda.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/honda-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/chevrolet.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/chevrolet-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/chevrolet.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/chevrolet-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/acura.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/acura-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/acura.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/acura-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/bmw.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/bmw-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/bmw.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/bmw-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/toyota.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/toyota-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/toyota.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/toyota-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                     </ul>

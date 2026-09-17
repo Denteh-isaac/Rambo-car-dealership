@@ -15,7 +15,7 @@ export default function Error404() {
 								<h5>Page Not Found</h5>
 								<p className="text-md-medium neutral-500 text-center">Page not available. Please search again or <br /> navigate using the menu.</p>
 								<Link href="/" className="btn btn-primary mt-30"><img src="/assets/imgs/template/icons/arrow-left.svg" /> Back to Home</Link>
-								<img src="/assets/imgs/template/404.png" alt="Rambo" />
+								<img src="/assets/imgs/template/404.png" alt="Gastonsin" />
 							</div>
 						</div>
 					</div>

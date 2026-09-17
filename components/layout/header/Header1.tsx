@@ -6,6 +6,7 @@ const ThemeSwitch = dynamic(() => import('@/components/elements/ThemeSwitch'), {
 import Link from 'next/link'
 import Dropdown from 'react-bootstrap/Dropdown'
 import { CURRENCIES, CurrencyCode, useCurrency } from '@/util/currency'
+import { LogoLink } from "@/components/elements/Logo"
 export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handleOffcanvas, isOffcanvas }: any) {
 	const { currency, setCurrency } = useCurrency()
 	return (
@@ -20,11 +21,11 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handle
 								</svg>
 								<span className="d-none d-lg-inline-block">+233 241 145 6455</span>
 							</Link>
-							<Link className="email-head text-white" href="mailto:info@rambocardealership.com">
+							<Link className="email-head text-white" href="mailto:info@gastonsincardealership.com">
 								<svg width={16} height={12} viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path fillRule="evenodd" clipRule="evenodd" d="M1.96372 1.07378L6.28622 5.39816C7.22897 6.33909 8.77003 6.33991 9.71356 5.39816L14.0361 1.07378C14.0796 1.03025 14.0732 0.958563 14.0227 0.923344C13.5819 0.615875 13.0455 0.433594 12.4677 0.433594H3.53216C2.95431 0.433594 2.41791 0.615906 1.97703 0.923344C1.92653 0.958563 1.92019 1.03025 1.96372 1.07378ZM0.808594 3.15713C0.808594 2.70275 0.92125 2.27344 1.11969 1.89609C1.15072 1.83706 1.22938 1.82513 1.27653 1.87228L5.54431 6.14006C6.89578 7.4935 9.10322 7.49428 10.4555 6.14006L14.7233 1.87228C14.7704 1.82513 14.8491 1.83706 14.8801 1.89609C15.0785 2.27344 15.1912 2.70278 15.1912 3.15713V8.84266C15.1912 10.3456 13.9687 11.5662 12.4677 11.5662H3.53216C2.03116 11.5662 0.808594 10.3456 0.808594 8.84266V3.15713Z" fill="true" />
 								</svg>
-								<span className="d-none d-lg-inline-block">info@rambocardealership.com</span>
+								<span className="d-none d-lg-inline-block">info@gastonsincardealership.com</span>
 							</Link>
 						</div>
 						<div className="text-header">
@@ -37,18 +38,6 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handle
 							</Link>
 						</div>
 						<div className="top-right-header">
-							<Dropdown className="d-none d-xl-inline-block box-dropdown-cart align-middle mr-15 head-lang">
-								<Dropdown.Toggle as="span" className="text-14-medium icon-list icon-account icon-lang">
-									<span className="text-14-medium arrow-down">EN</span>
-								</Dropdown.Toggle>
-								<Dropdown.Menu className="dropdown-account" style={{visibility: 'visible'}}>
-									<ul>
-										<li><Link className="text-sm-medium" href="#">English</Link></li>
-										<li><Link className="text-sm-medium" href="#">French</Link></li>
-										<li><Link className="text-sm-medium" href="#">Chinese</Link></li>
-									</ul>
-								</Dropdown.Menu>
-							</Dropdown>
 							<Dropdown className="d-none d-xl-inline-block box-dropdown-cart align-middle head-currency">
 								<Dropdown.Toggle  as="span" className="text-14-medium icon-list icon-cart">
 									<span className="text-14-medium arrow-down">{currency}</span>
@@ -75,113 +64,41 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handle
 					<div className="main-header">
 						<div className="header-left">
 							<div className="header-logo">
-								<Link className="d-flex align-items-center" href="/">
-									<span style={{display: 'flex', flexDirection: 'column', lineHeight: 1.1}}>
-										<span style={{fontWeight: 900, fontSize: '1.45rem', color: '#70f46d', letterSpacing: '-0.5px', textTransform: 'uppercase'}}>Rambo</span>
-										<span style={{fontWeight: 500, fontSize: '0.5rem', color: 'rgba(255,255,255,0.8)', letterSpacing: '2px', textTransform: 'uppercase'}}>Car Dealership &amp; Rentals</span>
-									</span>
-								</Link>
+								<LogoLink size="md" tone="light" />
 							</div>
 							<div className="header-nav">
 								<nav className="nav-main-menu">
 									<ul className="main-menu">
+										<li><Link className="color-white" href="/">Home</Link></li>
+										<li><Link className="color-white" href="/cars-list-1">Vehicles</Link></li>
 										<li className="has-children arrow-white">
-											<Link className="color-white" href="#">Home</Link>
-											<ul className="sub-menu">
-												<li><Link href="/">Home page v1</Link></li>
-												<li><Link href="/index-2">Home page v2</Link></li>
-												<li><Link href="/index-3">Home page v3</Link></li>
-											</ul>
-										</li>
-										<li className="mega-li-small has-children arrow-white">
-											<Link className="color-white" href="#">Vehicles</Link>
-											<div className="mega-menu">
-												<div className="mega-menu-inner mega-menu-inner-small">
-													<div className="row">
-														<div className="col-lg-6">
-															<h6 className="text-lg-bold neutral-1000">Cars List</h6>
-															<ul className="sub-menu">
-																<li><Link href="/cars-list-1">Cars List v1</Link></li>
-																<li><Link href="/cars-list-2">Cars List v2</Link></li>
-																<li><Link href="/cars-list-3">Cars List v3</Link></li>
-																<li><Link href="/cars-list-4">Cars List v4</Link></li>
-															</ul>
-														</div>
-														<div className="col-lg-6">
-															<h6 className="text-lg-bold neutral-1000">Car Details</h6>
-															<ul className="sub-menu">
-																<li><Link href="/cars-details-1">Car Details v1</Link></li>
-																<li><Link href="/cars-details-2">Car Details v2</Link></li>
-																<li><Link href="/cars-details-3">Car Details v3</Link></li>
-																<li><Link href="/cars-details-4">Car Details v4</Link></li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li className="has-children arrow-white">
-											<Link className="color-white" href="#">Dealers</Link>
+											<Link className="color-white" href="/dealer-listing">Dealers</Link>
 											<ul className="sub-menu">
 												<li><Link href="/dealer-listing">Dealers Listing</Link></li>
 												<li><Link href="/dealer-details">Dealer Details</Link></li>
 											</ul>
 										</li>
 										<li className="has-children arrow-white">
-											<Link className="color-white" href="#">Shop</Link>
+											<Link className="color-white" href="/shop-list">Shop</Link>
 											<ul className="sub-menu">
 												<li><Link href="/shop-list">Shop Grid</Link></li>
 												<li><Link href="/shop-details">Product Details</Link></li>
 											</ul>
 										</li>
 										<li className="has-children arrow-white">
-											<Link className="color-white" href="#">Pages</Link>
+											<Link className="color-white" href="/about-us">About Us</Link>
 											<ul className="sub-menu">
-												<li><Link href="/about-us">About Us</Link></li>
 												<li><Link href="/services">Our Services</Link></li>
-												<li><Link href="/pricing">Pricing</Link></li>
-												<li><Link href="/calculator">Loan Calculator</Link></li>
-												<li><Link href="/faqs">FAQs</Link></li>
-												<li><Link href="/term">Term</Link></li>
-												<li><Link href="/contact">Contact</Link></li>
-												<li><Link href="/login">Login</Link></li>
-												<li><Link href="/register">Register</Link></li>
-												<li><Link href="/404">Error 404</Link></li>
+												<li><Link href="/term">Terms</Link></li>
 											</ul>
-										</li>
-										<li className="mega-li-small has-children arrow-white">
-											<Link className="color-white" href="#">News</Link>
-											<div className="mega-menu">
-												<div className="mega-menu-inner mega-menu-inner-small mega-menu-inner-destinations">
-													<div className="row">
-														<div className="col-lg-12">
-															<h6 className="text-lg-bold neutral-1000">Cars Rental</h6>
-															<ul className="sub-menu">
-																<li><Link href="/blog-grid">News Grid</Link></li>
-																<li><Link href="/blog-list">News List</Link></li>
-																<li><Link href="/blog-details">News Details</Link></li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
 										</li>
 										<li><Link className="color-white" href="/contact">Contact</Link></li>
 									</ul>
 								</nav>
 							</div>
 							<div className="header-right">
-								<div className="d-none d-xxl-inline-block align-middle mr-15">
-									<Link className="btn btn-signin" href="/login">
-										<svg className="mb-1" xmlns="http://www.w3.org/2000/svg" width={16} height={16} viewBox="0 0 16 16" fill="none">
-											<path d="M3 14C3 14 2 14 2 13C2 12 3 9 8 9C13 9 14 12 14 13C14 14 13 14 13 14H3ZM8 8C8.79565 8 9.55871 7.68393 10.1213 7.12132C10.6839 6.55871 11 5.79565 11 5C11 4.20435 10.6839 3.44129 10.1213 2.87868C9.55871 2.31607 8.79565 2 8 2C7.20435 2 6.44129 2.31607 5.87868 2.87868C5.31607 3.44129 5 4.20435 5 5C5 5.79565 5.31607 6.55871 5.87868 7.12132C6.44129 7.68393 7.20435 8 8 8Z" fill="white" />
-										</svg>
-										Sign in
-									</Link>
-									<Link className="btn btn-signin bg-white text-dark" href="/pricing">Add Listing</Link>
-								</div>
 								<div className="burger-icon-2 burger-icon-white" onClick={handleOffcanvas}>
-									<img src="/assets/imgs/template/icons/menu.svg" alt="Rambo" />
+									<img src="/assets/imgs/template/icons/menu.svg" alt="Gastonsin" />
 								</div>
 								<div className="burger-icon burger-icon-white" onClick={handleMobileMenu}>
 									<span className="burger-icon-top" />

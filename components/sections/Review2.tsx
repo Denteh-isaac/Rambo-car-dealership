@@ -20,7 +20,7 @@ export default function Review2() {
                                                 Hybrid 2025 review
                                             </h3>
                                             <p className="text-lg-medium color-white">The Tucson Plug-in Hybrid is easy to drive and provides a sufficient all-electric range.</p>
-                                            <Link href="/blog-details" className="btn btn-primary mt-30">
+                                            <Link href="/cars-list-1" className="btn btn-primary mt-30">
                                                 View Details
                                                 <svg xmlns="http://www.w3.org/2000/svg" width={24} height={25} viewBox="0 0 24 25" fill="none">
                                                     <path d="M12 19.5L19 12.5L12 5.5M19 12.5L5 12.5" stroke="#101010" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -38,7 +38,7 @@ export default function Review2() {
                                                 Review and news
                                             </h3>
                                             <p className="text-lg-medium color-white">The Tucson Plug-in Hybrid is easy to drive and provides a sufficient all-electric range.</p>
-                                            <Link href="/blog-details" className="btn btn-primary mt-30">
+                                            <Link href="/cars-list-1" className="btn btn-primary mt-30">
                                                 View Details
                                                 <svg xmlns="http://www.w3.org/2000/svg" width={24} height={25} viewBox="0 0 24 25" fill="none">
                                                     <path d="M12 19.5L19 12.5L12 5.5M19 12.5L5 12.5" stroke="#101010" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

@@ -26,7 +26,7 @@ export default function Inquiry() {
         const body = encodeURIComponent(
             `Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\n\nCar / Model of Interest: ${form.carModel}\nSource: ${form.source}\nBudget: ${form.budget}\n\nMessage:\n${form.message}`
         )
-        window.location.href = `mailto:info@rambocardealership.com?subject=${subject}&body=${body}`
+        window.location.href = `mailto:info@gastonsincardealership.com?subject=${subject}&body=${body}`
     }
 
     return (
@@ -35,7 +35,7 @@ export default function Inquiry() {
                 <div className="page-header pt-30 background-body">
                     <div className="custom-container position-relative mx-auto">
                         <div className="bg-overlay rounded-12 overflow-hidden">
-                            <img className="w-100 h-100 rounded-12 img-banner" src="/assets/imgs/page-header/banner4.png" alt="Rambo Car Inquiry" />
+                            <img className="w-100 h-100 rounded-12 img-banner" src="/assets/imgs/page-header/banner4.png" alt="Gastonsin Car Inquiry" />
                         </div>
                         <div className="container position-absolute z-1 top-50 start-50 translate-middle">
                             <h2 className="text-white">Submit a Car Inquiry</h2>
@@ -53,8 +53,8 @@ export default function Inquiry() {
                                     <p className="text-md-medium neutral-500 mb-30">
                                         Fill in the form below and we will email you with pricing, availability, and import details.
                                         Alternatively, reach us directly at{" "}
-                                        <Link href="mailto:info@rambocardealership.com" className="text-primary">
-                                            info@rambocardealership.com
+                                        <Link href="mailto:info@gastonsincardealership.com" className="text-primary">
+                                            info@gastonsincardealership.com
                                         </Link>{" "}
                                         or{" "}
                                         <Link href="https://wa.me/233595987271" target="_blank" rel="noopener noreferrer" className="text-primary">
@@ -167,12 +167,12 @@ export default function Inquiry() {
                                     </p>
                                     <p className="text-md-medium neutral-500 mb-10">
                                         <strong>Email:</strong>{" "}
-                                        <Link href="mailto:info@rambocardealership.com" className="text-primary">
-                                            info@rambocardealership.com
+                                        <Link href="mailto:info@gastonsincardealership.com" className="text-primary">
+                                            info@gastonsincardealership.com
                                         </Link>
                                     </p>
                                     <p className="text-md-medium neutral-500">
-                                        <strong>Location:</strong> Nzema, Western Region, Ghana
+                                        <strong>Location:</strong> Esiama off Nkroful Road, Western Region, Ghana
                                     </p>
                                 </div>
                                 <div className="background-card p-30 rounded-12">

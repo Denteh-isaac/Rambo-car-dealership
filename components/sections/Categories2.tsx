@@ -25,13 +25,13 @@ export default function Categories2() {
                         <div className="row">
                             <div className="col-lg-2 col-md-4 col-sm-4 text-center mb-lg-0 mb-3 wow fadeIn" data-wow-delay="0.1s">
                                 <div className="card-popular background-100 hover-up position-relative">
-                                    <Link href="/cars-list-2" className="card-image border-0">
-                                        <img src="/assets/imgs/categories/categories-2/cross-over.png" alt="Rambo" />
+                                    <Link href="/cars-list-1" className="card-image border-0">
+                                        <img src="/assets/imgs/categories/categories-2/cross-over.png" alt="Gastonsin" />
                                     </Link>
                                     <div className="card-info">
                                         <div className="card-meta position-absolute top-100 start-50 translate-middle ">
                                             <div className="meta-links">
-                                                <Link className="background-0" href="/cars-list-2">
+                                                <Link className="background-0" href="/cars-list-1">
                                                     24 Vehicles
                                                 </Link>
                                             </div>
@@ -44,13 +44,13 @@ export default function Categories2() {
                             </div>
                             <div className="col-lg-2 col-md-4 col-sm-4 text-center mb-lg-0 mb-3 wow fadeIn" data-wow-delay="0.2s">
                                 <div className="card-popular background-100 hover-up position-relative">
-                                    <Link href="/cars-list-2" className="card-image border-0">
-                                        <img src="/assets/imgs/categories/categories-2/hatchback.png" alt="Rambo" />
+                                    <Link href="/cars-list-1" className="card-image border-0">
+                                        <img src="/assets/imgs/categories/categories-2/hatchback.png" alt="Gastonsin" />
                                     </Link>
                                     <div className="card-info">
                                         <div className="card-meta position-absolute top-100 start-50 translate-middle ">
                                             <div className="meta-links">
-                                                <Link className="background-0" href="/cars-list-2">
+                                                <Link className="background-0" href="/cars-list-1">
                                                     24 Vehicles
                                                 </Link>
                                             </div>
@@ -63,13 +63,13 @@ export default function Categories2() {
                             </div>
                             <div className="col-lg-2 col-md-4 col-sm-4 text-center mb-lg-0 mb-3 wow fadeIn" data-wow-delay="0.3s">
                                 <div className="card-popular background-100 hover-up position-relative">
-                                    <Link href="/cars-list-2" className="card-image border-0">
-                                        <img src="/assets/imgs/categories/categories-2/sedan.png" alt="Rambo" />
+                                    <Link href="/cars-list-1" className="card-image border-0">
+                                        <img src="/assets/imgs/categories/categories-2/sedan.png" alt="Gastonsin" />
                                     </Link>
                                     <div className="card-info">
                                         <div className="card-meta position-absolute top-100 start-50 translate-middle ">
                                             <div className="meta-links">
-                                                <Link className="background-0" href="/cars-list-2">
+                                                <Link className="background-0" href="/cars-list-1">
                                                     24 Vehicles
                                                 </Link>
                                             </div>
@@ -82,13 +82,13 @@ export default function Categories2() {
                             </div>
                             <div className="col-lg-2 col-md-4 col-sm-4 text-center mb-lg-0 mb-3 wow fadeIn" data-wow-delay="0.4s">
                                 <div className="card-popular background-100 hover-up position-relative">
-                                    <Link href="/cars-list-2" className="card-image border-0">
-                                        <img src="/assets/imgs/categories/categories-2/SUV.png" alt="Rambo" />
+                                    <Link href="/cars-list-1" className="card-image border-0">
+                                        <img src="/assets/imgs/categories/categories-2/SUV.png" alt="Gastonsin" />
                                     </Link>
                                     <div className="card-info">
                                         <div className="card-meta position-absolute top-100 start-50 translate-middle ">
                                             <div className="meta-links">
-                                                <Link className="background-0" href="/cars-list-2">
+                                                <Link className="background-0" href="/cars-list-1">
                                                     24 Vehicles
                                                 </Link>
                                             </div>
@@ -101,13 +101,13 @@ export default function Categories2() {
                             </div>
                             <div className="col-lg-2 col-md-4 col-sm-4 text-center mb-lg-0 mb-3 wow fadeIn" data-wow-delay="0.5s">
                                 <div className="card-popular background-100 hover-up position-relative">
-                                    <Link href="/cars-list-2" className="card-image border-0">
-                                        <img src="/assets/imgs/categories/categories-2/sport.png" alt="Rambo" />
+                                    <Link href="/cars-list-1" className="card-image border-0">
+                                        <img src="/assets/imgs/categories/categories-2/sport.png" alt="Gastonsin" />
                                     </Link>
                                     <div className="card-info">
                                         <div className="card-meta position-absolute top-100 start-50 translate-middle ">
                                             <div className="meta-links">
-                                                <Link className="background-0" href="/cars-list-2">
+                                                <Link className="background-0" href="/cars-list-1">
                                                     24 Vehicles
                                                 </Link>
                                             </div>
@@ -120,13 +120,13 @@ export default function Categories2() {
                             </div>
                             <div className="col-lg-2 col-md-4 col-sm-4 text-center mb-lg-0 mb-3 wow fadeIn" data-wow-delay="0.6s">
                                 <div className="card-popular background-100 hover-up position-relative">
-                                    <Link href="/cars-list-2" className="card-image border-0">
-                                        <img src="/assets/imgs/categories/categories-2/minivan.png" alt="Rambo" />
+                                    <Link href="/cars-list-1" className="card-image border-0">
+                                        <img src="/assets/imgs/categories/categories-2/minivan.png" alt="Gastonsin" />
                                     </Link>
                                     <div className="card-info">
                                         <div className="card-meta position-absolute top-100 start-50 translate-middle ">
                                             <div className="meta-links">
-                                                <Link className="background-0" href="/cars-list-2">
+                                                <Link className="background-0" href="/cars-list-1">
                                                     24 Vehicles
                                                 </Link>
                                             </div>

@@ -3,6 +3,7 @@ import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import Marquee from 'react-fast-marquee'
 import { Price, useCurrency } from "@/util/currency"
+import MailtoForm from "@/components/elements/MailtoForm"
 export default function DealerDetails() {
 	const { format } = useCurrency()
 
@@ -14,18 +15,18 @@ export default function DealerDetails() {
 					<div className="page-header pt-30 background-body">
 						<div className="custom-container position-relative mx-auto">
 							<div className="bg-overlay rounded-12 overflow-hidden">
-								<img className="w-100 h-100 img-banner" src="/assets/imgs/page-header/banner8.png" alt="Rambo" />
+								<img className="w-100 h-100 img-banner" src="/assets/imgs/page-header/banner8.png" alt="Gastonsin" />
 							</div>
 							<div className="container position-absolute z-1 top-50 start-50 translate-middle">
-								<h2 className="text-white">Peugeot Sheffield</h2>
-								<span className="text-white text-xl-medium">Since 2012</span>
+								<h2 className="text-white">Gastonsin Esiama</h2>
+								<span className="text-white text-xl-medium">Esiama, off Nkroful Road · Western Region</span>
 							</div>
 							<div className="background-body position-absolute z-1 top-100 start-50 translate-middle px-3 py-2 rounded-12 border d-flex gap-3 d-none">
 								<Link href="/" className="neutral-700 text-md-medium">Home</Link>
 								<span>
-									<img src="/assets/imgs/template/icons/arrow-right.svg" alt="Rambo" />
+									<img src="/assets/imgs/template/icons/arrow-right.svg" alt="Gastonsin" />
 								</span>
-								<Link href="#" className="neutral-1000 text-md-bold" />
+								<Link href="/dealer-details" className="neutral-1000 text-md-bold">Dealer Details</Link>
 							</div>
 						</div>
 					</div>
@@ -46,29 +47,29 @@ export default function DealerDetails() {
 												<div className="card-contact border-0 border-bottom rounded-0 d-flex">
 													<div className="card-image me-3">
 														<div className="position-relative">
-															<img src="/assets/imgs/dealer/dealer-listing/icon-9.svg" alt="Rambo" />
+															<img src="/assets/imgs/dealer/dealer-listing/icon-9.svg" alt="Gastonsin" />
 														</div>
 													</div>
 													<div className="card-info">
 														<div className="card-title">
-															<Link className="title heading-6" href="#">Peugeot Sheffield</Link>
+															<Link className="title heading-6" href="/dealer-listing">Gastonsin Esiama</Link>
 															<p className="text-md-medium neutral-500">25 Ring Road Central, Accra, GA-144</p>
 														</div>
 														<div className="card-method-contact2">
-															<Link className="email text-xs-bold" href="#"> 180 Vehicles </Link>
+															<Link className="email text-xs-bold" href="/cars-list-1"> 180 Vehicles </Link>
 														</div>
 													</div>
 												</div>
 												<div className="card card-body">
-													<p>Elevate your Accra experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Accra Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below.</p>
-													<p>Whether you're a first-time visitor or a seasoned Accra aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Accra from a whole new perspective, while learning about its rich history and famous landmarks along the way.</p>
+													<p>Every vehicle listed here is inspected before it leaves the source market and again when it lands in Ghana. You are looking at the exact car we will hand over — not a stock photo of a similar model. If it is marked as available at our Esiama warehouse, it is already cleared, duty-paid and registered, and you can come and drive it before you commit to anything.</p>
+													<p>We buy on three routes — China, the USA and Dubai — and we clear our own containers at Tema and Takoradi, so the price you see already includes freight, duty, clearing and delivery anywhere in Ghana. If this particular car is not in the yard, tell us the specification you want and we will source it and quote you landed, in writing, before you pay anything.</p>
 													<div className="row g-3 mt-1">
 														<div className="col-md-6">
-															<img className="rounded-1" src="/assets/imgs/dealer/dealer-details/img-1.png" alt="Rambo" />
+															<img className="rounded-1" src="/assets/imgs/dealer/dealer-details/img-1.png" alt="Gastonsin" />
 														</div>
 														<div className="col-md-6 d-flex align-items-center justify-content-between flex-column gap-3">
-															<img className="rounded-1" src="/assets/imgs/dealer/dealer-details/img-2.png" alt="Rambo" />
-															<img className="rounded-1" src="/assets/imgs/dealer/dealer-details/img-3.png" alt="Rambo" />
+															<img className="rounded-1" src="/assets/imgs/dealer/dealer-details/img-2.png" alt="Gastonsin" />
+															<img className="rounded-1" src="/assets/imgs/dealer/dealer-details/img-3.png" alt="Gastonsin" />
 														</div>
 													</div>
 												</div>
@@ -111,25 +112,25 @@ export default function DealerDetails() {
 									<div className="sidebar-left border-1 background-card">
 										<h6 className="text-xl-bold neutral-1000">Get in touch</h6>
 										<div className="box-sidebar-content">
-											<form className="form-contact">
+											<MailtoForm className="form-contact" subject="Dealer page enquiry" intro="Message sent from the dealer page.">
 												<div className="row">
 													<div className="col-lg-12">
 														<div className="form-group">
-															<input className="form-control username" type="text" placeholder="Your name" />
+															<input className="form-control username" type="text" name="name" aria-label="Name" placeholder="Your name" required />
 														</div>
 													</div>
 													<div className="col-lg-12">
 														<div className="form-group">
-															<input className="form-control email" type="email" placeholder="Your email" />
+															<input className="form-control email" type="email" name="email" aria-label="Email" placeholder="Your email" />
 														</div>
 													</div>
 													<div className="col-lg-12">
 														<div className="form-group">
-															<textarea className="form-control message" rows={6} placeholder="Message" />
+															<textarea className="form-control message" rows={6} name="message" aria-label="Message" placeholder="Message" required />
 														</div>
 													</div>
 													<div className="col-lg-12">
-														<button className="btn btn-book">
+														<button type="submit" className="btn btn-book">
 															Send message
 															<svg width={17} height={16} viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M8.5 15L15.5 8L8.5 1M15.5 8L1.5 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -137,7 +138,7 @@ export default function DealerDetails() {
 														</button>
 													</div>
 												</div>
-											</form>
+											</MailtoForm>
 											<div className="box-info-contact pt-4">
 												<p className="text-md-medium mobile-phone neutral-1000"><span className="text-md-bold">Mobile:</span> 1-222-333-4444</p>
 												<p className="text-md-medium email neutral-1000"><span className="text-md-bold">Email:</span> emily-rose@gmail.com</p>
@@ -152,7 +153,7 @@ export default function DealerDetails() {
 											<div className="box-collapse scrollFilter mb-15">
 												<div className="pt-0">
 													<div className="box-map-small">
-														<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2308.720630029671!2d-2.342859708199406!3d4.943758782601608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfe7fb4b598f13f7%3A0x1389ab9fe7c13d2e!2sBig%20Spoon%20Restaurant%20and%20Social%20Centre!5e0!3m2!1sen!2sgh!4v1778202778174!5m2!1sen!2sgh" width="100%" height={160} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+														<iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sgh!4v1789115556010!5m2!1sen!2sgh!6m8!1m7!1sKhIXdbo6sugUbO6uBgGVWA!2m2!1d4.961097417344019!2d-2.327745335434869!3f297.2972908483529!4f-10.630530162432493!5f0.7820865974627469" width="100%" height={160} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="strict-origin-when-cross-origin" />
 													</div>
 												</div>
 											</div>
@@ -183,7 +184,7 @@ export default function DealerDetails() {
 											<div className="col-lg-3 col-md-6">
 												<div className="card-journey-small background-card hover-up">
 													<div className="card-image">
-														<img src="/assets/imgs/cars-listing/cars-listing-6/car-6.png" alt="Rambo" />
+														<img src="/assets/imgs/cars-listing/cars-listing-6/car-6.png" alt="Gastonsin" />
 													</div>
 													<div className="card-info p-4 pt-30">
 														<div className="card-rating">
@@ -217,7 +218,7 @@ export default function DealerDetails() {
 											<div className="col-lg-3 col-md-6">
 												<div className="card-journey-small background-card hover-up">
 													<div className="card-image">
-														<img src="/assets/imgs/cars-listing/cars-listing-6/car-5.png" alt="Rambo" />
+														<img src="/assets/imgs/cars-listing/cars-listing-6/car-5.png" alt="Gastonsin" />
 													</div>
 													<div className="card-info p-4 pt-30">
 														<div className="card-rating">
@@ -251,7 +252,7 @@ export default function DealerDetails() {
 											<div className="col-lg-3 col-md-6">
 												<div className="card-journey-small background-card hover-up">
 													<div className="card-image">
-														<img src="/assets/imgs/cars-listing/cars-listing-6/car-4.png" alt="Rambo" />
+														<img src="/assets/imgs/cars-listing/cars-listing-6/car-4.png" alt="Gastonsin" />
 													</div>
 													<div className="card-info p-4 pt-30">
 														<div className="card-rating">
@@ -285,7 +286,7 @@ export default function DealerDetails() {
 											<div className="col-lg-3 col-md-6">
 												<div className="card-journey-small background-card hover-up">
 													<div className="card-image">
-														<img src="/assets/imgs/cars-listing/cars-listing-6/car-3.png" alt="Rambo" />
+														<img src="/assets/imgs/cars-listing/cars-listing-6/car-3.png" alt="Gastonsin" />
 													</div>
 													<div className="card-info p-4 pt-30">
 														<div className="card-rating">
@@ -327,7 +328,7 @@ export default function DealerDetails() {
 												<div className="box-collapse scrollFilter mb-15">
 													<div className="pt-0">
 														<div className="box-map-small">
-															<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2308.720630029671!2d-2.342859708199406!3d4.943758782601608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfe7fb4b598f13f7%3A0x1389ab9fe7c13d2e!2sBig%20Spoon%20Restaurant%20and%20Social%20Centre!5e0!3m2!1sen!2sgh!4v1778202778174!5m2!1sen!2sgh" width="100%" height={160} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+															<iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sgh!4v1789115556010!5m2!1sen!2sgh!6m8!1m7!1sKhIXdbo6sugUbO6uBgGVWA!2m2!1d4.961097417344019!2d-2.327745335434869!3f297.2972908483529!4f-10.630530162432493!5f0.7820865974627469" width="100%" height={160} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="strict-origin-when-cross-origin" />
 														</div>
 													</div>
 												</div>
@@ -358,7 +359,7 @@ export default function DealerDetails() {
 														<span className="text-sm-medium neutral-1000">Clear</span>
 													</Link>
 													<Link href="#" className="btn btn-primary px-3 py-2">
-														<img src="/assets/imgs/template/icons/user.svg" alt="Rambo" />
+														<img src="/assets/imgs/template/icons/user.svg" alt="Gastonsin" />
 														Apply
 													</Link>
 												</div>
@@ -485,27 +486,27 @@ export default function DealerDetails() {
 													<ul className="list-filter-checkbox">
 														<li>
 															<label className="cb-container">
-																<input type="checkbox" /><span className="text-sm-medium"> <img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /></span><span className="checkmark" />
+																<input type="checkbox" /><span className="text-sm-medium"> <img src="/assets/imgs/template/icons/star-yellow.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Gastonsin" /></span><span className="checkmark" />
 															</label>
 														</li>
 														<li>
 															<label className="cb-container">
-																<input type="checkbox" /><span className="text-sm-medium"> <img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /></span><span className="checkmark" />
+																<input type="checkbox" /><span className="text-sm-medium"> <img src="/assets/imgs/template/icons/star-yellow.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Gastonsin" /></span><span className="checkmark" />
 															</label>
 														</li>
 														<li>
 															<label className="cb-container">
-																<input type="checkbox" /><span className="text-sm-medium"> <img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /></span><span className="checkmark" />
+																<input type="checkbox" /><span className="text-sm-medium"> <img src="/assets/imgs/template/icons/star-yellow.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Gastonsin" /></span><span className="checkmark" />
 															</label>
 														</li>
 														<li>
 															<label className="cb-container">
-																<input type="checkbox" /><span className="text-sm-medium"> <img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /></span><span className="checkmark" />
+																<input type="checkbox" /><span className="text-sm-medium"> <img src="/assets/imgs/template/icons/star-yellow.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Gastonsin" /></span><span className="checkmark" />
 															</label>
 														</li>
 														<li>
 															<label className="cb-container">
-																<input type="checkbox" /><span className="text-sm-medium"> <img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /></span><span className="checkmark" />
+																<input type="checkbox" /><span className="text-sm-medium"> <img src="/assets/imgs/template/icons/star-yellow.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Gastonsin" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Gastonsin" /></span><span className="checkmark" />
 															</label>
 														</li>
 													</ul>
@@ -547,7 +548,7 @@ export default function DealerDetails() {
 															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Barcelona Beachfront</span><span className="checkmark" /> </label><span className="number-item">76</span>
 														</li>
 														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">London Luxe</span><span className="checkmark" /> </label><span className="number-item">76</span>
+															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Accra Auto Hub</span><span className="checkmark" /> </label><span className="number-item">76</span>
 														</li>
 													</ul>
 													<div className="box-see-more">
@@ -571,74 +572,74 @@ export default function DealerDetails() {
 									<ul className="carouselTicker__list">
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/jaguar.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/jaguar-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/jaguar.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/jaguar-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/honda.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/honda-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/honda.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/honda-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/chevrolet.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/chevrolet-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/chevrolet.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/chevrolet-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/acura.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/acura-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/acura.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/acura-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/bmw.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/bmw-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/bmw.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/bmw-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/toyota.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/toyota-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/toyota.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/toyota-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 									</ul>

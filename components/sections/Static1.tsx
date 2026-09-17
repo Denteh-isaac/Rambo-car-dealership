@@ -5,7 +5,7 @@ export default function Static1() {
 	return (
 		<>
 
-			<section className="section-static-1 background-body @@classList">
+			<section className="section-static-1 background-body">
 				<div className="container">
 					<div className="row">
 						<div className="rounded-12 background-3 pt-30 pb-30">
@@ -27,7 +27,7 @@ export default function Static1() {
 											<h3 className="neutral-1000">K</h3>
 										</div>
 										<div className="text-md-start text-center">
-											<p className="text-lg-bold neutral-1000">Destinations</p>
+											<p className="text-lg-bold neutral-1000">Vehicles Cleared</p>
 											<p className="text-lg-bold neutral-1000">Collaboration</p>
 										</div>
 									</div>

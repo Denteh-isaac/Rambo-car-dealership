@@ -32,13 +32,12 @@ export default function Services1() {
 									<SwiperSlide>
 										<div className="card-spot background-card wow fadeInDown">
 											<div className="card-image">
-												<Link href="/services"><img className="rounded-3" src="/assets/imgs/services/services-1/img-1.png" alt="Rambo" /></Link>
+												<Link href="/services"><img className="rounded-3" src="/assets/imgs/services/services-1/img-1.png" alt="Car Importation" /></Link>
 											</div>
 											<div className="card-info background-card">
 												<div className="card-left">
-													<div className="card-title"><Link className="text-lg-bold neutral-1000" href="/services">Venice</Link></div>
-													<div className="card-desc"><Link className="text-sm neutral-500" href="#">356
-														Properties</Link></div>
+													<div className="card-title"><Link className="text-lg-bold neutral-1000" href="/services">Car Importation</Link></div>
+													<div className="card-desc"><Link className="text-sm neutral-500" href="/services">China · USA · Dubai</Link></div>
 												</div>
 												<div className="card-right">
 													<div className="card-button">
@@ -55,13 +54,56 @@ export default function Services1() {
 									<SwiperSlide>
 										<div className="card-spot background-card wow fadeInDown">
 											<div className="card-image">
-												<Link href="/services"><img className="rounded-3" src="/assets/imgs/services/services-1/img-2.png" alt="Rambo" /></Link>
+												<Link href="/cars-list-1?listing=sale"><img className="rounded-3" src="/assets/imgs/services/services-1/img-2.png" alt="Vehicle Sales" /></Link>
 											</div>
 											<div className="card-info background-card">
 												<div className="card-left">
-													<div className="card-title"><Link className="text-lg-bold neutral-1000" href="/services">Accra</Link></div>
-													<div className="card-desc"><Link className="text-sm neutral-500" href="#">356
-														Properties</Link></div>
+													<div className="card-title"><Link className="text-lg-bold neutral-1000" href="/cars-list-1?listing=sale">Vehicle Sales</Link></div>
+													<div className="card-desc"><Link className="text-sm neutral-500" href="/cars-list-1?listing=sale">Ready stock at Esiama</Link></div>
+												</div>
+												<div className="card-right">
+													<div className="card-button">
+														<Link href="/cars-list-1?listing=sale">
+															<svg width={10} height={10} viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+															</svg>
+														</Link>
+													</div>
+												</div>
+											</div>
+										</div>
+									</SwiperSlide>
+									<SwiperSlide>
+										<div className="card-spot background-card wow fadeInDown">
+											<div className="card-image">
+												<Link href="/cars-list-1?listing=rental"><img className="rounded-3" src="/assets/imgs/services/services-1/img-3.png" alt="Car Rentals" /></Link>
+											</div>
+											<div className="card-info background-card">
+												<div className="card-left">
+													<div className="card-title"><Link className="text-lg-bold neutral-1000" href="/cars-list-1?listing=rental">Car Rentals</Link></div>
+													<div className="card-desc"><Link className="text-sm neutral-500" href="/cars-list-1?listing=rental">Daily, weekly &amp; long-term</Link></div>
+												</div>
+												<div className="card-right">
+													<div className="card-button">
+														<Link href="/cars-list-1?listing=rental">
+															<svg width={10} height={10} viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+															</svg>
+														</Link>
+													</div>
+												</div>
+											</div>
+										</div>
+									</SwiperSlide>
+									<SwiperSlide>
+										<div className="card-spot background-card wow fadeInDown">
+											<div className="card-image">
+												<Link href="/services"><img className="rounded-3" src="/assets/imgs/services/services-1/img-4.png" alt="Port Clearing" /></Link>
+											</div>
+											<div className="card-info background-card">
+												<div className="card-left">
+													<div className="card-title"><Link className="text-lg-bold neutral-1000" href="/services">Port Clearing</Link></div>
+													<div className="card-desc"><Link className="text-sm neutral-500" href="/services">Tema &amp; Takoradi</Link></div>
 												</div>
 												<div className="card-right">
 													<div className="card-button">
@@ -78,17 +120,16 @@ export default function Services1() {
 									<SwiperSlide>
 										<div className="card-spot background-card wow fadeInDown">
 											<div className="card-image">
-												<Link href="/services"><img className="rounded-3" src="/assets/imgs/services/services-1/img-3.png" alt="Rambo" /></Link>
+												<Link href="/inquiry"><img className="rounded-3" src="/assets/imgs/services/services-1/img-5.png" alt="Fleet and Corporate" /></Link>
 											</div>
 											<div className="card-info background-card">
 												<div className="card-left">
-													<div className="card-title"><Link className="text-lg-bold neutral-1000" href="/services">Amsterdam</Link></div>
-													<div className="card-desc"><Link className="text-sm neutral-500" href="#">356
-														Properties</Link></div>
+													<div className="card-title"><Link className="text-lg-bold neutral-1000" href="/inquiry">Fleet &amp; Corporate</Link></div>
+													<div className="card-desc"><Link className="text-sm neutral-500" href="/inquiry">Companies, NGOs &amp; government</Link></div>
 												</div>
 												<div className="card-right">
 													<div className="card-button">
-														<Link href="/services">
+														<Link href="/inquiry">
 															<svg width={10} height={10} viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
 															</svg>
@@ -101,63 +142,16 @@ export default function Services1() {
 									<SwiperSlide>
 										<div className="card-spot background-card wow fadeInDown">
 											<div className="card-image">
-												<Link href="/services"><img className="rounded-3" src="/assets/imgs/services/services-1/img-4.png" alt="Rambo" /></Link>
+												<Link href="/inquiry"><img className="rounded-3" src="/assets/imgs/services/services-1/img-6.png" alt="Pre-Order a Car" /></Link>
 											</div>
 											<div className="card-info background-card">
 												<div className="card-left">
-													<div className="card-title"><Link className="text-lg-bold neutral-1000" href="/services">Budapest</Link></div>
-													<div className="card-desc"><Link className="text-sm neutral-500" href="#">356
-														Properties</Link></div>
+													<div className="card-title"><Link className="text-lg-bold neutral-1000" href="/inquiry">Pre-Order a Car</Link></div>
+													<div className="card-desc"><Link className="text-sm neutral-500" href="/inquiry">Tell us the car you want</Link></div>
 												</div>
 												<div className="card-right">
 													<div className="card-button">
-														<Link href="/services">
-															<svg width={10} height={10} viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
-															</svg>
-														</Link>
-													</div>
-												</div>
-											</div>
-										</div>
-									</SwiperSlide>
-									<SwiperSlide>
-										<div className="card-spot background-card wow fadeInDown">
-											<div className="card-image">
-												<Link href="/services"><img className="rounded-3" src="/assets/imgs/services/services-1/img-2.png" alt="Rambo" /></Link>
-											</div>
-											<div className="card-info background-card">
-												<div className="card-left">
-													<div className="card-title"><Link className="text-lg-bold neutral-1000" href="/services">Accra</Link></div>
-													<div className="card-desc"><Link className="text-sm neutral-500" href="#">356
-														Properties</Link></div>
-												</div>
-												<div className="card-right">
-													<div className="card-button">
-														<Link href="/services">
-															<svg width={10} height={10} viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
-															</svg>
-														</Link>
-													</div>
-												</div>
-											</div>
-										</div>
-									</SwiperSlide>
-									<SwiperSlide>
-										<div className="card-spot background-card wow fadeInDown">
-											<div className="card-image">
-												<Link href="/services"><img className="rounded-3" src="/assets/imgs/services/services-1/img-3.png" alt="Rambo" /></Link>
-											</div>
-											<div className="card-info background-card">
-												<div className="card-left">
-													<div className="card-title"><Link className="text-lg-bold neutral-1000" href="/services">Amsterdam</Link></div>
-													<div className="card-desc"><Link className="text-sm neutral-500" href="#">356
-														Properties</Link></div>
-												</div>
-												<div className="card-right">
-													<div className="card-button">
-														<Link href="/services">
+														<Link href="/inquiry">
 															<svg width={10} height={10} viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
 															</svg>

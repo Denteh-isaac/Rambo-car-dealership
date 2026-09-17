@@ -1,6 +1,7 @@
 'use client'
 import CounterUp from '../elements/CounterUp'
 import { useCurrency } from '@/util/currency'
+import Link from "next/link"
 
 
 export default function Cta2() {
@@ -50,7 +51,7 @@ export default function Cta2() {
 										</div>
 										<div className="row py-4">
 											<div className="col-md-5 col-8 d-flex flex-column gap-1">
-												<p className="text-sm-bold neutral-1000">Down payment ammout</p>
+												<p className="text-sm-bold neutral-1000">Down payment amount</p>
 												<p className="text-sm-bold neutral-1000">Amount financed</p>
 												<p className="text-sm-bold neutral-1000">Monthly payment</p>
 											</div>
@@ -61,12 +62,12 @@ export default function Cta2() {
 											</div>
 										</div>
 										<div className="col-lg-12">
-											<button className="btn btn-book">
-												Apply for a loan
+											<Link className="btn btn-book" href="/inquiry">
+												Ask about payment options
 												<svg width={17} height={16} viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M8.5 15L15.5 8L8.5 1M15.5 8L1.5 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
 												</svg>
-											</button>
+											</Link>
 										</div>
 									</div>
 								</div>
@@ -93,7 +94,7 @@ export default function Cta2() {
 										<h3 className="text-white">K</h3>
 									</div>
 									<div className="position-relative">
-										<p className="text-lg-bold text-white">Destinations</p>
+										<p className="text-lg-bold text-white">Vehicles Cleared</p>
 										<p className="text-lg-bold text-white">Collaboration</p>
 									</div>
 								</div>
@@ -122,7 +123,7 @@ export default function Cta2() {
 						<div className="col-lg-4 offset-lg-1 wow fadeIn">
 							<div className="box-authors-partner background-body wow fadeInUp p-4">
 								<div className="authors-partner-left">
-									<img src="/assets/imgs/page/homepage5/author.png" alt="Rambo" /><img src="/assets/imgs/page/homepage5/author2.png" alt="Rambo" /><img src="/assets/imgs/page/homepage5/author3.png" alt="Rambo" />
+									<img src="/assets/imgs/page/homepage5/author.png" alt="Gastonsin" /><img src="/assets/imgs/page/homepage5/author2.png" alt="Gastonsin" /><img src="/assets/imgs/page/homepage5/author3.png" alt="Gastonsin" />
 									<span className="item-author">
 										<svg width={18} height={18} viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<rect x="0.5" y="7.448" width={17} height="2.31818" fill="black" />
@@ -131,7 +132,7 @@ export default function Cta2() {
 									</span>
 								</div>
 								<div className="authors-partner-right">
-									<p className="text-sm neutral-1000">1684 people used <strong>Rambo </strong>in the last
+									<p className="text-sm neutral-1000">1684 people used <strong>Gastonsin </strong>in the last
 										<strong>24 hours</strong></p>
 								</div>
 							</div>

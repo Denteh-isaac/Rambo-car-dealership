@@ -23,77 +23,77 @@ export default function Brand2({ noBg }: any) {
 							<ul className="carouselTicker__list">
 								<li className="carouselTicker__item">
 									<div className="item-brand-2">
-										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-1.png" alt="Rambo" />
+										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-1.png" alt="Gastonsin" />
 										<span className="text-md-bold mt-2">Opel</span>
 										<span className="text-xs-bold neutral-500">180 cars</span>
 									</div>
 								</li>
 								<li className="carouselTicker__item">
 									<div className="item-brand-2">
-										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-2.png" alt="Rambo" />
+										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-2.png" alt="Gastonsin" />
 										<span className="text-md-bold mt-2">BMV</span>
 										<span className="text-xs-bold neutral-500">180 cars</span>
 									</div>
 								</li>
 								<li className="carouselTicker__item">
 									<div className="item-brand-2">
-										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-3.png" alt="Rambo" />
+										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-3.png" alt="Gastonsin" />
 										<span className="text-md-bold mt-2">Mercedes</span>
 										<span className="text-xs-bold neutral-500">180 cars</span>
 									</div>
 								</li>
 								<li className="carouselTicker__item">
 									<div className="item-brand-2">
-										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-4.png" alt="Rambo" />
+										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-4.png" alt="Gastonsin" />
 										<span className="text-md-bold mt-2">Ford</span>
 										<span className="text-xs-bold neutral-500">180 cars</span>
 									</div>
 								</li>
 								<li className="carouselTicker__item">
 									<div className="item-brand-2">
-										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-5.png" alt="Rambo" />
+										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-5.png" alt="Gastonsin" />
 										<span className="text-md-bold mt-2">Peugeot</span>
 										<span className="text-xs-bold neutral-500">180 cars</span>
 									</div>
 								</li>
 								<li className="carouselTicker__item">
 									<div className="item-brand-2">
-										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-6.png" alt="Rambo" />
+										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-6.png" alt="Gastonsin" />
 										<span className="text-md-bold mt-2">Hyundai</span>
 										<span className="text-xs-bold neutral-500">180 cars</span>
 									</div>
 								</li>
 								<li className="carouselTicker__item">
 									<div className="item-brand-2">
-										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-7.png" alt="Rambo" />
+										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-7.png" alt="Gastonsin" />
 										<span className="text-md-bold mt-2">Toyota</span>
 										<span className="text-xs-bold neutral-500">180 cars</span>
 									</div>
 								</li>
 								<li className="carouselTicker__item">
 									<div className="item-brand-2">
-										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-2.png" alt="Rambo" />
+										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-2.png" alt="Gastonsin" />
 										<span className="text-md-bold mt-2">BMV</span>
 										<span className="text-xs-bold neutral-500">180 cars</span>
 									</div>
 								</li>
 								<li className="carouselTicker__item">
 									<div className="item-brand-2">
-										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-3.png" alt="Rambo" />
+										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-3.png" alt="Gastonsin" />
 										<span className="text-md-bold mt-2">Mercedes</span>
 										<span className="text-xs-bold neutral-500">180 cars</span>
 									</div>
 								</li>
 								<li className="carouselTicker__item">
 									<div className="item-brand-2">
-										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-8.png" alt="Rambo" />
+										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-8.png" alt="Gastonsin" />
 										<span className="text-md-bold mt-2">Nissan</span>
 										<span className="text-xs-bold neutral-500">180 cars</span>
 									</div>
 								</li>
 								<li className="carouselTicker__item">
 									<div className="item-brand-2">
-										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-9.png" alt="Rambo" />
+										<img className="dark-invert" src="/assets/imgs/brand/brand-2/icon-9.png" alt="Gastonsin" />
 										<span className="text-md-bold mt-2">Mazda</span>
 										<span className="text-xs-bold neutral-500">180 cars</span>
 									</div>

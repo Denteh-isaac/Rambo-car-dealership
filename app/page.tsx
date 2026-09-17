@@ -1,7 +1,6 @@
 import Layout from "@/components/layout/Layout"
 import App from "@/components/sections/App"
 import Banners from "@/components/sections/Banners"
-import Blog1 from "@/components/sections/Blog1"
 import Brand1 from "@/components/sections/Brand1"
 import CarReview1 from "@/components/sections/CarReview1"
 import CarsListing1 from "@/components/sections/CarsListing1"
@@ -36,7 +35,6 @@ export default function Home() {
 				<Banners />
 				<Testimonials />
 				<CarReview1 />
-				<Blog1 />
 				<App />
 			</Layout>
 		</>

@@ -1,6 +1,10 @@
 'use client'
 import { ChangeEvent, useState } from "react"
 
+/** Slider bounds derived from the catalogue, so the default range can never exclude every car. */
+export const PRICE_FLOOR = 22000
+export const PRICE_CEILING = 159000
+
 interface Car {
 	id: number
 	price: number
@@ -11,7 +15,20 @@ interface Car {
 	fuelType: string
 	location: string
 	image: string
+	/** Whether the vehicle is offered for sale, for rental, or both. */
+	listingType: ListingType
+	/** Rental rate per day. Null when the car is not part of the rental fleet. */
+	dailyRate: number | null
 }
+
+export type ListingType = 'sale' | 'rental' | 'both'
+
+/** The three ways a shopper can slice the catalogue. */
+export const LISTING_TABS: { id: 'all' | 'sale' | 'rental'; label: string }[] = [
+	{ id: 'all', label: 'All vehicles' },
+	{ id: 'sale', label: 'For sale' },
+	{ id: 'rental', label: 'For rent' },
+]
 
 export interface Filter {
 	names: string[]
@@ -21,6 +38,8 @@ export interface Filter {
 	priceRange: [number, number]
 	ratings: number[]
 	carType: string[]
+	/** 'all' shows everything; 'sale' and 'rental' also include cars offered as both. */
+	listing: 'all' | 'sale' | 'rental'
 }
 
 type SortCriteria = "name" | "price" | "rating"
@@ -31,9 +50,10 @@ const useCarFilter = (carsData: Car[]) => {
 		fuelType: [],
 		amenities: [],
 		locations: [],
-		priceRange: [0, 500],
+		priceRange: [PRICE_FLOOR, PRICE_CEILING],
 		ratings: [],
 		carType: [],
+		listing: 'all',
 	})
 	const [sortCriteria, setSortCriteria] = useState<SortCriteria>("name")
 	const [itemsPerPage, setItemsPerPage] = useState<number>(10)
@@ -54,7 +74,8 @@ const useCarFilter = (carsData: Car[]) => {
 			(filter.locations.length === 0 || filter.locations.includes(car.location)) &&
 			(car.price >= filter.priceRange[0] && car.price <= filter.priceRange[1]) &&
 			(filter.ratings.length === 0 || filter.ratings.includes(car.rating)) &&
-			(filter.carType.length === 0 || filter.carType.includes(car.carType))
+			(filter.carType.length === 0 || filter.carType.includes(car.carType)) &&
+			(filter.listing === 'all' || car.listingType === filter.listing || car.listingType === 'both')
 		)
 	})
 
@@ -121,18 +142,31 @@ const useCarFilter = (carsData: Car[]) => {
 		}
 	}
 
+	const handleListingChange = (listing: Filter['listing']) => {
+		setFilter((prev) => ({ ...prev, listing }))
+		setCurrentPage(1)
+	}
+
+	/** How many cars each tab would show, for the counts on the tabs. */
+	const listingCounts = {
+		all: carsData.length,
+		sale: carsData.filter((c) => c.listingType === 'sale' || c.listingType === 'both').length,
+		rental: carsData.filter((c) => c.listingType === 'rental' || c.listingType === 'both').length,
+	}
+
 	const handleClearFilters = () => {
 		setFilter({
 			names: [],
 			fuelType: [],
 			amenities: [],
 			locations: [],
-			priceRange: [0, 500],
+			priceRange: [PRICE_FLOOR, PRICE_CEILING],
 			ratings: [],
 			carType: [],
+			listing: 'all',
 		})
 		setSortCriteria("name")
-		setItemsPerPage(4)
+		setItemsPerPage(10)
 		setCurrentPage(1)
 	}
 
@@ -168,6 +202,8 @@ const useCarFilter = (carsData: Car[]) => {
 		handlePreviousPage,
 		handleNextPage,
 		handleClearFilters,
+		handleListingChange,
+		listingCounts,
 		startItemIndex,
 		endItemIndex,
 	}

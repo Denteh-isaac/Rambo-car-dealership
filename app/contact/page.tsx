@@ -1,6 +1,7 @@
 
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import MailtoForm from "@/components/elements/MailtoForm"
 export default function Contact() {
 
 	return (
@@ -11,7 +12,7 @@ export default function Contact() {
 					<div className="page-header pt-30 background-body">
 						<div className="custom-container position-relative mx-auto">
 							<div className="bg-overlay rounded-12 overflow-hidden">
-								<img className="w-100 h-100 rounded-12 img-banner" src="/assets/imgs/page-header/banner4.png" alt="Rambo Car Dealership & Rentals" />
+								<img className="w-100 h-100 rounded-12 img-banner" src="/assets/imgs/page-header/banner4.png" alt="Gastonsin Car Dealership & Rentals" />
 							</div>
 							<div className="container position-absolute z-1 top-50 start-50 translate-middle">
 								<h2 className="text-white">Get in touch</h2>
@@ -40,7 +41,7 @@ export default function Contact() {
 										</div>
 										<div className="card-info">
 											<div className="card-title mb-">
-												<Link className="title heading-6" href="#">Ghana (Main Office)</Link>
+												<Link className="title heading-6" href="mailto:info@gastonsincardealership.com">Ghana (Main Office)</Link>
 											</div>
 											<div className="card-method-contact">
 												<div className="d-flex align-items-start mb-2">
@@ -49,7 +50,7 @@ export default function Contact() {
 															<path d="M9 1.0625C7.35897 1.0625 5.78516 1.7144 4.62478 2.87478C3.4644 4.03516 2.8125 5.60897 2.8125 7.25C2.8125 10.5181 8.325 17.4312 8.56125 17.7294C8.61396 17.7951 8.68074 17.8481 8.75668 17.8845C8.83262 17.921 8.91577 17.9399 9 17.9399C9.08423 17.9399 9.16738 17.921 9.24332 17.8845C9.31925 17.8481 9.38604 17.7951 9.43875 17.7294C9.675 17.4312 15.1875 10.5181 15.1875 7.25C15.1875 5.60897 14.5356 4.03516 13.3752 2.87478C12.2148 1.7144 10.641 1.0625 9 1.0625Z" fill="#101010" />
 														</svg>
 													</div>
-													<span className="location text-md-medium ms-2">Nzema, Western Region, Ghana</span>
+													<span className="location text-md-medium ms-2">Esiama off Nkroful Road, Western Region, Ghana</span>
 												</div>
 												<div className="d-flex align-items-start mb-2">
 													<div className="icon">
@@ -73,7 +74,7 @@ export default function Contact() {
 															<path d="M14.5938 0.875H1.40625C0.629281 0.875 0 1.50819 0 2.28125V10.7188C0 11.4964 0.633906 12.125 1.40625 12.125H14.5938C15.3642 12.125 16 11.4991 16 10.7188V2.28125C16 1.50956 15.3732 0.875 14.5938 0.875Z" fill="#101010" />
 														</svg>
 													</div>
-													<Link className="email text-md-medium ms-2" href="mailto:info@rambocardealership.com">info@rambocardealership.com</Link>
+													<Link className="email text-md-medium ms-2" href="mailto:info@gastonsincardealership.com">info@gastonsincardealership.com</Link>
 												</div>
 											</div>
 										</div>
@@ -94,7 +95,7 @@ export default function Contact() {
 										</div>
 										<div className="card-info">
 											<div className="card-title mb-">
-												<Link className="title heading-6" href="#">China (Sourcing Hub)</Link>
+												<Link className="title heading-6" href="mailto:china@gastonsincardealership.com">China (Sourcing Hub)</Link>
 											</div>
 											<div className="card-method-contact">
 												<div className="d-flex align-items-start mb-2">
@@ -115,7 +116,7 @@ export default function Contact() {
 															<path d="M14.5938 0.875H1.40625C0.629281 0.875 0 1.50819 0 2.28125V10.7188C0 11.4964 0.633906 12.125 1.40625 12.125H14.5938C15.3642 12.125 16 11.4991 16 10.7188V2.28125C16 1.50956 15.3732 0.875 14.5938 0.875Z" fill="#101010" />
 														</svg>
 													</div>
-													<Link className="email text-md-medium ms-2" href="mailto:china@rambocardealership.com">china@rambocardealership.com</Link>
+													<Link className="email text-md-medium ms-2" href="mailto:china@gastonsincardealership.com">china@gastonsincardealership.com</Link>
 												</div>
 											</div>
 										</div>
@@ -137,7 +138,7 @@ export default function Contact() {
 										</div>
 										<div className="card-info">
 											<div className="card-title mb-">
-												<Link className="title heading-6" href="#">USA (Sourcing Hub)</Link>
+												<Link className="title heading-6" href="mailto:usa@gastonsincardealership.com">USA (Sourcing Hub)</Link>
 											</div>
 											<div className="card-method-contact">
 												<div className="d-flex align-items-start mb-2">
@@ -158,7 +159,7 @@ export default function Contact() {
 															<path d="M14.5938 0.875H1.40625C0.629281 0.875 0 1.50819 0 2.28125V10.7188C0 11.4964 0.633906 12.125 1.40625 12.125H14.5938C15.3642 12.125 16 11.4991 16 10.7188V2.28125C16 1.50956 15.3732 0.875 14.5938 0.875Z" fill="#101010" />
 														</svg>
 													</div>
-													<Link className="email text-md-medium ms-2" href="mailto:usa@rambocardealership.com">usa@rambocardealership.com</Link>
+													<Link className="email text-md-medium ms-2" href="mailto:usa@gastonsincardealership.com">usa@gastonsincardealership.com</Link>
 												</div>
 											</div>
 										</div>
@@ -179,7 +180,7 @@ export default function Contact() {
 										</div>
 										<div className="card-info">
 											<div className="card-title mb-">
-												<Link className="title heading-6" href="#">Dubai, UAE (Sourcing Hub)</Link>
+												<Link className="title heading-6" href="mailto:dubai@gastonsincardealership.com">Dubai, UAE (Sourcing Hub)</Link>
 											</div>
 											<div className="card-method-contact">
 												<div className="d-flex align-items-start mb-2">
@@ -200,7 +201,7 @@ export default function Contact() {
 															<path d="M14.5938 0.875H1.40625C0.629281 0.875 0 1.50819 0 2.28125V10.7188C0 11.4964 0.633906 12.125 1.40625 12.125H14.5938C15.3642 12.125 16 11.4991 16 10.7188V2.28125C16 1.50956 15.3732 0.875 14.5938 0.875Z" fill="#101010" />
 														</svg>
 													</div>
-													<Link className="email text-md-medium ms-2" href="mailto:dubai@rambocardealership.com">dubai@rambocardealership.com</Link>
+													<Link className="email text-md-medium ms-2" href="mailto:dubai@gastonsincardealership.com">dubai@gastonsincardealership.com</Link>
 												</div>
 											</div>
 										</div>
@@ -215,47 +216,47 @@ export default function Contact() {
 								<div className="col-lg-6 mb-30">
 									<h2 className="neutral-1000 mb-25">Get in Touch</h2>
 									<p className="neutral-500 mb-25">Whether you want to pre-order a car from China, USA, or Dubai — or pick one from our Ghana warehouse — we are here to help. Reach out and let us find your perfect ride.</p>
-									<div className="form-contact">
+									<MailtoForm className="form-contact" subject="Website enquiry" intro="New message from the website contact form.">
 										<div className="row">
 											<div className="col-lg-6">
 												<div className="form-group">
 													<label className="text-sm-medium neutral-1000">First Name</label>
-													<input className="form-control username" type="text" placeholder="First Name" />
+													<input className="form-control username" type="text" name="firstName" aria-label="First name" placeholder="First Name" required />
 												</div>
 											</div>
 											<div className="col-lg-6">
 												<div className="form-group">
 													<label className="text-sm-medium neutral-1000">Last Name</label>
-													<input className="form-control username" type="text" placeholder="Last Name" />
+													<input className="form-control username" type="text" name="lastName" aria-label="Last name" placeholder="Last Name" />
 												</div>
 											</div>
 											<div className="col-lg-12">
 												<div className="form-group">
 													<label className="text-sm-medium neutral-1000">Email Address</label>
-													<input className="form-control email" type="email" placeholder="email@domain.com" />
+													<input className="form-control email" type="email" name="email" aria-label="Email" placeholder="email@domain.com" />
 												</div>
 											</div>
 											<div className="col-lg-12">
 												<div className="form-group">
 													<label className="text-sm-medium neutral-1000">Phone Number (WhatsApp preferred)</label>
-													<input className="form-control phone" type="text" placeholder="Phone number" />
+													<input className="form-control phone" type="tel" name="phone" aria-label="Phone / WhatsApp" placeholder="Phone number" />
 												</div>
 											</div>
 											<div className="col-lg-12">
 												<div className="form-group">
 													<label className="text-sm-medium neutral-1000">Your Message</label>
-													<textarea className="form-control" rows={6} placeholder="Tell us the car you want, your budget, or any questions..." />
+													<textarea className="form-control" rows={6} name="message" aria-label="Message" placeholder="Tell us the car you want, your budget, or any questions..." required />
 												</div>
 											</div>
 											<div className="box-remember-forgot">
 												<div className="form-group">
 													<div className="remeber-me">
-														<label className="text-sm-medium neutral-500"> <input className="cb-remember" type="checkbox" />Agree to our <Link className="text-sm-medium neutral-1000" href="/term">Terms of service </Link>and <Link className="text-sm-medium neutral-1000" href="/privacy">Privacy Policy</Link> </label>
+														<label className="text-sm-medium neutral-500"> <input className="cb-remember" type="checkbox" />Agree to our <Link className="text-sm-medium neutral-1000" href="/term">Terms of service </Link>and <Link className="text-sm-medium neutral-1000" href="/term">Privacy Policy</Link> </label>
 													</div>
 												</div>
 											</div>
 											<div className="col-lg-12">
-												<button className="btn btn-book">
+												<button type="submit" className="btn btn-book">
 													Send message
 													<svg width={17} height={16} viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M8.5 15L15.5 8L8.5 1M15.5 8L1.5 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -263,12 +264,12 @@ export default function Contact() {
 												</button>
 											</div>
 										</div>
-									</div>
+									</MailtoForm>
 								</div>
 								<div className="col-lg-6 mb-30">
 									<div className="ps-lg-5">
 										<h4 className="neutral-1000">Our Location</h4>
-										<p className="neutral-500 mb-10">Nzema, Western Region, Ghana</p>
+										<p className="neutral-500 mb-10">Esiama off Nkroful Road, Western Region, Ghana</p>
 										<div className="d-flex gap-3 mb-30 flex-wrap">
 											<Link href="tel:+2332411456455" className="btn btn-book btn-small">
 												<svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} viewBox="0 0 20 20" fill="none" className="me-1">
@@ -282,13 +283,13 @@ export default function Contact() {
 										</div>
 										<iframe
 											className="h-520 rounded-3"
-											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2308.720630029671!2d-2.342859708199406!3d4.943758782601608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfe7fb4b598f13f7%3A0x1389ab9fe7c13d2e!2sBig%20Spoon%20Restaurant%20and%20Social%20Centre!5e0!3m2!1sen!2sgh!4v1778202778174!5m2!1sen!2sgh"
+											src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sgh!4v1789115556010!5m2!1sen!2sgh!6m8!1m7!1sKhIXdbo6sugUbO6uBgGVWA!2m2!1d4.961097417344019!2d-2.327745335434869!3f297.2972908483529!4f-10.630530162432493!5f0.7820865974627469"
 											width="100%"
 											height={450}
 											style={{ border: 0 }}
 											allowFullScreen
 											loading="lazy"
-											referrerPolicy="no-referrer-when-downgrade"
+											referrerPolicy="strict-origin-when-cross-origin"
 										/>
 									</div>
 								</div>

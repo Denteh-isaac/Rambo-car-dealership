@@ -13,23 +13,23 @@ export default function ShopList() {
 					<div className="page-header-2 pt-30 background-body">
 						<div className="custom-container position-relative mx-auto">
 							<div className="bg-overlay rounded-12 overflow-hidden">
-								<img className="w-100 h-100 img-fluid img-banner" src="/assets/imgs/page-header/banner9.png" alt="Rambo" />
+								<img className="w-100 h-100 img-fluid img-banner" src="/assets/imgs/page-header/banner9.png" alt="Gastonsin" />
 							</div>
 							<div className="container position-absolute z-1 top-50 start-50 pb-70 translate-middle text-center">
 								<span className="text-sm-bold bg-2 px-4 py-3 rounded-12">Find cars for sale and for rent near you</span>
 								<h2 className="text-white mt-4">Find the Perfect Part at the <br /> Best Price for Your Vehicle's Comfort</h2>
 								<span className="text-white text-lg-medium" />
 							</div>
-							<div className="background-body position-absolute z-1 top-100 start-50 translate-middle px-3 py-2 rounded-12 border d-flex gap-3 @@navigation-page d-none d-md-flex">
+							<div className="background-body position-absolute z-1 top-100 start-50 translate-middle px-3 py-2 rounded-12 border d-flex gap-3 d-none d-md-flex">
 								<Link href="/" className="neutral-700 text-md-medium">Home</Link>
-								<span className="@@ds-prev-page">
-									<img src="/assets/imgs/template/icons/arrow-right.svg" alt="Rambo" />
-								</span>
-								<Link href="#" className="neutral-1000 text-md-bold">Shop</Link>
 								<span>
-									<img src="/assets/imgs/template/icons/arrow-right.svg" alt="Rambo" />
+									<img src="/assets/imgs/template/icons/arrow-right.svg" alt="Gastonsin" />
 								</span>
-								<Link href="#" className="neutral-1000 text-md-bold text-nowrap">All items</Link>
+								<Link href="/shop-list" className="neutral-1000 text-md-bold">Shop</Link>
+								<span>
+									<img src="/assets/imgs/template/icons/arrow-right.svg" alt="Gastonsin" />
+								</span>
+								<Link href="/shop-list" className="neutral-1000 text-md-bold text-nowrap">All items</Link>
 							</div>
 						</div>
 					</div>
@@ -39,7 +39,7 @@ export default function ShopList() {
 							<div className="row align-items-end">
 								<div className="col-md-9 mb-30 wow fadeInUp">
 									<h4 className="title-svg neutral-1000 mb-15">Latest Products</h4>
-									<p className="text-lg-medium text-bold neutral-500">Experience The Best Car Services In Rambo</p>
+									<p className="text-lg-medium text-bold neutral-500">Experience The Best Car Services In Gastonsin</p>
 								</div>
 							</div>
 						</div>
@@ -60,46 +60,15 @@ export default function ShopList() {
 															<path d="M8 20C8.4125 20 8.75 19.6625 8.75 19.25V14C8.75 13.5875 8.4125 13.25 8 13.25H2.75C2.3375 13.25 2 13.5875 2 14V19.25C2 19.6625 2.3375 20 2.75 20H8ZM8 11.75C9.245 11.75 10.25 12.755 10.25 14V19.25C10.25 20.495 9.245 21.5 8 21.5H2.75C1.505 21.5 0.5 20.495 0.5 19.25V14C0.5 12.755 1.505 11.75 2.75 11.75H8Z" fill="#101010" />
 														</svg>
 													</Link>
-													<Link className="display-type display-list" href="/cars-list-4">
+													<Link className="display-type display-list" href="/cars-list-1">
 														<svg width={21} height={21} viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M4.788 0H1.09497C0.491194 0 0 0.486501 0 1.08456V4.74269C0 5.34075 0.491194 5.82729 1.09497 5.82729H4.788C5.39177 5.82729 5.88297 5.34075 5.88297 4.74269V1.08456C5.88297 0.486501 5.39177 0 4.788 0ZM4.80951 4.74273C4.80951 4.75328 4.79865 4.76404 4.788 4.76404H1.09497C1.08432 4.76404 1.07345 4.75328 1.07345 4.74273V1.08456C1.07345 1.07401 1.08432 1.06329 1.09497 1.06329H4.788C4.79865 1.06329 4.80951 1.07401 4.80951 1.08456V4.74273ZM7.53412 1.32686C7.53412 1.03321 7.77444 0.795211 8.07084 0.795211H20.4632C20.7596 0.795211 21 1.03321 21 1.32686C21 1.62046 20.7596 1.8585 20.4632 1.8585H8.07084C7.77444 1.8585 7.53412 1.62046 7.53412 1.32686ZM21 4.50043C21 4.79408 20.7597 5.03208 20.4633 5.03208H8.07084C7.77444 5.03208 7.53412 4.79408 7.53412 4.50043C7.53412 4.20683 7.77444 3.96879 8.07084 3.96879H20.4632C20.7597 3.96879 21 4.20683 21 4.50043ZM4.788 7.58633H1.09497C0.491194 7.58633 0 8.07283 0 8.67089V12.329C0 12.9271 0.491194 13.4136 1.09497 13.4136H4.788C5.39177 13.4136 5.88297 12.9271 5.88297 12.329V8.67089C5.88297 8.07288 5.39177 7.58633 4.788 7.58633ZM4.80951 12.3291C4.80951 12.3396 4.79865 12.3504 4.788 12.3504H1.09497C1.08432 12.3504 1.07345 12.3396 1.07345 12.3291V8.67094C1.07345 8.66039 1.08432 8.64967 1.09497 8.64967H4.788C4.79865 8.64967 4.80951 8.66039 4.80951 8.67094V12.3291ZM4.788 15.1727H1.09497C0.491194 15.1727 0 15.6592 0 16.2573V19.9154C0 20.5135 0.491194 21 1.09497 21H4.788C5.39177 21 5.88297 20.5135 5.88297 19.9154V16.2573C5.88297 15.6592 5.39177 15.1727 4.788 15.1727ZM4.80951 19.9154C4.80951 19.926 4.79865 19.9368 4.788 19.9368H1.09497C1.08432 19.9368 1.07345 19.926 1.07345 19.9154V16.2573C1.07345 16.2468 1.08432 16.236 1.09497 16.236H4.788C4.79865 16.236 4.80951 16.2468 4.80951 16.2573V19.9154ZM21 12.0868C21 12.3805 20.7597 12.6185 20.4633 12.6185H8.07084C7.77444 12.6185 7.53412 12.3805 7.53412 12.0868C7.53412 11.7932 7.77444 11.5552 8.07084 11.5552H20.4632C20.7597 11.5552 21 11.7932 21 12.0868ZM21 8.91328C21 9.20688 20.7597 9.44492 20.4633 9.44492H8.07084C7.77444 9.44492 7.53412 9.20688 7.53412 8.91328C7.53412 8.61963 7.77444 8.38163 8.07084 8.38163H20.4632C20.7597 8.38163 21 8.61963 21 8.91328ZM21 16.4996C21 16.7932 20.7597 17.0313 20.4633 17.0313H8.07084C7.77444 17.0313 7.53412 16.7932 7.53412 16.4996C7.53412 16.206 7.77444 15.968 8.07084 15.968H20.4632C20.7597 15.968 21 16.206 21 16.4996ZM21 19.6732C21 19.9668 20.7597 20.2048 20.4633 20.2048H8.07084C7.77444 20.2048 7.53412 19.9668 7.53412 19.6732C7.53412 19.3796 7.77444 19.1415 8.07084 19.1415H20.4632C20.7597 19.1415 21 19.3796 21 19.6732Z" fill="#101010" />
 														</svg>
 													</Link>
-													<span className="text-sm-bold neutral-500 number-found">64 items found</span>
+													<span className="text-sm-bold neutral-500 number-found">12 items</span>
 												</div>
 											</div>
 											<div className="col-xl-8 col-md-8 mb-10 text-lg-end text-center">
-												<div className="box-item-sort">
-													<Link className="btn btn-sort" href="#">
-														<svg width={18} height={18} viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M8.25 6L5.25 3M5.25 3L2.25 6M5.25 3L5.25 15" stroke="#101010" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-															<path d="M9.75 12L12.75 15M12.75 15L15.75 12M12.75 15L12.75 3" stroke="#101010" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-														</svg>
-													</Link>
-													<div className="item-sort border-1">
-														<span className="text-xs-medium neutral-500 mr-5">Show</span>
-														<div className="dropdown dropdown-sort border-1-right">
-															<button className="btn dropdown-toggle" id="dropdownSort2" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static"><span>20</span></button>
-															<ul className="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownSort2">
-																<li><Link className="dropdown-item active" href="#">20</Link></li>
-																<li><Link className="dropdown-item" href="#">30</Link></li>
-																<li><Link className="dropdown-item" href="#">50</Link></li>
-															</ul>
-														</div>
-													</div>
-													<div className="item-sort border-1">
-														<span className="text-xs-medium neutral-500 mr-5">Sort by:</span>
-														<div className="dropdown dropdown-sort border-1-right">
-															<button className="btn dropdown-toggle" id="dropdownSort" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span>Most Viewed</span></button>
-															<ul className="dropdown-menu dropdown-menu-light m-0" aria-labelledby="dropdownSort">
-																<li><Link className="dropdown-item active" href="#">Most Viewed</Link></li>
-																<li><Link className="dropdown-item" href="#">Recently search</Link></li>
-																<li><Link className="dropdown-item" href="#">Most popular</Link></li>
-																<li><Link className="dropdown-item" href="#">Top rated</Link></li>
-															</ul>
-														</div>
-													</div>
-												</div>
 											</div>
 										</div>
 									</div>
@@ -108,12 +77,7 @@ export default function ShopList() {
 											<div className="col-lg-4 col-md-6">
 												<div className="card-journey-small background-card hover-up">
 													<div className="card-image">
-														<Link className="wish" href="#">
-															<svg width={20} height={18} viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z" stroke="#101010" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-															</svg>
-														</Link>
-														<img src="/assets/imgs/shop/shop-list/product1.png" alt="Rambo" />
+														<img src="/assets/imgs/shop/shop-list/product1.png" alt="Gastonsin" />
 													</div>
 													<div className="card-info p-3 pt-30 border-top">
 														<div className="card-rating">
@@ -133,13 +97,12 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-md-medium neutral-500 text-decoration-line-through"><Price amount={68.53} /></h6>
 																</div>
-																<Link href="#" className="card-button pe-3"><img src="/assets/imgs/shop/shop-list/stock.png" alt="Rambo" /></Link>
 															</div>
 															<div className="endtime">
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><Link className="btn btn-gray" href="/shop-details">Book Now</Link></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Mobil%201%20Extended%20Performance%20Full%20Synthetic%20Motor%20Oil%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -148,12 +111,7 @@ export default function ShopList() {
 											<div className="col-lg-4 col-md-6">
 												<div className="card-journey-small background-card hover-up">
 													<div className="card-image">
-														<Link className="wish" href="#">
-															<svg width={20} height={18} viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z" stroke="#101010" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-															</svg>
-														</Link>
-														<img src="/assets/imgs/shop/shop-list/product2.png" alt="Rambo" />
+														<img src="/assets/imgs/shop/shop-list/product2.png" alt="Gastonsin" />
 													</div>
 													<div className="card-info p-3 pt-30 border-top">
 														<div className="card-rating">
@@ -173,13 +131,12 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-md-medium neutral-500 text-decoration-line-through"><Price amount={68.53} /></h6>
 																</div>
-																<Link href="#" className="card-button pe-3"><img src="/assets/imgs/shop/shop-list/stock.png" alt="Rambo" /></Link>
 															</div>
 															<div className="endtime">
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><Link className="btn btn-gray" href="/shop-details">Book Now</Link></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Thinkware%20F770%20Dash%20Cam%20Dual%20Channel%20Wifi%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -188,12 +145,7 @@ export default function ShopList() {
 											<div className="col-lg-4 col-md-6">
 												<div className="card-journey-small background-card hover-up">
 													<div className="card-image">
-														<Link className="wish" href="#">
-															<svg width={20} height={18} viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z" stroke="#101010" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-															</svg>
-														</Link>
-														<img src="/assets/imgs/shop/shop-list/product3.png" alt="Rambo" />
+														<img src="/assets/imgs/shop/shop-list/product3.png" alt="Gastonsin" />
 													</div>
 													<div className="card-info p-3 pt-30 border-top">
 														<div className="card-rating">
@@ -213,13 +165,12 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-md-medium neutral-500 text-decoration-line-through"><Price amount={68.53} /></h6>
 																</div>
-																<Link href="#" className="card-button pe-3"><img src="/assets/imgs/shop/shop-list/stock.png" alt="Rambo" /></Link>
 															</div>
 															<div className="endtime">
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><Link className="btn btn-gray" href="/shop-details">Book Now</Link></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Mobil%20Delvac%201300%20Super%20Heavy%20Duty%20Synthetic%20Blend%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -228,12 +179,7 @@ export default function ShopList() {
 											<div className="col-lg-4 col-md-6">
 												<div className="card-journey-small background-card hover-up">
 													<div className="card-image">
-														<Link className="wish" href="#">
-															<svg width={20} height={18} viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z" stroke="#101010" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-															</svg>
-														</Link>
-														<img src="/assets/imgs/shop/shop-list/product4.png" alt="Rambo" />
+														<img src="/assets/imgs/shop/shop-list/product4.png" alt="Gastonsin" />
 													</div>
 													<div className="card-info p-3 pt-30 border-top">
 														<div className="card-rating">
@@ -253,13 +199,12 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-md-medium neutral-500 text-decoration-line-through"><Price amount={68.53} /></h6>
 																</div>
-																<Link href="#" className="card-button pe-3"><img src="/assets/imgs/shop/shop-list/stock.png" alt="Rambo" /></Link>
 															</div>
 															<div className="endtime">
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><Link className="btn btn-gray" href="/shop-details">Book Now</Link></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Spyder%C2%AE%20%E2%80%93%20Projector%20Headlight%20Misubisi%202024%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -268,12 +213,7 @@ export default function ShopList() {
 											<div className="col-lg-4 col-md-6">
 												<div className="card-journey-small background-card hover-up">
 													<div className="card-image">
-														<Link className="wish" href="#">
-															<svg width={20} height={18} viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z" stroke="#101010" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-															</svg>
-														</Link>
-														<img src="/assets/imgs/shop/shop-list/product5.png" alt="Rambo" />
+														<img src="/assets/imgs/shop/shop-list/product5.png" alt="Gastonsin" />
 													</div>
 													<div className="card-info p-3 pt-30 border-top">
 														<div className="card-rating">
@@ -293,13 +233,12 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-md-medium neutral-500 text-decoration-line-through"><Price amount={68.53} /></h6>
 																</div>
-																<Link href="#" className="card-button pe-3"><img src="/assets/imgs/shop/shop-list/stock.png" alt="Rambo" /></Link>
 															</div>
 															<div className="endtime">
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><Link className="btn btn-gray" href="/shop-details">Book Now</Link></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20HRE%20FlowForm%C2%AE%20%E2%80%93%20FT01%20Tarma%20Honda%202024%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -308,12 +247,7 @@ export default function ShopList() {
 											<div className="col-lg-4 col-md-6">
 												<div className="card-journey-small background-card hover-up">
 													<div className="card-image">
-														<Link className="wish" href="#">
-															<svg width={20} height={18} viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z" stroke="#101010" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-															</svg>
-														</Link>
-														<img src="/assets/imgs/shop/shop-list/product6.png" alt="Rambo" />
+														<img src="/assets/imgs/shop/shop-list/product6.png" alt="Gastonsin" />
 													</div>
 													<div className="card-info p-3 pt-30 border-top">
 														<div className="card-rating">
@@ -333,13 +267,12 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-md-medium neutral-500 text-decoration-line-through"><Price amount={68.53} /></h6>
 																</div>
-																<Link href="#" className="card-button pe-3"><img src="/assets/imgs/shop/shop-list/stock.png" alt="Rambo" /></Link>
 															</div>
 															<div className="endtime">
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><Link className="btn btn-gray" href="/shop-details">Book Now</Link></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Right%20Stuff%C2%AE%20%E2%80%93%20Drilled%20and%20Slotted%20Brake%20Rotor%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -348,12 +281,7 @@ export default function ShopList() {
 											<div className="col-lg-4 col-md-6">
 												<div className="card-journey-small background-card hover-up">
 													<div className="card-image">
-														<Link className="wish" href="#">
-															<svg width={20} height={18} viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z" stroke="#101010" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-															</svg>
-														</Link>
-														<img src="/assets/imgs/shop/shop-list/product7.png" alt="Rambo" />
+														<img src="/assets/imgs/shop/shop-list/product7.png" alt="Gastonsin" />
 													</div>
 													<div className="card-info p-3 pt-30 border-top">
 														<div className="card-rating">
@@ -373,13 +301,12 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-md-medium neutral-500 text-decoration-line-through"><Price amount={68.53} /></h6>
 																</div>
-																<Link href="#" className="card-button pe-3"><img src="/assets/imgs/shop/shop-list/stock.png" alt="Rambo" /></Link>
 															</div>
 															<div className="endtime">
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><Link className="btn btn-gray" href="/shop-details">Book Now</Link></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20PIRELLI%20TIRES%C2%AE%20%E2%80%93%20P4%20FOUR%20SEASONS%20PLUS%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -388,12 +315,7 @@ export default function ShopList() {
 											<div className="col-lg-4 col-md-6">
 												<div className="card-journey-small background-card hover-up">
 													<div className="card-image">
-														<Link className="wish" href="#">
-															<svg width={20} height={18} viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z" stroke="#101010" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-															</svg>
-														</Link>
-														<img src="/assets/imgs/shop/shop-list/product8.png" alt="Rambo" />
+														<img src="/assets/imgs/shop/shop-list/product8.png" alt="Gastonsin" />
 													</div>
 													<div className="card-info p-3 pt-30 border-top">
 														<div className="card-rating">
@@ -413,13 +335,12 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-md-medium neutral-500 text-decoration-line-through"><Price amount={68.53} /></h6>
 																</div>
-																<Link href="#" className="card-button pe-3"><img src="/assets/imgs/shop/shop-list/stock.png" alt="Rambo" /></Link>
 															</div>
 															<div className="endtime">
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><Link className="btn btn-gray" href="/shop-details">Book Now</Link></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Lumen%C2%AE%20%E2%80%93%20Custom%20Sealed%20Beam%20LED%20Headlights%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -428,12 +349,7 @@ export default function ShopList() {
 											<div className="col-lg-4 col-md-6">
 												<div className="card-journey-small background-card hover-up">
 													<div className="card-image">
-														<Link className="wish" href="#">
-															<svg width={20} height={18} viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z" stroke="#101010" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-															</svg>
-														</Link>
-														<img src="/assets/imgs/shop/shop-list/product9.png" alt="Rambo" />
+														<img src="/assets/imgs/shop/shop-list/product9.png" alt="Gastonsin" />
 													</div>
 													<div className="card-info p-3 pt-30 border-top">
 														<div className="card-rating">
@@ -453,13 +369,12 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-md-medium neutral-500 text-decoration-line-through"><Price amount={68.53} /></h6>
 																</div>
-																<Link href="#" className="card-button pe-3"><img src="/assets/imgs/shop/shop-list/stock.png" alt="Rambo" /></Link>
 															</div>
 															<div className="endtime">
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><Link className="btn btn-gray" href="/shop-details">Book Now</Link></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Shell%20Rotella%20T1%20SAE%2030%20Conventional%20Heavy%20Duty%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -468,12 +383,7 @@ export default function ShopList() {
 											<div className="col-lg-4 col-md-6">
 												<div className="card-journey-small background-card hover-up">
 													<div className="card-image">
-														<Link className="wish" href="#">
-															<svg width={20} height={18} viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z" stroke="#101010" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-															</svg>
-														</Link>
-														<img src="/assets/imgs/shop/shop-list/product10.png" alt="Rambo" />
+														<img src="/assets/imgs/shop/shop-list/product10.png" alt="Gastonsin" />
 													</div>
 													<div className="card-info p-3 pt-30 border-top">
 														<div className="card-rating">
@@ -493,13 +403,12 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-md-medium neutral-500 text-decoration-line-through"><Price amount={68.53} /></h6>
 																</div>
-																<Link href="#" className="card-button pe-3"><img src="/assets/imgs/shop/shop-list/stock.png" alt="Rambo" /></Link>
 															</div>
 															<div className="endtime">
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><Link className="btn btn-gray" href="/shop-details">Book Now</Link></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20R1%20Concepts%C2%AE%20%E2%80%93%20eLINE%20Series%20Plain%20Brake%20Rotors%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -508,12 +417,7 @@ export default function ShopList() {
 											<div className="col-lg-4 col-md-6">
 												<div className="card-journey-small background-card hover-up">
 													<div className="card-image">
-														<Link className="wish" href="#">
-															<svg width={20} height={18} viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z" stroke="#101010" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-															</svg>
-														</Link>
-														<img src="/assets/imgs/shop/shop-list/product11.png" alt="Rambo" />
+														<img src="/assets/imgs/shop/shop-list/product11.png" alt="Gastonsin" />
 													</div>
 													<div className="card-info p-3 pt-30 border-top">
 														<div className="card-rating">
@@ -533,13 +437,12 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-md-medium neutral-500 text-decoration-line-through"><Price amount={68.53} /></h6>
 																</div>
-																<Link href="#" className="card-button pe-3"><img src="/assets/imgs/shop/shop-list/stock.png" alt="Rambo" /></Link>
 															</div>
 															<div className="endtime">
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><Link className="btn btn-gray" href="/shop-details">Book Now</Link></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Mobil%20Delvac%201300%20Super%20Heavy%20Duty%20Synthetic%20Blend%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -548,12 +451,7 @@ export default function ShopList() {
 											<div className="col-lg-4 col-md-6">
 												<div className="card-journey-small background-card hover-up">
 													<div className="card-image">
-														<Link className="wish" href="#">
-															<svg width={20} height={18} viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z" stroke="#101010" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-															</svg>
-														</Link>
-														<img src="/assets/imgs/shop/shop-list/product12.png" alt="Rambo" />
+														<img src="/assets/imgs/shop/shop-list/product12.png" alt="Gastonsin" />
 													</div>
 													<div className="card-info p-3 pt-30 border-top">
 														<div className="card-rating">
@@ -573,225 +471,15 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-md-medium neutral-500 text-decoration-line-through"><Price amount={68.53} /></h6>
 																</div>
-																<Link href="#" className="card-button pe-3"><img src="/assets/imgs/shop/shop-list/stock.png" alt="Rambo" /></Link>
 															</div>
 															<div className="endtime">
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><Link className="btn btn-gray" href="/shop-details">Book Now</Link></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Mobil%20Delvac%201300%20Super%20Heavy%20Duty%20Synthetic%20Blend%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<nav aria-label="Page navigation example">
-										<ul className="pagination">
-											<li className="page-item">
-												<Link className="page-link" href="#" aria-label="Previous">
-													<span aria-hidden="true">
-														<svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6.00016 1.33325L1.3335 5.99992M1.3335 5.99992L6.00016 10.6666M1.3335 5.99992H10.6668" stroke="#101010" strokeLinecap="round" strokeLinejoin="round" />
-														</svg>
-													</span>
-												</Link>
-											</li>
-											<li className="page-item"><Link className="page-link" href="#">1</Link></li>
-											<li className="page-item"><Link className="page-link active" href="#">2</Link></li>
-											<li className="page-item"><Link className="page-link" href="#">3</Link></li>
-											<li className="page-item"><Link className="page-link" href="#">4</Link></li>
-											<li className="page-item"><Link className="page-link" href="#">5</Link></li>
-											<li className="page-item"><Link className="page-link" href="#">...</Link></li>
-											<li className="page-item">
-												<Link className="page-link" href="#" aria-label="Next">
-													<span aria-hidden="true">
-														<svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M5.99967 10.6666L10.6663 5.99992L5.99968 1.33325M10.6663 5.99992L1.33301 5.99992" stroke="#101010" strokeLinecap="round" strokeLinejoin="round" />
-														</svg>
-													</span>
-												</Link>
-											</li>
-										</ul>
-									</nav>
-								</div>
-								<div className="content-left order-lg-first">
-									<div className="sidebar-left border-1 background-body">
-										<div className="box-filters-sidebar">
-											<div className="block-filter border-1">
-												<h6 className="text-lg-bold item-collapse neutral-1000">Filter Price</h6>
-												<div className="box-collapse scrollFilter">
-													<div className="pt-20">
-														<div className="box-slider-range">
-															<div id="slider-range" />
-															<div className="box-value-price"><span className="text-md-medium neutral-1000">{format(0, { decimals: 0 })}</span><span className="text-md-medium neutral-1000">{format(500, { decimals: 0 })}</span></div>
-															<input className="value-money" type="hidden" />
-														</div>
-													</div>
-												</div>
-												<div className="d-flex justify-content-between pt-20 border-top">
-													<Link href="#" className="d-flex align-items-center">
-														<div className="background-100 icon-shape p-1 rounded-1 me-2">
-															<svg xmlns="http://www.w3.org/2000/svg" width={9} height={9} viewBox="0 0 9 9" fill="none">
-																<line x1="1.20074" y1="1.5141" x2="7.59837" y2="7.91174" stroke="black" strokeWidth="0.904762" />
-																<line x1="1.01337" y1="7.91156" x2="7.411" y2="1.51393" stroke="black" strokeWidth="0.904762" />
-															</svg>
-														</div>
-														<span className="text-sm-medium neutral-1000">Clear</span>
-													</Link>
-													<Link href="#" className="btn btn-primary px-3 py-2">
-														<img src="/assets/imgs/template/icons/user.svg" alt="Rambo" />
-														Apply
-													</Link>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div className="sidebar-left border-1 background-body">
-										<div className="box-filters-sidebar">
-											<div className="block-filter border-1">
-												<h6 className="text-lg-bold item-collapse neutral-1000">Categories</h6>
-												<div className="box-collapse scrollFilter">
-													<ul className="list-filter-checkbox">
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Accessories</span><span className="checkmark" /> </label><span className="number-item">198</span>
-														</li>
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Automotive Rims</span><span className="checkmark" /> </label><span className="number-item">32</span>
-														</li>
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Brakes</span><span className="checkmark" /> </label><span className="number-item">13</span>
-														</li>
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Detailing</span><span className="checkmark" /> </label><span className="number-item">23</span>
-														</li>
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Headlight</span><span className="checkmark" /> </label><span className="number-item">35</span>
-														</li>
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Tires &amp; Wheels</span><span className="checkmark" /> </label><span className="number-item">56</span>
-														</li>
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Auto Safety &amp; Security </span><span className="checkmark" /> </label><span className="number-item">76</span>
-														</li>
-													</ul>
-													<div className="box-see-more mt-20 mb-25">
-														<Link className="link-see-more" href="#">
-															See more
-															<svg width={8} height={6} viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M7.89553 1.02367C7.75114 0.870518 7.50961 0.864815 7.35723 1.00881L3.9998 4.18946L0.642774 1.00883C0.490387 0.86444 0.249236 0.870534 0.104474 1.02369C-0.0402885 1.17645 -0.0338199 1.4176 0.118958 1.56236L3.73809 4.99102C3.81123 5.06036 3.90571 5.0954 3.9998 5.0954C4.0939 5.0954 4.18875 5.06036 4.26191 4.99102L7.88104 1.56236C8.03382 1.41758 8.04029 1.17645 7.89553 1.02367Z" fill="#101010" />
-															</svg>
-														</Link>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div className="sidebar-left border-1 background-body">
-										<div className="box-filters-sidebar">
-											<div className="block-filter border-1">
-												<h6 className="text-lg-bold item-collapse neutral-1000">Brands</h6>
-												<div className="box-collapse scrollFilter">
-													<ul className="list-filter-checkbox">
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">All</span><span className="checkmark" /> </label><span className="number-item">32</span>
-														</li>
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Honda</span><span className="checkmark" /> </label><span className="number-item">13</span>
-														</li>
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Hyundai</span><span className="checkmark" /> </label><span className="number-item">23</span>
-														</li>
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Jaguar</span><span className="checkmark" /> </label><span className="number-item">23</span>
-														</li>
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Lexus</span><span className="checkmark" /> </label><span className="number-item">35</span>
-														</li>
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Lotus</span><span className="checkmark" /> </label><span className="number-item">56</span>
-														</li>
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Toyota</span><span className="checkmark" /> </label><span className="number-item">76</span>
-														</li>
-													</ul>
-													<div className="box-see-more mt-20 mb-25">
-														<Link className="link-see-more" href="#">
-															See more
-															<svg width={8} height={6} viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M7.89553 1.02367C7.75114 0.870518 7.50961 0.864815 7.35723 1.00881L3.9998 4.18946L0.642774 1.00883C0.490387 0.86444 0.249236 0.870534 0.104474 1.02369C-0.0402885 1.17645 -0.0338199 1.4176 0.118958 1.56236L3.73809 4.99102C3.81123 5.06036 3.90571 5.0954 3.9998 5.0954C4.0939 5.0954 4.18875 5.06036 4.26191 4.99102L7.88104 1.56236C8.03382 1.41758 8.04029 1.17645 7.89553 1.02367Z" fill="#101010" />
-															</svg>
-														</Link>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div className="sidebar-left border-1 background-body">
-										<div className="box-filters-sidebar">
-											<div className="block-filter border-1">
-												<h6 className="text-lg-bold item-collapse neutral-1000">Fuel Type</h6>
-												<div className="box-collapse scrollFilter">
-													<ul className="list-filter-checkbox">
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">All</span><span className="checkmark" /> </label><span className="number-item">32</span>
-														</li>
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Plug-in Hybrid (PHEV)</span><span className="checkmark" /> </label><span className="number-item">13</span>
-														</li>
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Hybrid (HEV)</span><span className="checkmark" /> </label><span className="number-item">23</span>
-														</li>
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Electric Vehicle (EV)</span><span className="checkmark" /> </label><span className="number-item">23</span>
-														</li>
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Diesel</span><span className="checkmark" /> </label><span className="number-item">35</span>
-														</li>
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Gasoline/Petrol</span><span className="checkmark" /> </label><span className="number-item">56</span>
-														</li>
-														<li>
-															<label className="cb-container"> <input type="checkbox" /><span className="text-sm-medium">Hydrogen</span><span className="checkmark" /> </label><span className="number-item">76</span>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div className="sidebar-left border-1 background-body">
-										<div className="box-filters-sidebar">
-											<div className="block-filter border-1">
-												<h6 className="text-lg-bold item-collapse neutral-1000">Review Score</h6>
-												<div className="box-collapse scrollFilter">
-													<ul className="list-filter-checkbox">
-														<li>
-															<label className="cb-container">
-																<input type="checkbox" /><span className="text-sm-medium"> <img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /></span><span className="checkmark" />
-															</label>
-														</li>
-														<li>
-															<label className="cb-container">
-																<input type="checkbox" /><span className="text-sm-medium"> <img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /></span><span className="checkmark" />
-															</label>
-														</li>
-														<li>
-															<label className="cb-container">
-																<input type="checkbox" /><span className="text-sm-medium"> <img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /></span><span className="checkmark" />
-															</label>
-														</li>
-														<li>
-															<label className="cb-container">
-																<input type="checkbox" /><span className="text-sm-medium"> <img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /></span><span className="checkmark" />
-															</label>
-														</li>
-														<li>
-															<label className="cb-container">
-																<input type="checkbox" /><span className="text-sm-medium"> <img src="/assets/imgs/template/icons/star-yellow.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /><img src="/assets/imgs/template/icons/star-grey.svg" alt="Rambo" /></span><span className="checkmark" />
-															</label>
-														</li>
-													</ul>
 												</div>
 											</div>
 										</div>
@@ -805,74 +493,74 @@ export default function ShopList() {
 									<ul className="carouselTicker__list">
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/jaguar.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/jaguar-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/jaguar.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/jaguar-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/honda.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/honda-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/honda.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/honda-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/chevrolet.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/chevrolet-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/chevrolet.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/chevrolet-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/acura.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/acura-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/acura.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/acura-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/bmw.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/bmw-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/bmw.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/bmw-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/toyota.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/toyota-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/toyota.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/toyota-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 										<li className="carouselTicker__item">
 											<div className="item-brand">
-												<img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Rambo" />
-												<img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Rambo" />
+												<img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Gastonsin" />
+												<img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Gastonsin" />
 											</div>
 										</li>
 									</ul>

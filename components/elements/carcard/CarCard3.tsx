@@ -10,13 +10,13 @@ export default function CarCard3({ car }: any) {
 				<div className="card-image"> <Link className="wish" href="#">
 					<svg width={20} height={18} viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
 						<path d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z" stroke="" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-					</svg></Link><Link href="/rental-detail"><img src={`/assets/imgs/page/car/${car.image}`} alt="Travila" /></Link></div>
+					</svg></Link><Link href="/cars-details-1"><img src={`/assets/imgs/page/car/${car.image}`} alt="Travila" /></Link></div>
 				<div className="card-info">
 					<label className="sale-lbl">-25%</label>
 					<div className="tour-rate">
 						<div className="rate-element"><span className="rating">{car.rating} <span className="text-sm-medium neutral-500">(672 reviews)</span></span></div>
 					</div>
-					<div className="card-title"> <Link className="heading-6 neutral-1000" href="/rental-detail">{car.name}</Link></div>
+					<div className="card-title"> <Link className="heading-6 neutral-1000" href="/cars-details-1">{car.name}</Link></div>
 					<div className="card-program">
 						<div className="card-location mb-25">
 							<p className="text-location text-md-medium neutral-500">Accra, Ghana</p>
@@ -47,7 +47,7 @@ export default function CarCard3({ car }: any) {
 								<h6 className="heading-6 neutral-1000"><Price amount={car.price} /></h6>
 								<p className="text-md-medium neutral-500">/ day</p>
 							</div>
-							<div className="card-button"> <Link className="btn btn-gray" href="/rental-detail">Book Now</Link></div>
+							<div className="card-button"> <Link className="btn btn-gray" href="/cars-details-1">Book Now</Link></div>
 						</div>
 					</div>
 				</div>

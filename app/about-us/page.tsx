@@ -20,20 +20,20 @@ export default function AboutUs() {
                     <div className="page-header pt-30 background-body">
                         <div className="custom-container position-relative mx-auto">
                             <div className="bg-overlay rounded-12 overflow-hidden">
-                                <img className="w-100 h-100 img-banner" src="/assets/imgs/page-header/banner.png" alt="Rambo" />
+                                <img className="w-100 h-100 img-banner" src="/assets/imgs/page-header/banner.png" alt="Gastonsin" />
                             </div>
                             <div className="container position-absolute z-1 top-50 start-50 translate-middle">
                                 <h2 className="text-white">About Us</h2>
                                 <span className="text-white text-xl-medium">Get the latest news, updates and tips</span>
                             </div>
-                            <div className="background-body position-absolute z-1 top-100 start-50 translate-middle px-3 py-2 rounded-12 border d-flex gap-3 @@navigation-page">
+                            <div className="background-body position-absolute z-1 top-100 start-50 translate-middle px-3 py-2 rounded-12 border d-flex gap-3">
                                 <Link href="/" className="neutral-700 text-md-medium">
                                     Home
                                 </Link>
                                 <span>
-                                    <img src="/assets/imgs/template/icons/arrow-right.svg" alt="Rambo" />
+                                    <img src="/assets/imgs/template/icons/arrow-right.svg" alt="Gastonsin" />
                                 </span>
-                                <Link href="#" className="neutral-1000 text-md-bold">
+                                <Link href="/about-us" className="neutral-1000 text-md-bold">
                                     About Us
                                 </Link>
                             </div>
@@ -45,43 +45,42 @@ export default function AboutUs() {
                             <div className="row pb-50">
                                 <div className="col-lg-4">
                                     <h3 className="neutral-1000">
-                                        The Future of <br />
-                                        <span className="text-primary">Car Rental</span>
-                                        is Here
+                                        Imported, cleared, <br />
+                                        <span className="text-primary">delivered</span>
                                     </h3>
                                 </div>
                                 <div className="col-lg-7 offset-lg-1">
-                                    <p className="text-lg-medium neutral-500">Welcome to Rambo, your trusted partner in car rentals. Since our founding, we have been committed to providing our customers with a seamless and reliable car rental experience. Whether you're planning a business trip, a family vacation, or just need a vehicle for everyday use, we offer a wide range of vehicles to meet your needs.</p>
+                                    <p className="text-lg-medium neutral-500">Gastonsin is a Ghanaian car dealership built on one idea: buy the car abroad, clear it ourselves, and hand you the keys without a chain of middlemen in between. We import from China, the USA and Dubai, and we keep a warehouse at Esiama, off Nkroful Road in the Western Region loaded with vehicles that are already cleared and registered — so you can come, look at what is actually on the ground, drive it, and take it home the same week. If what you want is not in the yard, we will go and find it on one of our routes.</p>
                                 </div>
                             </div>
                             <div className="row g-4">
                                 <div className="col-lg-4 col-md-6">
                                     <div className="box-image rounded-12 position-relative overflow-hidden">
-                                        <img className="rounded-12" src="/assets/imgs/section-1/img-1.png" alt="Rambo" />
+                                        <img className="rounded-12" src="/assets/imgs/section-1/img-1.png" alt="Gastonsin" />
                                         <div className="box-tag bg-white p-3 d-flex position-absolute bottom-0 end-0 rounded-12 m-3">
-                                            <span className="text-dark fs-72 me-3">86</span>
+                                            <span className="text-dark fs-72 me-3">3</span>
                                             <h6>
-                                                Industry <br />
-                                                Experts
+                                                Import <br />
+                                                Routes
                                             </h6>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-4 col-md-6">
                                     <div className="box-image rounded-12 position-relative overflow-hidden">
-                                        <img className="rounded-12" src="/assets/imgs/section-1/img-2.png" alt="Rambo" />
+                                        <img className="rounded-12" src="/assets/imgs/section-1/img-2.png" alt="Gastonsin" />
                                     </div>
                                 </div>
                                 <div className="col-lg-4 col-12">
                                     <div className="d-flex flex-column gap-4 align-self-stretch h-100">
                                         <div className="box-tag background-brand-2 p-5 d-flex rounded-12">
-                                            <span className="text-dark fs-96 me-3">25</span>
+                                            <span className="text-dark fs-96 me-3">15</span>
                                             <h4>
-                                                Years in <br />
-                                                Business
+                                                Years of <br />
+                                                Track Record
                                             </h4>
                                         </div>
-                                        <img className="rounded-12" src="/assets/imgs/section-1/img-3.png" alt="Rambo" />
+                                        <img className="rounded-12" src="/assets/imgs/section-1/img-3.png" alt="Gastonsin" />
                                     </div>
                                 </div>
                             </div>
@@ -111,7 +110,7 @@ export default function AboutUs() {
                                         </div>
                                         <div className="card-info">
                                             <h6 className="text-xl-bold neutral-1000 text-start">Choose a Location</h6>
-                                            <p className="text-md-medium neutral-500">Select the ideal destination to begin your journey with ease</p>
+                                            <p className="text-md-medium neutral-500">Come to the Esiama warehouse, or we deliver anywhere in Ghana</p>
                                         </div>
                                     </div>
                                 </div>
@@ -133,7 +132,7 @@ export default function AboutUs() {
                                         </div>
                                         <div className="card-info">
                                             <h6 className="text-xl-bold neutral-1000 text-start">Transparent Pricing</h6>
-                                            <p className="text-md-medium neutral-500">Enjoy clear and upfront pricing with no surprises, ensuring you know exactly what you're paying for.</p>
+                                            <p className="text-md-medium neutral-500">Landed prices with duty and clearing included — no surprise bill at the port.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -184,178 +183,60 @@ export default function AboutUs() {
                     <section className="section-team-1 py-96 background-body border-top border-bottom">
                         <div className="container">
                             <div className="row align-items-center justify-content-center">
-                                <div className="col-xl-6 col-lg-7 col-md-9 col-sm-11">
+                                <div className="col-xl-7 col-lg-9 col-md-10">
                                     <div className="text-center mb-5">
-                                        <span className="text-xl-medium neutral-500">Awesome Teams</span>
-                                        <h3 className="section-title neutral-1000">Meet Our Agents</h3>
+                                        <span className="text-xl-medium neutral-500">The person behind it</span>
+                                        <h3 className="section-title neutral-1000">Meet the Founder</h3>
                                     </div>
                                 </div>
                             </div>
-                            <div className="row mt-50">
-                                <div className="col-lg-3 col-md-6 col-12">
-                                    <div className="card-news background-card hover-up shadow-2 mb-4 mb-lg-0">
-                                        <div className="card-image">
-                                            <Link href="/dealer-details">
-                                                <img src="/assets/imgs/team/team-1/portrait-1.png" alt="Rambo" />
-                                            </Link>
-                                        </div>
-                                        <div className="card-info p-4">
-                                            <div className="card-title">
-                                                <Link className="text-xl-bold neutral-1000" href="/dealer-details">
-                                                    <h6>Cody Fisher</h6>
-                                                </Link>
-                                                <span className="text-sm-medium neutral-500">CFO (Chief Financial Officer)</span>
-                                            </div>
-                                            <div className="card-program">
-                                                <div className="endtime">
-                                                    <div className="card-author d-flex align-items-center gap-2">
-                                                        <Link href="#" className="rounded-circle background-100 icon-shape icon icon-sm hover-up">
-                                                            <img className="m-0" src="/assets/imgs/team/team-1/icon-1.svg" alt="Rambo" />
-                                                        </Link>
-                                                        <Link href="#" className="rounded-circle background-100 icon-shape icon icon-sm hover-up">
-                                                            <img className="m-0" src="/assets/imgs/team/team-1/icon-2.svg" alt="Rambo" />
-                                                        </Link>
-                                                        <Link href="#" className="rounded-circle background-100 icon-shape icon icon-sm hover-up">
-                                                            <img className="m-0" src="/assets/imgs/team/team-1/icon-3.svg" alt="Rambo" />
-                                                        </Link>
-                                                        <Link href="#" className="rounded-circle background-100 icon-shape icon icon-sm hover-up">
-                                                            <img className="m-0" src="/assets/imgs/team/team-1/icon-4.svg" alt="Rambo" />
-                                                        </Link>
-                                                    </div>
-                                                    <Link href="/dealer-details" className="rounded-circle background-100 icon-shape icon icon-sm hover-up border icon-shape-arrow">
-                                                        <img className="m-0" src="/assets/imgs/team/team-1/arrow-up-right.svg" alt="Rambo" />
-                                                    </Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div className="row align-items-center g-5 mt-2">
+                                <div className="col-lg-6">
+                                    <img
+                                        className="w-100 h-auto rounded-12"
+                                        src="/assets/imgs/page/about/founder.png"
+                                        alt="Yaw Gastonsin, founder of Gastonsin Car Dealership &amp; Rentals"
+                                    />
                                 </div>
-                                <div className="col-lg-3 col-md-6 col-12">
-                                    <div className="card-news background-card hover-up shadow-2 mb-4 mb-lg-0">
-                                        <div className="card-image">
-                                            <Link href="/dealer-details">
-                                                <img src="/assets/imgs/team/team-1/portrait-2.png" alt="Rambo" />
-                                            </Link>
-                                        </div>
-                                        <div className="card-info p-4">
-                                            <div className="card-title">
-                                                <Link className="text-xl-bold neutral-1000" href="/dealer-details">
-                                                    <h6>Darrell Steward</h6>
-                                                </Link>
-                                                <span className="text-sm-medium neutral-500">CEO (Chief Financial Officer)</span>
-                                            </div>
-                                            <div className="card-program">
-                                                <div className="endtime">
-                                                    <div className="card-author d-flex align-items-center gap-2">
-                                                        <Link href="#" className="rounded-circle background-100 icon-shape icon icon-sm hover-up">
-                                                            <img className="m-0" src="/assets/imgs/team/team-1/icon-1.svg" alt="Rambo" />
-                                                        </Link>
-                                                        <Link href="#" className="rounded-circle background-100 icon-shape icon icon-sm hover-up">
-                                                            <img className="m-0" src="/assets/imgs/team/team-1/icon-2.svg" alt="Rambo" />
-                                                        </Link>
-                                                        <Link href="#" className="rounded-circle background-100 icon-shape icon icon-sm hover-up">
-                                                            <img className="m-0" src="/assets/imgs/team/team-1/icon-3.svg" alt="Rambo" />
-                                                        </Link>
-                                                        <Link href="#" className="rounded-circle background-100 icon-shape icon icon-sm hover-up">
-                                                            <img className="m-0" src="/assets/imgs/team/team-1/icon-4.svg" alt="Rambo" />
-                                                        </Link>
-                                                    </div>
-                                                    <Link href="/dealer-details" className="rounded-circle background-100 icon-shape icon icon-sm hover-up border icon-shape-arrow">
-                                                        <img className="m-0" src="/assets/imgs/team/team-1/arrow-up-right.svg" alt="Rambo" />
-                                                    </Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-6 col-12">
-                                    <div className="card-news background-card hover-up shadow-2 mb-4 mb-lg-0">
-                                        <div className="card-image">
-                                            <Link href="/dealer-details">
-                                                <img src="/assets/imgs/team/team-1/portrait-3.png" alt="Rambo" />
-                                            </Link>
-                                        </div>
-                                        <div className="card-info p-4">
-                                            <div className="card-title">
-                                                <Link className="text-xl-bold neutral-1000" href="/dealer-details">
-                                                    <h6>Ronald Richards</h6>
-                                                </Link>
-                                                <span className="text-sm-medium neutral-500">COO (Chief Financial Officer)</span>
-                                            </div>
-                                            <div className="card-program">
-                                                <div className="endtime">
-                                                    <div className="card-author d-flex align-items-center gap-2">
-                                                        <Link href="#" className="rounded-circle background-100 icon-shape icon icon-sm hover-up">
-                                                            <img className="m-0" src="/assets/imgs/team/team-1/icon-1.svg" alt="Rambo" />
-                                                        </Link>
-                                                        <Link href="#" className="rounded-circle background-100 icon-shape icon icon-sm hover-up">
-                                                            <img className="m-0" src="/assets/imgs/team/team-1/icon-2.svg" alt="Rambo" />
-                                                        </Link>
-                                                        <Link href="#" className="rounded-circle background-100 icon-shape icon icon-sm hover-up">
-                                                            <img className="m-0" src="/assets/imgs/team/team-1/icon-3.svg" alt="Rambo" />
-                                                        </Link>
-                                                        <Link href="#" className="rounded-circle background-100 icon-shape icon icon-sm hover-up">
-                                                            <img className="m-0" src="/assets/imgs/team/team-1/icon-4.svg" alt="Rambo" />
-                                                        </Link>
-                                                    </div>
-                                                    <Link href="/dealer-details" className="rounded-circle background-100 icon-shape icon icon-sm hover-up border icon-shape-arrow">
-                                                        <img className="m-0" src="/assets/imgs/team/team-1/arrow-up-right.svg" alt="Rambo" />
-                                                    </Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-6 col-12">
-                                    <div className="card-news background-card hover-up shadow-2 mb-4 mb-lg-0">
-                                        <div className="card-image">
-                                            <Link href="/dealer-details">
-                                                <img src="/assets/imgs/team/team-1/portrait-4.png" alt="Rambo" />
-                                            </Link>
-                                        </div>
-                                        <div className="card-info p-4">
-                                            <div className="card-title">
-                                                <Link className="text-xl-bold neutral-1000" href="/dealer-details">
-                                                    <h6>Jerome Bell</h6>
-                                                </Link>
-                                                <span className="text-sm-medium neutral-500">CMO (Chief Financial Officer)</span>
-                                            </div>
-                                            <div className="card-program">
-                                                <div className="endtime">
-                                                    <div className="card-author d-flex align-items-center gap-2">
-                                                        <Link href="#" className="rounded-circle background-100 icon-shape icon icon-sm hover-up">
-                                                            <img className="m-0" src="/assets/imgs/team/team-1/icon-1.svg" alt="Rambo" />
-                                                        </Link>
-                                                        <Link href="#" className="rounded-circle background-100 icon-shape icon icon-sm hover-up">
-                                                            <img className="m-0" src="/assets/imgs/team/team-1/icon-2.svg" alt="Rambo" />
-                                                        </Link>
-                                                        <Link href="#" className="rounded-circle background-100 icon-shape icon icon-sm hover-up">
-                                                            <img className="m-0" src="/assets/imgs/team/team-1/icon-3.svg" alt="Rambo" />
-                                                        </Link>
-                                                        <Link href="#" className="rounded-circle background-100 icon-shape icon icon-sm hover-up">
-                                                            <img className="m-0" src="/assets/imgs/team/team-1/icon-4.svg" alt="Rambo" />
-                                                        </Link>
-                                                    </div>
-                                                    <Link href="/dealer-details" className="rounded-circle background-100 icon-shape icon icon-sm hover-up border icon-shape-arrow">
-                                                        <img className="m-0" src="/assets/imgs/team/team-1/arrow-up-right.svg" alt="Rambo" />
-                                                    </Link>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <div className="col-lg-6">
+                                    <h4 className="neutral-1000 mb-1">Yaw Gastonsin</h4>
+                                    <p className="text-lg-bold neutral-500 mb-4">Founder</p>
+                                    <blockquote className="border-start border-3 ps-4 mb-4" style={{ borderColor: "#70f46d" }}>
+                                        <p className="text-lg-medium neutral-1000 fst-italic mb-0">
+                                            &ldquo;We put the full price in writing before you pay a cedi. That is the
+                                            whole business.&rdquo;
+                                        </p>
+                                    </blockquote>
+                                    <p className="text-md-medium neutral-500 mb-3">
+                                        Yaw has spent the last decade and a half building ventures across Ghana, and the
+                                        pattern has been the same each time: people back what he puts his hands to,
+                                        because he delivers what he said he would. The company carries his name for that
+                                        reason.
+                                    </p>
+                                    <p className="text-md-medium neutral-500 mb-3">
+                                        He started Gastonsin after watching too many Ghanaians buy cars sight-unseen and
+                                        get caught out — a different specification to the advert, a surprise duty bill at
+                                        the port, or a dealer who went quiet after the sale. His answer was to control the
+                                        whole chain: buy abroad, clear our own containers at Tema and Takoradi, and keep a
+                                        warehouse people can walk into and inspect before they pay.
+                                    </p>
+                                    <p className="text-md-medium neutral-500 mb-4">
+                                        The company is young. The track record behind it is not.
+                                    </p>
+                                    <div className="box-info-contact border-top pt-4">
+                                        <p className="text-md neutral-500 icon-address mb-2">Esiama off Nkroful Road, Western Region, Ghana</p>
+                                        <p className="text-md neutral-500 icon-worktime">Open 8:00 – 18:00, Mon – Sat</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    {/* cta 8*/}
                     <section className="section-cta-7 background-body py-96">
                         <div className="box-cta-6">
                             <div className="container">
                                 <div className="row align-items-center">
                                     <div className="col-lg-5">
-                                        <Link className="btn btn-signin bg-2 text-dark mb-4" href="#">
-                                            Our Mission
-                                        </Link>
+                                        <span className="btn btn-signin bg-2 text-dark mb-4">Our Mission</span>
                                         <h4 className="mb-4 neutral-1000">
                                             Sell your car at a fair price. <br />
                                             Get started with us today.
@@ -370,7 +251,7 @@ export default function AboutUs() {
                                                 </ul>
                                             </div>
                                         </div>
-                                        <Link className="btn btn-primary mt-2" href="#">
+                                        <Link className="btn btn-primary mt-2" href="/cars-list-1">
                                             Get Started Now
                                             <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M8 15L15 8L8 1M15 8L1 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -381,18 +262,18 @@ export default function AboutUs() {
                                         <div className="d-flex flex-column gap-4">
                                             <div className="d-flex gap-4">
                                                 <div className="position-relative">
-                                                    <img className="bdrd8 w-100" src="/assets/imgs/cta/cta-8/img-1.png" alt="Rambo" />
+                                                    <img className="bdrd8 w-100" src="/assets/imgs/cta/cta-8/img-1.png" alt="Gastonsin" />
                                                 </div>
                                                 <div className="mt-auto">
-                                                    <img className="bdrd8 w-100" src="/assets/imgs/cta/cta-8/img-2.png" alt="Rambo" />
+                                                    <img className="bdrd8 w-100" src="/assets/imgs/cta/cta-8/img-2.png" alt="Gastonsin" />
                                                 </div>
                                             </div>
                                             <div className="d-flex gap-4">
                                                 <div className="position-relative">
-                                                    <img className="bdrd8 w-100" src="/assets/imgs/cta/cta-8/img-3.png" alt="Rambo" />
+                                                    <img className="bdrd8 w-100" src="/assets/imgs/cta/cta-8/img-3.png" alt="Gastonsin" />
                                                 </div>
                                                 <div className="position-relative">
-                                                    <img className="bdrd8 w-100" src="/assets/imgs/cta/cta-8/img-4.png" alt="Rambo" />
+                                                    <img className="bdrd8 w-100" src="/assets/imgs/cta/cta-8/img-4.png" alt="Gastonsin" />
                                                 </div>
                                             </div>
                                         </div>
@@ -429,7 +310,7 @@ export default function AboutUs() {
                                                     <h3 className="neutral-1000">K</h3>
                                                 </div>
                                                 <div className="text-md-start text-center">
-                                                    <p className="text-lg-bold neutral-1000">Destinations</p>
+                                                    <p className="text-lg-bold neutral-1000">Vehicles Cleared</p>
                                                     <p className="text-lg-bold neutral-1000">Collaboration</p>
                                                 </div>
                                             </div>
@@ -482,17 +363,15 @@ export default function AboutUs() {
                                 <div className="row align-items-center">
                                     <div className="col-lg-6">
                                         <div className="card-image d-inline-block position-relative mb-100">
-                                            <img className="rounded-12" src="/assets/imgs/cta/cta-9/img-1.png" alt="Rambo" />
+                                            <img className="rounded-12" src="/assets/imgs/cta/cta-9/img-1.png" alt="Gastonsin" />
                                             <a className="btn btn-play popup-youtube position-absolute top-50 start-50 translate-middle" onClick={() => setOpen(true)} />
-                                            <img className="position-absolute top-100 start-100 translate-middle rounded-12 d-none d-md-block" src="/assets/imgs/cta/cta-9/img-2.png" alt="Rambo" />
+                                            <img className="position-absolute top-100 start-100 translate-middle rounded-12 d-none d-md-block" src="/assets/imgs/cta/cta-9/img-2.png" alt="Gastonsin" />
                                         </div>
                                     </div>
                                     <div className="col-lg-6 ps-lg-5">
-                                        <Link className="btn btn-signin bg-2 text-dark mb-4" href="#">
-                                            Our Commitment
-                                        </Link>
-                                        <h4 className="mb-4 neutral-1000">Rambo offers clear pricing and 24/7 great support.</h4>
-                                        <p className="text-lg-medium neutral-500 mb-4">We are committed to offering transparent pricing with no hidden fees, comprehensive insurance options for peace of mind, and 24/7 customer support to assist you whenever you need it. At Rambo, your satisfaction is our top priority.</p>
+                                        <span className="btn btn-signin bg-2 text-dark mb-4">Our Commitment</span>
+                                        <h4 className="mb-4 neutral-1000">Clear landed pricing, and a warehouse you can walk into.</h4>
+                                        <p className="text-lg-medium neutral-500 mb-4">Every price we quote is the landed cost — vehicle, freight, duty, clearing and delivery — confirmed in writing before you pay. Our Esiama warehouse is stocked with cleared, registered vehicles you can inspect and drive before deciding, and our team clears our own containers at Tema and Takoradi, so there is nobody else to blame for a delay.</p>
                                         <div className="row">
                                             <div className="col">
                                                 <ul className="list-ticks-green list-ticks-green-2">
@@ -502,7 +381,7 @@ export default function AboutUs() {
                                                 </ul>
                                             </div>
                                         </div>
-                                        <Link className="btn btn-primary mt-2" href="#">
+                                        <Link className="btn btn-primary mt-2" href="/cars-list-1">
                                             Get Started Now
                                             <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M8 15L15 8L8 1M15 8L1 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -520,9 +399,9 @@ export default function AboutUs() {
                             <div className="row">
                                 <div className="col-auto mx-auto wow fadeInUp text-center d-flex flex-column align-items-center justify-content-center">
                                     <div className="box-author-testimonials background-100">
-                                        <img src="/assets/imgs/page/homepage1/testimonial.png" alt="Rambo" />
-                                        <img src="/assets/imgs/page/homepage1/testimonial2.png" alt="Rambo" />
-                                        <img src="/assets/imgs/page/homepage1/testimonial3.png" alt="Rambo" />
+                                        <img src="/assets/imgs/page/homepage1/testimonial.png" alt="Gastonsin" />
+                                        <img src="/assets/imgs/page/homepage1/testimonial2.png" alt="Gastonsin" />
+                                        <img src="/assets/imgs/page/homepage1/testimonial3.png" alt="Gastonsin" />
                                         Testimonials
                                     </div>
                                     <h3 className="mt-8 mb-15 neutral-1000">What they say about us?</h3>
@@ -539,12 +418,12 @@ export default function AboutUs() {
                                                     <div className="card-testimonial background-card">
                                                         <div className="card-info">
                                                             <p className="text-xl-bold card-title neutral-1000">No Hidden Fees</p>
-                                                            <p className="text-md-regular neutral-500">The attention to detail in the booking process made our trip stress-free, allowing us to focus on creating lasting memories together.</p>
+                                                            <p className="text-md-regular neutral-500">They handled the clearing at Tema themselves, so there was no agent calling me for extra money. The duty was exactly what they quoted.</p>
                                                         </div>
                                                         <div className="card-top pt-40 border-0 mb-0">
                                                             <div className="card-author">
                                                                 <div className="card-image">
-                                                                    <img src="/assets/imgs/testimonials/testimonials-1/author-1.png" alt="Rambo" />
+                                                                    <img src="/assets/imgs/testimonials/testimonials-1/author-1.png" alt="Gastonsin" />
                                                                 </div>
                                                                 <div className="card-info">
                                                                     <p className="text-lg-bold neutral-1000">Sophia Moore</p>
@@ -552,11 +431,11 @@ export default function AboutUs() {
                                                                 </div>
                                                             </div>
                                                             <div className="card-rate">
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -565,12 +444,12 @@ export default function AboutUs() {
                                                     <div className="card-testimonial background-card">
                                                         <div className="card-info">
                                                             <p className="text-xl-bold card-title neutral-1000">Mobile-Friendly and Fast!</p>
-                                                            <p className="text-md-regular neutral-500">Embarking on our dream vacation was made a breeze through the seamless coordination of items and hotels using this exceptional booking platform.</p>
+                                                            <p className="text-md-regular neutral-500">I drove down to the Esiama warehouse on a Saturday, saw the car in person, and drove it home the same day. Everything was already cleared and registered.</p>
                                                         </div>
                                                         <div className="card-top pt-40 border-0 mb-0">
                                                             <div className="card-author">
                                                                 <div className="card-image">
-                                                                    <img src="/assets/imgs/testimonials/testimonials-1/author-2.png" alt="Rambo" />
+                                                                    <img src="/assets/imgs/testimonials/testimonials-1/author-2.png" alt="Gastonsin" />
                                                                 </div>
                                                                 <div className="card-info">
                                                                     <p className="text-lg-bold neutral-1000">Atend John</p>
@@ -578,11 +457,11 @@ export default function AboutUs() {
                                                                 </div>
                                                             </div>
                                                             <div className="card-rate">
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -591,12 +470,12 @@ export default function AboutUs() {
                                                     <div className="card-testimonial background-card">
                                                         <div className="card-info">
                                                             <p className="text-xl-bold card-title neutral-1000">Excellent Customer Service</p>
-                                                            <p className="text-md-regular neutral-500">The overall process was not just efficient but also enriching, as the platform's intuitive design and user-friendly interface made every step enjoyable.</p>
+                                                            <p className="text-md-regular neutral-500">I ordered from the China route and they sent me photos and the VIN before it loaded, then tracking while it sailed. No guessing.</p>
                                                         </div>
                                                         <div className="card-top pt-40 border-0 mb-0">
                                                             <div className="card-author">
                                                                 <div className="card-image">
-                                                                    <img src="/assets/imgs/testimonials/testimonials-1/author-3.png" alt="Rambo" />
+                                                                    <img src="/assets/imgs/testimonials/testimonials-1/author-3.png" alt="Gastonsin" />
                                                                 </div>
                                                                 <div className="card-info">
                                                                     <p className="text-lg-bold neutral-1000">Sara Mohamed</p>
@@ -604,11 +483,11 @@ export default function AboutUs() {
                                                                 </div>
                                                             </div>
                                                             <div className="card-rate">
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -617,12 +496,12 @@ export default function AboutUs() {
                                                     <div className="card-testimonial background-card">
                                                         <div className="card-info">
                                                             <p className="text-xl-bold card-title neutral-1000">Highly Flexible and Customizable</p>
-                                                            <p className="text-md-regular neutral-500">The attention to detail in the booking process made our trip stress-free, allowing us to focus on creating lasting memories together.</p>
+                                                            <p className="text-md-regular neutral-500">They handled the clearing at Tema themselves, so there was no agent calling me for extra money. The duty was exactly what they quoted.</p>
                                                         </div>
                                                         <div className="card-top pt-40 border-0 mb-0">
                                                             <div className="card-author">
                                                                 <div className="card-image">
-                                                                    <img src="/assets/imgs/testimonials/testimonials-1/author-1.png" alt="Rambo" />
+                                                                    <img src="/assets/imgs/testimonials/testimonials-1/author-1.png" alt="Gastonsin" />
                                                                 </div>
                                                                 <div className="card-info">
                                                                     <p className="text-lg-bold neutral-1000">Sara Mohamed</p>
@@ -630,11 +509,11 @@ export default function AboutUs() {
                                                                 </div>
                                                             </div>
                                                             <div className="card-rate">
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
-                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Rambo" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
+                                                                <img className="background-brand-2 p-1" src="/assets/imgs/template/icons/star-black.svg" alt="Gastonsin" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -660,55 +539,55 @@ export default function AboutUs() {
                                             <h5 className="accordion-header" id="headingOne" onClick={() => handleAccordion(1)}>
                                                 <button className={`accordion-button text-heading-5 ${isAccordion === 1 ? "collapsed" : ""}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                     <h3>01</h3>
-                                                    <p>How do I make a reservation on your website</p>
+                                                    <p>How do I buy a car from Gastonsin?</p>
                                                 </button>
                                             </h5>
                                             <div className={`accordion-collapse collapse ${isAccordion == 1 ? "show" : ""} `} id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
-                                                <div className="accordion-body">Provide a step-by-step guide on how users can browse and book travel services on your platform. Include information on searching for destinations, selecting dates, choosing accommodation, and completing the booking process. Mention any special features or tools that can help users find the best deals.</div>
+                                                <div className="accordion-body">Start on the Vehicles page — everything listed there is either already cleared and parked at our Esiama warehouse or available to order on one of our import routes. Call or message us to arrange a viewing, come and drive the car, and if it suits you we complete the paperwork on the spot. If the model you want is not in the yard, tell us the make, model and year and we will source it from China, the USA or Dubai and quote you a landed price.</div>
                                             </div>
                                         </div>
                                         <div className="accordion-item wow fadeInUp border-bottom-0">
                                             <h5 className="accordion-header" id="headingTwo" onClick={() => handleAccordion(2)}>
                                                 <button className={`accordion-button text-heading-5 ${isAccordion === 2 ? "collapsed" : ""}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                                     <h3>02</h3>
-                                                    <p>What documents do I need for my trip, and how do I obtain them?</p>
+                                                    <p>Do you handle customs clearing and registration?</p>
                                                 </button>
                                             </h5>
                                             <div className={`accordion-collapse collapse ${isAccordion == 2 ? "show" : ""} `} id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
-                                                <div className="accordion-body">Provide a step-by-step guide on how users can browse and book travel services on your platform. Include information on searching for destinations, selecting dates, choosing accommodation, and completing the booking process. Mention any special features or tools that can help users find the best deals.</div>
+                                                <div className="accordion-body">Yes, and we do it with our own people rather than handing you to an agent. Customs entry, GRA valuation, duty assessment and DVLA registration are all handled by our team at Tema and Takoradi. For a vehicle bought from warehouse stock this is already done — the car is cleared and registered before it is listed.</div>
                                             </div>
                                         </div>
                                         <div className="accordion-item wow fadeInUp border-bottom-0">
                                             <h5 className="accordion-header" id="headingThree" onClick={() => handleAccordion(3)}>
                                                 <button className={`accordion-button text-heading-5 ${isAccordion === 3 ? "collapsed" : ""}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                                     <h3>03</h3>
-                                                    <p>In the event that I need to modify or cancel my reservation, what are the policies in place?</p>
+                                                    <p>Is the price I see the price I actually pay?</p>
                                                 </button>
                                             </h5>
                                             <div className={`accordion-collapse collapse ${isAccordion == 3 ? "show" : ""} `} id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
-                                                <div className="accordion-body">Provide a step-by-step guide on how users can browse and book travel services on your platform. Include information on searching for destinations, selecting dates, choosing accommodation, and completing the booking process. Mention any special features or tools that can help users find the best deals.</div>
+                                                <div className="accordion-body">The figure shown is a landed price: the vehicle, freight, duty, clearing and delivery within Ghana. Because it depends on the exchange rate and on GRA valuation, we confirm the final amount in writing before you pay anything. No charge appears later that we did not name up front.</div>
                                             </div>
                                         </div>
                                         <div className="accordion-item wow fadeInUp border-bottom-0">
                                             <h5 className="accordion-header" id="headingFour" onClick={() => handleAccordion(4)}>
                                                 <button className={`accordion-button text-heading-5 ${isAccordion === 4 ? "collapsed" : ""}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                                     <h3>04</h3>
-                                                    <p>Can you specify the types of credit/debit cards, digital wallets, or other online payment methods accepted?</p>
+                                                    <p>How can I pay for a vehicle?</p>
                                                 </button>
                                             </h5>
                                             <div className={`accordion-collapse collapse ${isAccordion == 4 ? "show" : ""} `} id="collapseFour" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
-                                                <div className="accordion-body">Provide a step-by-step guide on how users can browse and book travel services on your platform. Include information on searching for destinations, selecting dates, choosing accommodation, and completing the booking process. Mention any special features or tools that can help users find the best deals.</div>
+                                                <div className="accordion-body">Bank transfer, mobile money and cash at the warehouse. A vehicle bought from stock is settled on collection. An imported order takes a deposit to begin sourcing, with the balance due once the car has landed in Ghana and you have inspected it yourself.</div>
                                             </div>
                                         </div>
                                         <div className="accordion-item wow fadeInUp border-bottom-0">
                                             <h5 className="accordion-header" id="headingFive" onClick={() => handleAccordion(5)}>
                                                 <button className={`accordion-button text-heading-5 ${isAccordion === 5 ? "collapsed" : ""}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                                     <h3>05</h3>
-                                                    <p>What are the working hours, and what can I expect in terms of response times?</p>
+                                                    <p>What are your working hours, and how quickly do you reply?</p>
                                                 </button>
                                             </h5>
                                             <div className={`accordion-collapse collapse ${isAccordion == 5 ? "show" : ""} `} id="collapseFive" aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
-                                                <div className="accordion-body">Provide a step-by-step guide on how users can browse and book travel services on your platform. Include information on searching for destinations, selecting dates, choosing accommodation, and completing the booking process. Mention any special features or tools that can help users find the best deals.</div>
+                                                <div className="accordion-body">The Esiama warehouse is open 8:00 to 18:00, Monday to Saturday, and WhatsApp is the fastest way to reach us — we reply the same working day. On import lead times: roughly 5 to 8 weeks from Dubai, 6 to 10 from China and 8 to 12 from the USA, measured from confirmed order to keys in your hand.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -716,13 +595,13 @@ export default function AboutUs() {
                                 <div className="row">
                                     <div className="col-12 wow fadeInUp mt-4">
                                         <div className="d-flex justify-content-center gap-2">
-                                            <Link className="btn btn-primary mt-2" href="#">
+                                            <Link className="btn btn-primary mt-2" href="/contact">
                                                 Contact Us
                                                 <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 15L15 8L8 1M15 8L1 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
                                             </Link>
-                                            <Link className="btn btn-primary bg-transparent mt-2 invert" href="#">
+                                            <Link className="btn btn-primary bg-transparent mt-2 invert" href="/contact">
                                                 Help Center
                                                 <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 15L15 8L8 1M15 8L1 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -764,12 +643,12 @@ export default function AboutUs() {
                                             <SwiperSlide className="swiper-slide pt-2">
                                                 <div className="card-news background-card hover-up">
                                                     <div className="card-image">
-                                                        <Link href="/blog-details">
-                                                            <img src="/assets/imgs/blog/blog-1/img-1.png" alt="Rambo" />
+                                                        <Link href="/cars-list-1">
+                                                            <img src="/assets/imgs/blog/blog-1/img-1.png" alt="Gastonsin" />
                                                         </Link>
                                                     </div>
                                                     <div className="card-info">
-                                                        <Link className="bg-2 rounded-12 position-absolute top-0 end-0 translate-middle-y px-3 py-2 me-4 text-sm-bold" href="/blog-grid">
+                                                        <Link className="bg-2 rounded-12 position-absolute top-0 end-0 translate-middle-y px-3 py-2 me-4 text-sm-bold" href="/cars-list-1">
                                                             News
                                                         </Link>
                                                         <div className="card-meta">
@@ -778,18 +657,18 @@ export default function AboutUs() {
                                                             <span className="post-comment neutral-1000">38 comments</span>
                                                         </div>
                                                         <div className="card-title">
-                                                            <Link className="text-xl-bold neutral-1000" href="/blog-details">
+                                                            <Link className="text-xl-bold neutral-1000" href="/cars-list-1">
                                                                 2025 Cadillac Escalade costs more money{" "}
                                                             </Link>
                                                         </div>
                                                         <div className="card-program">
                                                             <div className="endtime">
                                                                 <div className="card-author">
-                                                                    <img src="/assets/imgs/blog/blog-1/avatar-1.png" alt="Rambo" />
+                                                                    <img src="/assets/imgs/blog/blog-1/avatar-1.png" alt="Gastonsin" />
                                                                     <p className="text-sm-bold neutral-1000">Jimmy Dave</p>
                                                                 </div>
                                                                 <div className="card-button">
-                                                                    <Link className="btn btn-gray" href="/blog-details">
+                                                                    <Link className="btn btn-gray" href="/cars-list-1">
                                                                         Keep Reading
                                                                     </Link>
                                                                 </div>
@@ -801,12 +680,12 @@ export default function AboutUs() {
                                             <SwiperSlide className="swiper-slide pt-2">
                                                 <div className="card-news background-card hover-up">
                                                     <div className="card-image">
-                                                        <Link href="/blog-details">
-                                                            <img src="/assets/imgs/blog/blog-1/img-2.png" alt="Rambo" />
+                                                        <Link href="/cars-list-1">
+                                                            <img src="/assets/imgs/blog/blog-1/img-2.png" alt="Gastonsin" />
                                                         </Link>
                                                     </div>
                                                     <div className="card-info">
-                                                        <Link className="bg-2 rounded-12 position-absolute top-0 end-0 translate-middle-y px-3 py-2 me-4 text-sm-bold" href="/blog-grid">
+                                                        <Link className="bg-2 rounded-12 position-absolute top-0 end-0 translate-middle-y px-3 py-2 me-4 text-sm-bold" href="/cars-list-1">
                                                             Trend
                                                         </Link>
                                                         <div className="card-meta">
@@ -815,18 +694,18 @@ export default function AboutUs() {
                                                             <span className="post-comment neutral-1000">38 comments</span>
                                                         </div>
                                                         <div className="card-title">
-                                                            <Link className="text-xl-bold neutral-1000" href="/blog-details">
+                                                            <Link className="text-xl-bold neutral-1000" href="/cars-list-1">
                                                                 2025 BMW 5 Series Review: A balanced luxury sedan
                                                             </Link>
                                                         </div>
                                                         <div className="card-program">
                                                             <div className="endtime">
                                                                 <div className="card-author">
-                                                                    <img src="/assets/imgs/blog/blog-1/avatar-2.png" alt="Rambo" />
+                                                                    <img src="/assets/imgs/blog/blog-1/avatar-2.png" alt="Gastonsin" />
                                                                     <p className="text-sm-bold neutral-1000">Steven Job</p>
                                                                 </div>
                                                                 <div className="card-button">
-                                                                    <Link className="btn btn-gray" href="/blog-details">
+                                                                    <Link className="btn btn-gray" href="/cars-list-1">
                                                                         Keep Reading
                                                                     </Link>
                                                                 </div>
@@ -838,12 +717,12 @@ export default function AboutUs() {
                                             <SwiperSlide className="swiper-slide pt-2">
                                                 <div className="card-news background-card hover-up">
                                                     <div className="card-image">
-                                                        <Link href="/blog-details">
-                                                            <img src="/assets/imgs/blog/blog-1/img-3.png" alt="Rambo" />
+                                                        <Link href="/cars-list-1">
+                                                            <img src="/assets/imgs/blog/blog-1/img-3.png" alt="Gastonsin" />
                                                         </Link>
                                                     </div>
                                                     <div className="card-info">
-                                                        <Link className="bg-2 rounded-12 position-absolute top-0 end-0 translate-middle-y px-3 py-2 me-4 text-sm-bold" href="/blog-grid">
+                                                        <Link className="bg-2 rounded-12 position-absolute top-0 end-0 translate-middle-y px-3 py-2 me-4 text-sm-bold" href="/cars-list-1">
                                                             Discovery
                                                         </Link>
                                                         <div className="card-meta">
@@ -852,18 +731,18 @@ export default function AboutUs() {
                                                             <span className="post-comment neutral-1000">38 comments</span>
                                                         </div>
                                                         <div className="card-title">
-                                                            <Link className="text-xl-bold neutral-1000" href="/blog-details">
+                                                            <Link className="text-xl-bold neutral-1000" href="/cars-list-1">
                                                                 2025 Ruf Rodeo is ready to wrangle some rough roads
                                                             </Link>
                                                         </div>
                                                         <div className="card-program">
                                                             <div className="endtime">
                                                                 <div className="card-author">
-                                                                    <img src="/assets/imgs/blog/blog-1/avatar-3.png" alt="Rambo" />
+                                                                    <img src="/assets/imgs/blog/blog-1/avatar-3.png" alt="Gastonsin" />
                                                                     <p className="text-sm-bold neutral-1000">David Jame</p>
                                                                 </div>
                                                                 <div className="card-button">
-                                                                    <Link className="btn btn-gray" href="/blog-details">
+                                                                    <Link className="btn btn-gray" href="/cars-list-1">
                                                                         Keep Reading
                                                                     </Link>
                                                                 </div>
@@ -875,12 +754,12 @@ export default function AboutUs() {
                                             <SwiperSlide className="swiper-slide pt-2">
                                                 <div className="card-news background-card hover-up">
                                                     <div className="card-image">
-                                                        <Link href="/blog-details">
-                                                            <img src="/assets/imgs/blog/blog-1/img-2.png" alt="Rambo" />
+                                                        <Link href="/cars-list-1">
+                                                            <img src="/assets/imgs/blog/blog-1/img-2.png" alt="Gastonsin" />
                                                         </Link>
                                                     </div>
                                                     <div className="card-info">
-                                                        <Link className="bg-2 rounded-12 position-absolute top-0 end-0 translate-middle-y px-3 py-2 me-4 text-sm-bold" href="/blog-grid">
+                                                        <Link className="bg-2 rounded-12 position-absolute top-0 end-0 translate-middle-y px-3 py-2 me-4 text-sm-bold" href="/cars-list-1">
                                                             Trend
                                                         </Link>
                                                         <div className="card-meta">
@@ -889,18 +768,18 @@ export default function AboutUs() {
                                                             <span className="post-comment neutral-1000">38 comments</span>
                                                         </div>
                                                         <div className="card-title">
-                                                            <Link className="text-xl-bold neutral-1000" href="/blog-details">
+                                                            <Link className="text-xl-bold neutral-1000" href="/cars-list-1">
                                                                 2025 BMW 5 Series Review: A balanced luxury sedan
                                                             </Link>
                                                         </div>
                                                         <div className="card-program">
                                                             <div className="endtime">
                                                                 <div className="card-author">
-                                                                    <img src="/assets/imgs/blog/blog-1/avatar-2.png" alt="Rambo" />
+                                                                    <img src="/assets/imgs/blog/blog-1/avatar-2.png" alt="Gastonsin" />
                                                                     <p className="text-sm-bold neutral-1000">Steven Job</p>
                                                                 </div>
                                                                 <div className="card-button">
-                                                                    <Link className="btn btn-gray" href="/blog-details">
+                                                                    <Link className="btn btn-gray" href="/cars-list-1">
                                                                         Keep Reading
                                                                     </Link>
                                                                 </div>

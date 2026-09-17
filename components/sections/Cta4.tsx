@@ -19,7 +19,7 @@ export default function Cta4() {
 						<div className="col-lg-4">
 							<div className="bg-white rounded-12 p-5 d-flex flex-column gap-4">
 								<span className="icon-shape icon_70 background-2 rounded-circle wow fadeIn">
-									<img className="dark-invert" src="/assets/imgs/cta/cta-4/icon-1.svg" alt="Rambo" />
+									<img className="dark-invert" src="/assets/imgs/cta/cta-4/icon-1.svg" alt="Gastonsin" />
 								</span>
 								<h6 className=" wow fadeInUp">Loking for a rental car?</h6>
 								<p className="text-md-regular wow fadeInUp">Find your perfect rental car for any journey, from road trips to business travel.</p>
@@ -32,12 +32,12 @@ export default function Cta4() {
 							</div>
 						</div>
 						<div className="col-lg-4 text-center wow fadeInUp">
-							<img src="/assets/imgs/cta/cta-4/car-center.png" alt="Rambo" />
+							<img src="/assets/imgs/cta/cta-4/car-center.png" alt="Gastonsin" />
 						</div>
 						<div className="col-lg-4">
 							<div className="bg-white rounded-12 p-5 d-flex flex-column gap-4">
 								<span className="icon-shape icon_70 background-2 rounded-circle wow fadeIn">
-									<img className="dark-invert" src="/assets/imgs/cta/cta-4/icon-2.svg" alt="Rambo" />
+									<img className="dark-invert" src="/assets/imgs/cta/cta-4/icon-2.svg" alt="Gastonsin" />
 								</span>
 								<h6 className=" wow fadeInUp">Loking for a rental car?</h6>
 								<p className="text-md-regular wow fadeInUp">Find your perfect rental car for any journey, from road trips to business travel.</p>

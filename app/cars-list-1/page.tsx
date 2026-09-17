@@ -11,15 +11,31 @@ import ByPrice from "@/components/Filter/ByPrice";
 import ByRating from "@/components/Filter/ByRating";
 import Layout from "@/components/layout/Layout";
 import rawCarsData from "@/util/cars.json";
-import useCarFilter from "@/util/useCarFilter";
+import useCarFilter, { LISTING_TABS, ListingType } from "@/util/useCarFilter";
+import { useEffect } from "react";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 const carsData = rawCarsData.map((car) => ({
     ...car,
     rating: parseFloat(car.rating as string),
+    listingType: car.listingType as ListingType,
 }));
 export default function CarsList1() {
-    const { filter, setFilter, sortCriteria, setSortCriteria, itemsPerPage, setItemsPerPage, currentPage, setCurrentPage, uniqueNames, uniqueFuelTypes, uniqueAmenities, uniqueLocations, uniqueRatings, uniqueCarTypes, filteredCars, sortedCars, totalPages, startIndex, endIndex, paginatedCars, handleCheckboxChange, handleSortChange, handlePriceRangeChange, handleItemsPerPageChange, handlePageChange, handlePreviousPage, handleNextPage, handleClearFilters, startItemIndex, endItemIndex } = useCarFilter(carsData);
+    const { filter, setFilter, sortCriteria, setSortCriteria, itemsPerPage, setItemsPerPage, currentPage, setCurrentPage, uniqueNames, uniqueFuelTypes, uniqueAmenities, uniqueLocations, uniqueRatings, uniqueCarTypes, filteredCars, sortedCars, totalPages, startIndex, endIndex, paginatedCars, handleCheckboxChange, handleSortChange, handlePriceRangeChange, handleItemsPerPageChange, handlePageChange, handlePreviousPage, handleNextPage, handleClearFilters, handleListingChange, listingCounts, startItemIndex, endItemIndex } = useCarFilter(carsData);
+    // Arriving from the homepage search with ?listing=sale or ?listing=rental preselects that tab.
+    useEffect(() => {
+        const wanted = new URLSearchParams(window.location.search).get("listing")
+        if (wanted === "sale" || wanted === "rental") handleListingChange(wanted)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+    // Keep the address bar in step with the selected tab, so a refresh or a shared link shows the same cars.
+    const selectListing = (id: "all" | "sale" | "rental") => {
+        handleListingChange(id)
+        const url = new URL(window.location.href)
+        if (id === "all") url.searchParams.delete("listing")
+        else url.searchParams.set("listing", id)
+        window.history.replaceState(null, "", url)
+    }
 
     return (
         <>
@@ -28,7 +44,7 @@ export default function CarsList1() {
                     <div className="page-header-2 pt-30 background-body">
                         <div className="custom-container position-relative mx-auto">
                             <div className="bg-overlay rounded-12 overflow-hidden">
-                                <img className="w-100 h-100 img-fluid img-banner" src="/assets/imgs/page-header/banner6.png" alt="Rambo" />
+                                <img className="w-100 h-100 img-fluid img-banner" src="/assets/imgs/page-header/banner6.png" alt="Gastonsin" />
                             </div>
                             <div className="container position-absolute z-1 top-50 start-50 pb-70 translate-middle text-center">
                                 <span className="text-sm-bold bg-2 px-4 py-3 rounded-12">Find cars for sale and for rent near you</span>
@@ -43,15 +59,18 @@ export default function CarsList1() {
                             <div className="box-search-advance background-card wow fadeIn">
                                 <div className="box-top-search">
                                     <div className="left-top-search">
-                                        <Link className="category-link text-sm-bold btn-click active" href="#">
-                                            All cars
-                                        </Link>
-                                        <a className="category-link text-sm-bold btn-click" href="#">
-                                            New cars
-                                        </a>
-                                        <Link className="category-link text-sm-bold btn-click" href="#">
-                                            Used cars
-                                        </Link>
+                                        {LISTING_TABS.map((tab) => (
+                                            <a
+                                                key={tab.id}
+                                                href="#"
+                                                role="button"
+                                                aria-pressed={filter.listing === tab.id}
+                                                className={`category-link text-sm-bold btn-click${filter.listing === tab.id ? " active" : ""}`}
+                                                onClick={(e) => { e.preventDefault(); selectListing(tab.id) }}
+                                            >
+                                                {tab.id === "all" ? "All cars" : tab.label}
+                                            </a>
+                                        ))}
                                     </div>
                                     <div className="right-top-search d-none d-md-flex">
                                         <Link className="text-sm-medium need-some-help" href="/contact">
@@ -78,6 +97,21 @@ export default function CarsList1() {
                         <div className="container">
                             <div className="box-content-main pt-20">
                                 <div className="content-right">
+                                    <div className="listing-tabs mb-20" role="tablist" aria-label="Sale or rental">
+                                        {LISTING_TABS.map((tab) => (
+                                            <button
+                                                key={tab.id}
+                                                type="button"
+                                                role="tab"
+                                                aria-selected={filter.listing === tab.id}
+                                                className={`listing-tab ${filter.listing === tab.id ? "active" : ""}`}
+                                                onClick={() => selectListing(tab.id)}
+                                            >
+                                                {tab.label}
+                                                <span className="listing-tab-count">{listingCounts[tab.id]}</span>
+                                            </button>
+                                        ))}
+                                    </div>
                                     <div className="box-filters mb-25 pb-5 border-bottom border-1">
                                         <SortCarsFilter sortCriteria={sortCriteria} handleSortChange={handleSortChange} itemsPerPage={itemsPerPage} handleItemsPerPageChange={handleItemsPerPageChange} handleClearFilters={handleClearFilters} startItemIndex={startItemIndex} endItemIndex={endItemIndex} sortedCars={sortedCars} />
                                     </div>
@@ -100,7 +134,7 @@ export default function CarsList1() {
                                                 <div className="box-collapse scrollFilter mb-15">
                                                     <div className="pt-0">
                                                         <div className="box-map-small">
-                                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2308.720630029671!2d-2.342859708199406!3d4.943758782601608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfe7fb4b598f13f7%3A0x1389ab9fe7c13d2e!2sBig%20Spoon%20Restaurant%20and%20Social%20Centre!5e0!3m2!1sen!2sgh!4v1778202778174!5m2!1sen!2sgh" width="100%" height={160} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+                                                            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1500!2d-2.327745335434869!3d4.961097417344019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNMKwNTcnNDAuMCJOIDLCsDE5JzM5LjkiVw!5e0!3m2!1sen!2sgh!4v1789115556010" width="100%" height={160} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="strict-origin-when-cross-origin" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -164,74 +198,74 @@ export default function CarsList1() {
                                     <ul className="carouselTicker__list">
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/jaguar.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/jaguar-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/jaguar.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/jaguar-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/honda.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/honda-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/honda.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/honda-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/chevrolet.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/chevrolet-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/chevrolet.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/chevrolet-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/acura.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/acura-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/acura.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/acura-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/bmw.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/bmw-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/bmw.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/bmw-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/toyota.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/toyota-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/toyota.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/toyota-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/lexus.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/lexus-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/mer.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/mer-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                         <li className="carouselTicker__item">
                                             <div className="item-brand">
-                                                <img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Rambo" />
-                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Rambo" />
+                                                <img className="light-mode" src="/assets/imgs/page/homepage2/bugatti.png" alt="Gastonsin" />
+                                                <img className="dark-mode" src="/assets/imgs/page/homepage2/bugatti-w.png" alt="Gastonsin" />
                                             </div>
                                         </li>
                                     </ul>

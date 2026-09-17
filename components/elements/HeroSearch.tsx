@@ -1,11 +1,10 @@
 'use client'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import Dropdown from 'react-bootstrap/Dropdown'
 import MyDatePicker from './MyDatePicker'
 
 const ghanaLocations = [
-	'Nzema, Ghana',
 	'Esiama, Ghana',
 	'Kikam, Ghana',
 	'Takoradi, Ghana',
@@ -16,17 +15,26 @@ const ghanaLocations = [
 ]
 
 export default function HeroSearch() {
+	const [pickUp, setPickUp] = useState('Esiama, Ghana')
+	const [dropOff, setDropOff] = useState('Takoradi, Ghana')
+
 	return (
 		<>
 			<div className="box-bottom-search background-card">
 				<div className="item-search">
 					<label className="text-sm-bold neutral-500">Pick Up Location</label>
 					<Dropdown className="dropdown">
-						<Dropdown.Toggle as="div" className="btn btn-secondary dropdown-toggle btn-dropdown-search location-search" aria-expanded="false">Nzema, Ghana</Dropdown.Toggle>
+						<Dropdown.Toggle as="div" className="btn btn-secondary dropdown-toggle btn-dropdown-search location-search" aria-expanded="false">{pickUp}</Dropdown.Toggle>
 						<Dropdown.Menu as="ul" className="dropdown-menu">
 							{ghanaLocations.map((loc) => (
 								<li key={loc}>
-									<Link className="dropdown-item" href="#">{loc}</Link>
+									<button
+										type="button"
+										className={`dropdown-item ${loc === pickUp ? 'active' : ''}`}
+										onClick={() => setPickUp(loc)}
+									>
+										{loc}
+									</button>
 								</li>
 							))}
 						</Dropdown.Menu>
@@ -35,11 +43,17 @@ export default function HeroSearch() {
 				<div className="item-search item-search-2">
 					<label className="text-sm-bold neutral-500">Drop Off Location</label>
 					<Dropdown className="dropdown">
-						<Dropdown.Toggle as="div" className="btn btn-secondary dropdown-toggle btn-dropdown-search location-search">Takoradi, Ghana</Dropdown.Toggle>
+						<Dropdown.Toggle as="div" className="btn btn-secondary dropdown-toggle btn-dropdown-search location-search">{dropOff}</Dropdown.Toggle>
 						<Dropdown.Menu as="ul" className="dropdown-menu">
 							{ghanaLocations.map((loc) => (
 								<li key={loc}>
-									<Link className="dropdown-item" href="#">{loc}</Link>
+									<button
+										type="button"
+										className={`dropdown-item ${loc === dropOff ? 'active' : ''}`}
+										onClick={() => setDropOff(loc)}
+									>
+										{loc}
+									</button>
 								</li>
 							))}
 						</Dropdown.Menu>

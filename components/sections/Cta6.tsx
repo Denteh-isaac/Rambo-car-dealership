@@ -22,7 +22,7 @@ export default function Cta6() {
 										</ul>
 									</div>
 								</div>
-								<Link className="btn btn-primary mt-2 wow fadeInUp" href="#">
+								<Link className="btn btn-primary mt-2 wow fadeInUp" href="/cars-list-1">
 									Get Started Now
 									<svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M8 15L15 8L8 1M15 8L1 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -33,12 +33,12 @@ export default function Cta6() {
 								<div className="position-relative">
 									<div className="row align-items-center">
 										<div className="col-sm-6">
-											<img className="bdrd8 w-100 mb-15 wow fadeInUp" src="/assets/imgs/cta/cta-6/img-1.png" alt="Rambo" />
-											<img className="bdrd8 w-100 mb-15 wow fadeInUp" src="/assets/imgs/cta/cta-6/img-2.png" alt="Rambo" />
+											<img className="bdrd8 w-100 mb-15 wow fadeInUp" src="/assets/imgs/cta/cta-6/img-1.png" alt="Gastonsin" />
+											<img className="bdrd8 w-100 mb-15 wow fadeInUp" src="/assets/imgs/cta/cta-6/img-2.png" alt="Gastonsin" />
 										</div>
 										<div className="col-sm-6 mt-md-50">
-											<img className="bdrd8 w-100 mb-15 wow fadeInUp" src="/assets/imgs/cta/cta-6/img-3.png" alt="Rambo" />
-											<img className="bdrd8 w-100 wow fadeInUp" src="/assets/imgs/cta/cta-6/img-4.png" alt="Rambo" />
+											<img className="bdrd8 w-100 mb-15 wow fadeInUp" src="/assets/imgs/cta/cta-6/img-3.png" alt="Gastonsin" />
+											<img className="bdrd8 w-100 wow fadeInUp" src="/assets/imgs/cta/cta-6/img-4.png" alt="Gastonsin" />
 										</div>
 									</div>
 								</div>
