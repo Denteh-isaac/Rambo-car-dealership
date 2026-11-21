@@ -7,14 +7,21 @@ export const PRICE_CEILING = 159000
 
 interface Car {
 	id: number
-	price: number
+	/** Null for stock we price on request rather than advertising a figure. */
+	price: number | null
 	carType: string
 	amenities: string
 	rating: number
 	name: string
+	/** Manufacturer, so shoppers can browse by marque. */
+	brand: string
+	/** URL segment for this car's own page. */
+	slug: string
 	fuelType: string
 	location: string
 	image: string
+	/** True for cars physically standing at the Esiama showroom. */
+	featured?: boolean
 	/** Whether the vehicle is offered for sale, for rental, or both. */
 	listingType: ListingType
 	/** Rental rate per day. Null when the car is not part of the rental fleet. */
@@ -22,6 +29,25 @@ interface Car {
 }
 
 export type ListingType = 'sale' | 'rental' | 'both'
+
+/** Shopper-facing fuel groups, each mapping to the raw fuelType values it covers. */
+export const FUEL_GROUPS = {
+	all: [],
+	hybrid: ['Plug-in Hybrid (PHEV)', 'Hybrid (HEV)'],
+	electric: ['Electric Vehicle (EV)'],
+	petrol: ['Gasoline/Petrol'],
+	diesel: ['Diesel'],
+} as const
+
+export type FuelGroup = keyof typeof FUEL_GROUPS
+
+export const FUEL_CHIPS: { id: FuelGroup; label: string }[] = [
+	{ id: 'all', label: 'All fuels' },
+	{ id: 'hybrid', label: 'Hybrid' },
+	{ id: 'electric', label: 'Electric' },
+	{ id: 'petrol', label: 'Petrol' },
+	{ id: 'diesel', label: 'Diesel' },
+]
 
 /** The three ways a shopper can slice the catalogue. */
 export const LISTING_TABS: { id: 'all' | 'sale' | 'rental'; label: string }[] = [
@@ -32,6 +58,7 @@ export const LISTING_TABS: { id: 'all' | 'sale' | 'rental'; label: string }[] = 
 
 export interface Filter {
 	names: string[]
+	brands: string[]
 	fuelType: string[]
 	amenities: string[]
 	locations: string[]
@@ -47,6 +74,7 @@ type SortCriteria = "name" | "price" | "rating"
 const useCarFilter = (carsData: Car[]) => {
 	const [filter, setFilter] = useState<Filter>({
 		names: [],
+		brands: [],
 		fuelType: [],
 		amenities: [],
 		locations: [],
@@ -60,6 +88,7 @@ const useCarFilter = (carsData: Car[]) => {
 	const [currentPage, setCurrentPage] = useState<number>(1)
 
 	const uniqueNames = [...new Set(carsData.map((car) => car.name))]
+	const uniqueBrands = [...new Set(carsData.map((car) => car.brand))].filter(Boolean).sort()
 	const uniqueFuelTypes = [...new Set(carsData.map((car) => car.fuelType))]
 	const uniqueAmenities = [...new Set(carsData.map((car) => car.amenities))]
 	const uniqueLocations = [...new Set(carsData.map((car) => car.location))]
@@ -72,7 +101,9 @@ const useCarFilter = (carsData: Car[]) => {
 			(filter.fuelType.length === 0 || filter.fuelType.includes(car.fuelType)) &&
 			(filter.amenities.length === 0 || filter.amenities.includes(car.amenities)) &&
 			(filter.locations.length === 0 || filter.locations.includes(car.location)) &&
-			(car.price >= filter.priceRange[0] && car.price <= filter.priceRange[1]) &&
+			(filter.brands.length === 0 || filter.brands.includes(car.brand)) &&
+			// Stock priced on request has no number to compare — never filter it out.
+			(car.price == null || (car.price >= filter.priceRange[0] && car.price <= filter.priceRange[1])) &&
 			(filter.ratings.length === 0 || filter.ratings.includes(car.rating)) &&
 			(filter.carType.length === 0 || filter.carType.includes(car.carType)) &&
 			(filter.listing === 'all' || car.listingType === filter.listing || car.listingType === 'both')
@@ -80,9 +111,13 @@ const useCarFilter = (carsData: Car[]) => {
 	})
 
 	const sortedCars = [...filteredCars].sort((a, b) => {
+		// Cars actually standing at the Esiama showroom always lead the list.
+		if (!!a.featured !== !!b.featured) return a.featured ? -1 : 1
 		if (sortCriteria === "name") {
 			return a.name.localeCompare(b.name)
 		} else if (sortCriteria === "price") {
+			// Price-on-request sinks below priced stock rather than sorting as zero.
+			if (a.price == null || b.price == null) return a.price == null ? 1 : -1
 			return a.price - b.price
 		} else if (sortCriteria === "rating") {
 			return b.rating - a.rating
@@ -157,6 +192,7 @@ const useCarFilter = (carsData: Car[]) => {
 	const handleClearFilters = () => {
 		setFilter({
 			names: [],
+			brands: [],
 			fuelType: [],
 			amenities: [],
 			locations: [],
@@ -169,6 +205,36 @@ const useCarFilter = (carsData: Car[]) => {
 		setItemsPerPage(10)
 		setCurrentPage(1)
 	}
+
+	/** Browse by marque: pass a brand to show only that brand, or null for all. */
+	const handleBrandChange = (brand: string | null) => {
+		setFilter((prev) => ({ ...prev, brands: brand ? [brand] : [] }))
+		setCurrentPage(1)
+	}
+
+	/** How many cars each brand has, for the brand strip. */
+	const brandCounts = carsData.reduce<Record<string, number>>((acc, car) => {
+		if (car.brand) acc[car.brand] = (acc[car.brand] || 0) + 1
+		return acc
+	}, {})
+
+	/**
+	 * Shoppers think "hybrid", not "Plug-in Hybrid (PHEV)" — each chip maps to
+	 * every fuelType string that belongs to it.
+	 */
+	const handleFuelGroup = (group: FuelGroup) => {
+		setFilter((prev) => ({ ...prev, fuelType: [...FUEL_GROUPS[group]] }))
+		setCurrentPage(1)
+	}
+
+	const fuelGroupCounts = Object.fromEntries(
+		(Object.keys(FUEL_GROUPS) as FuelGroup[]).map((g) => [
+			g,
+			FUEL_GROUPS[g].length === 0
+				? carsData.length
+				: carsData.filter((c) => (FUEL_GROUPS[g] as readonly string[]).includes(c.fuelType)).length,
+		])
+	) as Record<FuelGroup, number>
 
 	const startItemIndex = (currentPage - 1) * itemsPerPage + 1
 	const endItemIndex = Math.min(startItemIndex + itemsPerPage - 1, sortedCars.length)
@@ -183,6 +249,11 @@ const useCarFilter = (carsData: Car[]) => {
 		currentPage,
 		setCurrentPage,
 		uniqueNames,
+		uniqueBrands,
+		brandCounts,
+		handleBrandChange,
+		handleFuelGroup,
+		fuelGroupCounts,
 		uniqueFuelTypes,
 		uniqueAmenities,
 		uniqueLocations,

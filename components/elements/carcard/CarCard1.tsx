@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { Price } from '@/util/currency'
+import { carImage } from '@/util/carImage'
 
 const BADGE = {
 	sale:   { label: 'For sale',     cls: 'listing-badge-sale' },
@@ -11,6 +12,7 @@ const BADGE = {
 export default function CarCard1({ car }: any) {
 	const listing: 'sale' | 'rental' | 'both' = car?.listingType ?? 'sale'
 	const badge = BADGE[listing]
+	const href = car?.slug ? `/cars/${car.slug}` : '/cars-details-1'
 
 	// A rental-only car is priced per day; anything sellable leads with its sale price.
 	const rentalOnly = listing === 'rental'
@@ -21,8 +23,9 @@ export default function CarCard1({ car }: any) {
 		<div className="card-journey-small background-card hover-up">
 			<div className="card-image">
 				<span className={`listing-badge ${badge.cls}`}>{badge.label}</span>
-				<Link href="/cars-details-1">
-					<img src={`/assets/imgs/cars-listing/cars-listing-6/${car.image}`} alt={car.name} />
+				{car?.featured && <span className="stock-badge">At the showroom</span>}
+				<Link href={href}>
+					<img src={carImage(car.image)} alt={car.name} />
 				</Link>
 			</div>
 			<div className="card-info p-4 pt-30">
@@ -33,7 +36,7 @@ export default function CarCard1({ car }: any) {
 					</div>
 				</div>
 				<div className="card-title">
-					<Link className="text-lg-bold neutral-1000" href="/cars-details-1">{car.name}</Link>
+					<Link className="text-lg-bold neutral-1000" href={href}>{car.name}</Link>
 				</div>
 				<div className="card-program">
 					<div className="card-location">
@@ -46,7 +49,12 @@ export default function CarCard1({ car }: any) {
 					</div>
 					<div className="endtime">
 						<div className="card-price">
-							{showsDailyRate ? (
+							{car?.price == null ? (
+								<>
+									<h6 className="text-lg-bold neutral-1000">Price on request</h6>
+									<p className="text-md-medium neutral-500">talk to us</p>
+								</>
+							) : showsDailyRate ? (
 								<>
 									<h6 className="text-lg-bold neutral-1000"><Price amount={car.dailyRate} /></h6>
 									<p className="text-md-medium neutral-500">/ day</p>
@@ -64,7 +72,7 @@ export default function CarCard1({ car }: any) {
 								</>
 							)}
 						</div>
-						<div className="card-button"><Link className="btn btn-gray" href="/cars-details-1">{cta}</Link></div>
+						<div className="card-button"><Link className="btn btn-gray" href={href}>{cta}</Link></div>
 					</div>
 				</div>
 			</div>

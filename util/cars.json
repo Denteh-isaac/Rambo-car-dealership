@@ -1,5 +1,255 @@
 [
   {
+    "slug": "jetour-t2-2026",
+    "featured": true,
+    "location": "Esiama, W/R",
+    "rating": "5.0",
+    "price": null,
+    "dailyRate": null,
+    "image": "/assets/imgs/cars/jetour-t2-2026/card.jpg",
+    "gallery": [
+      "/assets/imgs/cars/jetour-t2-2026/gallery/01.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/gallery/02.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/gallery/03.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/gallery/04.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/gallery/05.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/gallery/06.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/gallery/07.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/gallery/08.jpg"
+    ],
+    "spin": [
+      "/assets/imgs/cars/jetour-t2-2026/spin/00.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/01.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/02.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/03.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/04.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/05.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/06.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/07.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/08.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/09.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/10.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/11.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/12.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/13.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/14.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/15.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/16.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/17.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/18.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/19.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/20.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/21.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/22.jpg",
+      "/assets/imgs/cars/jetour-t2-2026/spin/23.jpg"
+    ],
+    "id": 101,
+    "brand": "Jetour",
+    "name": "Jetour T2 2026",
+    "carType": "SUVs",
+    "fuelType": "Gasoline/Petrol",
+    "amenities": "5 seats · XWD 4WD",
+    "duration": "7",
+    "listingType": "sale",
+    "tagline": "Rugged adventure SUV with fully automatic intelligent four-wheel drive.",
+    "specs": {
+      "Engine": "1.5T / 2.0T",
+      "Drivetrain": "XWD automatic 4WD",
+      "Dimensions": "4785 × 2006 × 1880 mm",
+      "Wheelbase": "2800 mm",
+      "Seats": "5",
+      "Screen": "15.6-inch central display",
+      "Chip": "Snapdragon 8155",
+      "Assistance": "L2 intelligent driving assistance",
+      "Body": "Steel cage body structure"
+    },
+    "source": "Jetour official global site"
+  },
+  {
+    "slug": "jetour-g700-2026",
+    "featured": true,
+    "location": "Esiama, W/R",
+    "rating": "5.0",
+    "price": null,
+    "dailyRate": null,
+    "image": "/assets/imgs/cars/jetour-g700-2026/card.jpg",
+    "gallery": [
+      "/assets/imgs/cars/jetour-g700-2026/gallery/01.jpg"
+    ],
+    "spin": [
+      "/assets/imgs/cars/jetour-g700-2026/spin/00.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/spin/01.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/spin/02.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/spin/03.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/spin/04.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/spin/05.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/spin/06.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/spin/07.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/spin/08.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/spin/09.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/spin/10.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/spin/11.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/spin/12.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/spin/13.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/spin/14.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/spin/15.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/spin/16.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/spin/17.jpg"
+    ],
+    "id": 102,
+    "brand": "Jetour",
+    "name": "Jetour G700 2026 Hybrid",
+    "carType": "SUVs",
+    "fuelType": "Plug-in Hybrid (PHEV)",
+    "amenities": "Premium off-road",
+    "duration": "7",
+    "listingType": "sale",
+    "tagline": "All-terrain premium hybrid off-road SUV on Jetour's GAIA architecture.",
+    "specs": {
+      "Engine": "2.0T plug-in hybrid",
+      "Acceleration": "0–100 km/h in 4.6 s",
+      "Dimensions": "5198 × 2050 × 1956 mm",
+      "Wheelbase": "2870 mm",
+      "Architecture": "GAIA off-road platform",
+      "Body": "High-strength off-road body structure"
+    },
+    "source": "Jetour official global site"
+  },
+  {
+    "slug": "dongfeng-huge-plus-phev-2026",
+    "featured": true,
+    "location": "Esiama, W/R",
+    "rating": "5.0",
+    "price": null,
+    "dailyRate": null,
+    "image": "/assets/imgs/cars/dongfeng-huge-plus-phev-2026/card.jpg",
+    "gallery": [
+      "/assets/imgs/cars/dongfeng-huge-plus-phev-2026/gallery/01.jpg",
+      "/assets/imgs/cars/dongfeng-huge-plus-phev-2026/gallery/02.jpg",
+      "/assets/imgs/cars/dongfeng-huge-plus-phev-2026/gallery/03.jpg",
+      "/assets/imgs/cars/dongfeng-huge-plus-phev-2026/gallery/04.jpg",
+      "/assets/imgs/cars/dongfeng-huge-plus-phev-2026/gallery/05.jpg",
+      "/assets/imgs/cars/dongfeng-huge-plus-phev-2026/gallery/06.jpg",
+      "/assets/imgs/cars/dongfeng-huge-plus-phev-2026/gallery/07.jpg"
+    ],
+    "spin": [],
+    "id": 103,
+    "brand": "Dongfeng",
+    "name": "Dongfeng Huge Plus PHEV 2026",
+    "carType": "SUVs",
+    "fuelType": "Plug-in Hybrid (PHEV)",
+    "amenities": "7 seats · refrigerated bin",
+    "duration": "7",
+    "listingType": "sale",
+    "tagline": "Seven-seat plug-in hybrid SUV with 1,412 km of total range.",
+    "specs": {
+      "Power type": "Plug-in hybrid (PHEV)",
+      "Electric range": "185 km (CLTC)",
+      "Total range": "1,412 km (CLTC)",
+      "Dimensions": "4762 × 1910 × 1677 mm",
+      "Wheelbase": "2825 mm",
+      "Seats": "7",
+      "Class": "SUV-B",
+      "Comfort": "Multi-functional rear armrest, foldable table, refrigerated storage bin"
+    },
+    "source": "Dongfeng Passenger Vehicles official global site"
+  },
+  {
+    "slug": "changan-cs75-plus-2025",
+    "featured": true,
+    "location": "Esiama, W/R",
+    "rating": "5.0",
+    "price": null,
+    "dailyRate": null,
+    "image": "/assets/imgs/cars/changan-cs75-plus-2025/card.jpg",
+    "gallery": [
+      "/assets/imgs/cars/changan-cs75-plus-2025/gallery/01.jpg",
+      "/assets/imgs/cars/changan-cs75-plus-2025/gallery/02.jpg",
+      "/assets/imgs/cars/changan-cs75-plus-2025/gallery/03.jpg"
+    ],
+    "spin": [],
+    "id": 104,
+    "brand": "Changan",
+    "name": "Changan CS75 Plus 2025",
+    "carType": "SUVs",
+    "fuelType": "Gasoline/Petrol",
+    "amenities": "5 seats · 8-speed auto",
+    "duration": "7",
+    "listingType": "sale",
+    "tagline": "Changan's flagship family SUV, turbocharged with an 8-speed automatic.",
+    "specs": {
+      "Engine": "1.5T (≈188 hp / 310 Nm) or 2.0T (≈229 hp / 360 Nm)",
+      "Transmission": "8-speed automatic",
+      "Dimensions": "4690 × 1865 × 1710 mm",
+      "Wheelbase": "2710 mm",
+      "Seats": "5",
+      "Infotainment": "12.3-inch touchscreen, Apple CarPlay & Android Auto",
+      "Safety": "360° camera, adaptive cruise control"
+    },
+    "source": "Changan global site; engine figures vary by market — confirm at the showroom"
+  },
+  {
+    "slug": "changan-x5-plus-2026",
+    "featured": true,
+    "location": "Esiama, W/R",
+    "rating": "5.0",
+    "price": null,
+    "dailyRate": null,
+    "image": "/assets/imgs/cars/changan-x5-plus-2026/card.jpg",
+    "gallery": [
+      "/assets/imgs/cars/changan-x5-plus-2026/gallery/01.jpg",
+      "/assets/imgs/cars/changan-x5-plus-2026/gallery/02.jpg",
+      "/assets/imgs/cars/changan-x5-plus-2026/gallery/03.jpg"
+    ],
+    "spin": [],
+    "id": 105,
+    "brand": "Changan",
+    "name": "Changan X5 Plus 2026",
+    "carType": "SUVs",
+    "fuelType": "Gasoline/Petrol",
+    "amenities": "5 seats · sport coupe SUV",
+    "duration": "7",
+    "listingType": "sale",
+    "tagline": "Sport-styled compact SUV with a coupé roofline and turbo power.",
+    "specs": {
+      "Engine": "1.5T (≈188 hp / 300 Nm)",
+      "Transmission": "7-speed automatic",
+      "Acceleration": "0–100 km/h in 7.5 s",
+      "Seats": "5",
+      "Interior": "Triple-screen layout"
+    },
+    "source": "Changan global site; figures vary by market — confirm at the showroom"
+  },
+  {
+    "slug": "changan-qiyuan-q05-2026",
+    "featured": true,
+    "location": "Esiama, W/R",
+    "rating": "5.0",
+    "price": null,
+    "dailyRate": null,
+    "image": "/assets/imgs/cars/changan-qiyuan-q05-2026/card.jpg",
+    "gallery": [
+      "/assets/imgs/cars/changan-qiyuan-q05-2026/gallery/01.jpg"
+    ],
+    "spin": [],
+    "id": 106,
+    "brand": "Changan",
+    "name": "Changan Qiyuan Q05 2026 Hybrid",
+    "carType": "SUVs",
+    "fuelType": "Plug-in Hybrid (PHEV)",
+    "amenities": "5 seats · range extender",
+    "duration": "7",
+    "listingType": "sale",
+    "tagline": "Range-extender hybrid SUV — sold overseas under Changan's NEVO badge.",
+    "specs": {
+      "Power type": "REEV range-extender hybrid",
+      "Also known as": "Changan NEVO Q05",
+      "Seats": "5",
+      "Note": "Changan builds REEV versions of the NEVO A05 and Q05 specifically for overseas markets"
+    },
+    "source": "Changan NEVO official brand page"
+  },
+  {
     "id": 1,
     "price": 77595,
     "duration": "7",
@@ -11,7 +261,10 @@
     "image": "car-1.png",
     "name": "GMC Sierra 2500HD Denali",
     "listingType": "sale",
-    "dailyRate": null
+    "dailyRate": null,
+    "brand": "GMC",
+    "slug": "gmc-sierra-2500hd-denali",
+    "featured": false
   },
   {
     "id": 2,
@@ -25,7 +278,10 @@
     "image": "car-2.png",
     "name": "Ford Mustang GT Premium",
     "listingType": "sale",
-    "dailyRate": null
+    "dailyRate": null,
+    "brand": "Ford",
+    "slug": "ford-mustang-gt-premium",
+    "featured": false
   },
   {
     "id": 3,
@@ -39,7 +295,10 @@
     "image": "car-3.png",
     "name": "Mazda MX-5 Miata Club",
     "listingType": "sale",
-    "dailyRate": null
+    "dailyRate": null,
+    "brand": "Mazda",
+    "slug": "mazda-mx-5-miata-club",
+    "featured": false
   },
   {
     "id": 4,
@@ -53,7 +312,10 @@
     "image": "car-4.png",
     "name": "Subaru Impreza WRX STI",
     "listingType": "sale",
-    "dailyRate": null
+    "dailyRate": null,
+    "brand": "Subaru",
+    "slug": "subaru-impreza-wrx-sti",
+    "featured": false
   },
   {
     "id": 5,
@@ -67,7 +329,10 @@
     "image": "car-5.png",
     "name": "Porsche 911 Carrera S",
     "listingType": "sale",
-    "dailyRate": null
+    "dailyRate": null,
+    "brand": "Porsche",
+    "slug": "porsche-911-carrera-s",
+    "featured": false
   },
   {
     "id": 6,
@@ -81,7 +346,10 @@
     "image": "car-6.png",
     "name": "Toyota Camry LE Hybrid",
     "listingType": "both",
-    "dailyRate": 65
+    "dailyRate": 65,
+    "brand": "Toyota",
+    "slug": "toyota-camry-le-hybrid",
+    "featured": false
   },
   {
     "id": 7,
@@ -95,7 +363,10 @@
     "image": "car-7.png",
     "name": "Hyundai Sonata SEL Plus",
     "listingType": "both",
-    "dailyRate": 65
+    "dailyRate": 65,
+    "brand": "Hyundai",
+    "slug": "hyundai-sonata-sel-plus",
+    "featured": false
   },
   {
     "id": 8,
@@ -109,7 +380,10 @@
     "image": "car-8.png",
     "name": "Buick Enclave Avenir",
     "listingType": "sale",
-    "dailyRate": null
+    "dailyRate": null,
+    "brand": "Buick",
+    "slug": "buick-enclave-avenir",
+    "featured": false
   },
   {
     "id": 9,
@@ -123,7 +397,10 @@
     "image": "car-9.png",
     "name": "Chevrolet Silverado",
     "listingType": "sale",
-    "dailyRate": null
+    "dailyRate": null,
+    "brand": "Chevrolet",
+    "slug": "chevrolet-silverado",
+    "featured": false
   },
   {
     "id": 10,
@@ -137,7 +414,10 @@
     "image": "car-10.png",
     "name": "Subaru Outback Limited XT",
     "listingType": "sale",
-    "dailyRate": null
+    "dailyRate": null,
+    "brand": "Subaru",
+    "slug": "subaru-outback-limited-xt",
+    "featured": false
   },
   {
     "id": 11,
@@ -151,7 +431,10 @@
     "image": "car-11.png",
     "name": "Jeep Wrangler Rubicon Unlimited",
     "listingType": "sale",
-    "dailyRate": null
+    "dailyRate": null,
+    "brand": "Jeep",
+    "slug": "jeep-wrangler-rubicon-unlimited",
+    "featured": false
   },
   {
     "id": 12,
@@ -165,7 +448,10 @@
     "image": "car-12.png",
     "name": "Kia Telluride SX",
     "listingType": "both",
-    "dailyRate": 135
+    "dailyRate": 135,
+    "brand": "Kia",
+    "slug": "kia-telluride-sx",
+    "featured": false
   },
   {
     "id": 13,
@@ -179,7 +465,10 @@
     "image": "car-13.png",
     "name": "Mini Cooper S Hardtop 2 Door",
     "listingType": "sale",
-    "dailyRate": null
+    "dailyRate": null,
+    "brand": "Mini",
+    "slug": "mini-cooper-s-hardtop-2-door",
+    "featured": false
   },
   {
     "id": 14,
@@ -193,7 +482,10 @@
     "image": "car-14.png",
     "name": "Subaru Impreza WRX STI",
     "listingType": "sale",
-    "dailyRate": null
+    "dailyRate": null,
+    "brand": "Subaru",
+    "slug": "subaru-impreza-wrx-sti-2",
+    "featured": false
   },
   {
     "id": 15,
@@ -207,7 +499,10 @@
     "image": "car-15.png",
     "name": "Audi Q5 2.0T Premium Plus",
     "listingType": "sale",
-    "dailyRate": null
+    "dailyRate": null,
+    "brand": "Audi",
+    "slug": "audi-q5-2-0t-premium-plus",
+    "featured": false
   },
   {
     "id": 16,
@@ -221,7 +516,10 @@
     "image": "car-16.png",
     "name": "Cadillac XT6 Premium Luxury",
     "listingType": "sale",
-    "dailyRate": null
+    "dailyRate": null,
+    "brand": "Cadillac",
+    "slug": "cadillac-xt6-premium-luxury",
+    "featured": false
   },
   {
     "id": 17,
@@ -235,7 +533,10 @@
     "image": "car-17.png",
     "name": "Chevrolet Bolt EV Premier",
     "listingType": "rental",
-    "dailyRate": 60
+    "dailyRate": 60,
+    "brand": "Chevrolet",
+    "slug": "chevrolet-bolt-ev-premier",
+    "featured": false
   },
   {
     "id": 18,
@@ -249,7 +550,10 @@
     "image": "car-18.png",
     "name": "Ford Explorer Limited",
     "listingType": "rental",
-    "dailyRate": 140
+    "dailyRate": 140,
+    "brand": "Ford",
+    "slug": "ford-explorer-limited",
+    "featured": false
   },
   {
     "id": 19,
@@ -263,7 +567,10 @@
     "image": "car-19.png",
     "name": "Lexus RC 300 F Sport",
     "listingType": "sale",
-    "dailyRate": null
+    "dailyRate": null,
+    "brand": "Lexus",
+    "slug": "lexus-rc-300-f-sport",
+    "featured": false
   },
   {
     "id": 20,
@@ -277,7 +584,10 @@
     "image": "car-20.png",
     "name": "Nissan Rogue SV AWD",
     "listingType": "both",
-    "dailyRate": 75
+    "dailyRate": 75,
+    "brand": "Nissan",
+    "slug": "nissan-rogue-sv-awd",
+    "featured": false
   },
   {
     "id": 21,
@@ -286,12 +596,15 @@
     "carType": "SUVs",
     "amenities": "Panoramic sunroof",
     "rating": "4.8",
-    "fuelType": "Petrol",
+    "fuelType": "Gasoline/Petrol",
     "location": "Esiama, W/R",
     "image": "car-1.png",
     "name": "Jetour X70 Plus 2024",
     "listingType": "both",
-    "dailyRate": 70
+    "dailyRate": 70,
+    "brand": "Jetour",
+    "slug": "jetour-x70-plus-2024",
+    "featured": false
   },
   {
     "id": 22,
@@ -300,12 +613,15 @@
     "carType": "SUVs",
     "amenities": "360-degree camera",
     "rating": "4.9",
-    "fuelType": "Petrol",
+    "fuelType": "Gasoline/Petrol",
     "location": "Esiama, W/R",
     "image": "car-2.png",
     "name": "Jetour X90 Plus 2024",
     "listingType": "both",
-    "dailyRate": 110
+    "dailyRate": 110,
+    "brand": "Jetour",
+    "slug": "jetour-x90-plus-2024",
+    "featured": false
   },
   {
     "id": 23,
@@ -314,12 +630,15 @@
     "carType": "SUVs",
     "amenities": "Leather upholstery",
     "rating": "4.7",
-    "fuelType": "Petrol",
+    "fuelType": "Gasoline/Petrol",
     "location": "Takoradi",
     "image": "car-3.png",
     "name": "Changan CS55 Plus 2024",
     "listingType": "both",
-    "dailyRate": 70
+    "dailyRate": 70,
+    "brand": "Changan",
+    "slug": "changan-cs55-plus-2024",
+    "featured": false
   },
   {
     "id": 24,
@@ -328,11 +647,14 @@
     "carType": "SUVs",
     "amenities": "Smart ambient lighting",
     "rating": "4.8",
-    "fuelType": "Petrol",
+    "fuelType": "Gasoline/Petrol",
     "location": "Accra",
     "image": "car-4.png",
     "name": "Changan Uni-T 2024",
     "listingType": "rental",
-    "dailyRate": 55
+    "dailyRate": 55,
+    "brand": "Changan",
+    "slug": "changan-uni-t-2024",
+    "featured": false
   }
 ]

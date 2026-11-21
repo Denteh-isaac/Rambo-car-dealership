@@ -11,7 +11,7 @@ import ByPrice from "@/components/Filter/ByPrice";
 import ByRating from "@/components/Filter/ByRating";
 import Layout from "@/components/layout/Layout";
 import rawCarsData from "@/util/cars.json";
-import useCarFilter, { LISTING_TABS, ListingType } from "@/util/useCarFilter";
+import useCarFilter, { LISTING_TABS, ListingType, FUEL_CHIPS, FUEL_GROUPS, FuelGroup } from "@/util/useCarFilter";
 import { useEffect } from "react";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
@@ -21,13 +21,36 @@ const carsData = rawCarsData.map((car) => ({
     listingType: car.listingType as ListingType,
 }));
 export default function CarsList1() {
-    const { filter, setFilter, sortCriteria, setSortCriteria, itemsPerPage, setItemsPerPage, currentPage, setCurrentPage, uniqueNames, uniqueFuelTypes, uniqueAmenities, uniqueLocations, uniqueRatings, uniqueCarTypes, filteredCars, sortedCars, totalPages, startIndex, endIndex, paginatedCars, handleCheckboxChange, handleSortChange, handlePriceRangeChange, handleItemsPerPageChange, handlePageChange, handlePreviousPage, handleNextPage, handleClearFilters, handleListingChange, listingCounts, startItemIndex, endItemIndex } = useCarFilter(carsData);
-    // Arriving from the homepage search with ?listing=sale or ?listing=rental preselects that tab.
+    const { filter, setFilter, sortCriteria, setSortCriteria, itemsPerPage, setItemsPerPage, currentPage, setCurrentPage, uniqueNames, uniqueBrands, brandCounts, handleBrandChange, handleFuelGroup, fuelGroupCounts, uniqueFuelTypes, uniqueAmenities, uniqueLocations, uniqueRatings, uniqueCarTypes, filteredCars, sortedCars, totalPages, startIndex, endIndex, paginatedCars, handleCheckboxChange, handleSortChange, handlePriceRangeChange, handleItemsPerPageChange, handlePageChange, handlePreviousPage, handleNextPage, handleClearFilters, handleListingChange, listingCounts, startItemIndex, endItemIndex } = useCarFilter(carsData);
+    // Arriving with ?listing= / ?brand= / ?fuel= preselects that view, so links are shareable.
     useEffect(() => {
-        const wanted = new URLSearchParams(window.location.search).get("listing")
+        const q = new URLSearchParams(window.location.search)
+        const wanted = q.get("listing")
         if (wanted === "sale" || wanted === "rental") handleListingChange(wanted)
+        const brand = q.get("brand")
+        if (brand) handleBrandChange(brand)
+        const fuel = q.get("fuel") as FuelGroup | null
+        if (fuel && fuel in FUEL_GROUPS) handleFuelGroup(fuel)
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
+
+    /** Mirror a chosen facet into the address bar without a reload. */
+    const syncUrl = (key: string, value: string | null) => {
+        const url = new URL(window.location.href)
+        if (value) url.searchParams.set(key, value)
+        else url.searchParams.delete(key)
+        window.history.replaceState(null, "", url)
+    }
+
+    const selectBrand = (brand: string | null) => { handleBrandChange(brand); syncUrl("brand", brand) }
+    const selectFuel = (group: FuelGroup) => { handleFuelGroup(group); syncUrl("fuel", group === "all" ? null : group) }
+
+    // Which fuel chip is lit, worked out from the raw fuelType values currently filtered on.
+    const activeFuel: FuelGroup = ((Object.keys(FUEL_GROUPS) as FuelGroup[]).find((g) =>
+        FUEL_GROUPS[g].length > 0
+        && FUEL_GROUPS[g].length === filter.fuelType.length
+        && (FUEL_GROUPS[g] as readonly string[]).every((v) => filter.fuelType.includes(v))
+    )) ?? "all"
     // Keep the address bar in step with the selected tab, so a refresh or a shared link shows the same cars.
     const selectListing = (id: "all" | "sale" | "rental") => {
         handleListingChange(id)
@@ -88,7 +111,38 @@ export default function CarsList1() {
                             <div className="row align-items-end">
                                 <div className="col-md-9 mb-30 wow fadeInUp">
                                     <h4 className="title-svg neutral-1000 mb-15">Our Vehicle Fleet</h4>
-                                    <p className="text-lg-medium text-bold neutral-500">Turning dreams into reality with versatile vehicles.</p>
+                                    <p className="text-lg-medium text-bold neutral-500">Cars standing at our Esiama showroom come first — the rest we import to order.</p>
+                                </div>
+                            </div>
+
+                            <div className="browse-row">
+                                <span className="browse-label">Make</span>
+                                <div className="browse-strip" role="group" aria-label="Browse by make">
+                                    <button type="button" onClick={() => selectBrand(null)}
+                                        aria-pressed={filter.brands.length === 0}
+                                        className={`browse-chip${filter.brands.length === 0 ? " is-active" : ""}`}>
+                                        All makes <span>{carsData.length}</span>
+                                    </button>
+                                    {uniqueBrands.map((brand: string) => (
+                                        <button key={brand} type="button" onClick={() => selectBrand(brand)}
+                                            aria-pressed={filter.brands.includes(brand)}
+                                            className={`browse-chip${filter.brands.includes(brand) ? " is-active" : ""}`}>
+                                            {brand} <span>{brandCounts[brand]}</span>
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="browse-row">
+                                <span className="browse-label">Fuel</span>
+                                <div className="browse-strip" role="group" aria-label="Browse by fuel type">
+                                    {FUEL_CHIPS.map((chip) => (
+                                        <button key={chip.id} type="button" onClick={() => selectFuel(chip.id)}
+                                            aria-pressed={activeFuel === chip.id}
+                                            className={`browse-chip${activeFuel === chip.id ? " is-active" : ""}`}>
+                                            {chip.label} <span>{fuelGroupCounts[chip.id]}</span>
+                                        </button>
+                                    ))}
                                 </div>
                             </div>
                         </div>

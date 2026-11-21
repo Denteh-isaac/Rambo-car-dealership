@@ -160,3 +160,135 @@ a[href^="mailto:"] {
 		scroll-margin-top: 120px;
 	}
 }
+
+/* ---------------------------------------------------------------------------
+   In-stock marker — cars physically standing at the Esiama showroom
+   --------------------------------------------------------------------------- */
+.stock-badge {
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	z-index: 2;
+	padding: 5px 11px;
+	border-radius: 999px;
+	background: #0f1e14;
+	color: #9ced3a;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: .4px;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+.stock-badge-static { position: static; display: inline-block; }
+
+/* ---------------------------------------------------------------------------
+   Per-car gallery: 360 spin + photo viewer
+   --------------------------------------------------------------------------- */
+.car-gallery-tabs { display: flex; gap: 8px; margin-bottom: 12px; }
+.car-gallery-tab {
+	border: 1px solid #e3e6e4; background: transparent; color: #5b6b60;
+	padding: 7px 16px; border-radius: 999px; font-size: 14px; font-weight: 600; cursor: pointer;
+}
+.car-gallery-tab.is-active { background: #0f1e14; border-color: #0f1e14; color: #9ced3a; }
+
+.car-gallery-stage {
+	position: relative; border-radius: 14px; overflow: hidden;
+	background: #0b0d0c; aspect-ratio: 16 / 10;
+	display: flex; align-items: center; justify-content: center;
+}
+.car-gallery-stage img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.car-gallery-spin { cursor: grab; touch-action: pan-y; user-select: none; }
+.car-gallery-spin:active { cursor: grabbing; }
+.car-gallery-hint {
+	position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%);
+	background: rgba(255,255,255,.14); color: #fff; backdrop-filter: blur(4px);
+	padding: 5px 14px; border-radius: 999px; font-size: 12px; pointer-events: none;
+}
+
+.car-gallery-thumbs { display: flex; gap: 8px; margin-top: 10px; overflow-x: auto; padding-bottom: 4px; }
+.car-gallery-thumb {
+	flex: 0 0 auto; width: 88px; height: 62px; padding: 0; cursor: pointer;
+	border: 2px solid transparent; border-radius: 8px; overflow: hidden; background: #0b0d0c;
+}
+.car-gallery-thumb.is-active { border-color: #9ced3a; }
+.car-gallery-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.car-gallery-zoom {
+	position: fixed; inset: 0; z-index: 2000; background: rgba(8,12,16,.94);
+	display: flex; align-items: center; justify-content: center; padding: 40px 16px;
+}
+.car-gallery-zoom img { max-width: 100%; max-height: 100%; border-radius: 12px; }
+.car-gallery-close {
+	position: fixed; top: 16px; right: 20px; width: 44px; height: 44px; border: none;
+	border-radius: 50%; background: #fff; color: #101010; font-size: 24px; cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------------
+   Car detail: price block, quick facts, spec table, related cars
+   --------------------------------------------------------------------------- */
+.car-price-block { padding: 18px 20px; border-radius: 12px; background: #f5f7f6; }
+[data-bs-theme="dark"] .car-price-block { background: rgba(255,255,255,.05); }
+
+.car-quickfacts { list-style: none; padding: 0; margin: 0; border-top: 1px solid #e3e6e4; }
+.car-quickfacts li {
+	display: flex; justify-content: space-between; gap: 16px;
+	padding: 11px 0; border-bottom: 1px solid #e3e6e4;
+}
+.car-quickfacts span { color: #5b6b60; font-size: 14px; }
+.car-quickfacts strong { color: #0f1e14; font-size: 14px; text-align: right; }
+[data-bs-theme="dark"] .car-quickfacts strong { color: #fff; }
+
+.car-spec-table { width: 100%; border-collapse: collapse; }
+.car-spec-table th, .car-spec-table td {
+	padding: 12px 14px; border-bottom: 1px solid #e3e6e4;
+	font-size: 14px; text-align: left; vertical-align: top;
+}
+.car-spec-table th { width: 38%; color: #5b6b60; font-weight: 600; }
+.car-spec-table td { color: #0f1e14; }
+[data-bs-theme="dark"] .car-spec-table td { color: #fff; }
+
+.related-car { display: block; border-radius: 12px; overflow: hidden; background: #f5f7f6; }
+.related-car img { width: 100%; height: 150px; object-fit: cover; display: block; }
+.related-car span { display: block; padding: 12px 14px; }
+
+@media (max-width: 575px) {
+	.car-gallery-thumb { width: 72px; height: 52px; }
+	.car-spec-table th { width: 46%; }
+}
+
+/* ---------------------------------------------------------------------------
+   Browse-by strips: make and fuel
+   --------------------------------------------------------------------------- */
+.browse-row { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+.browse-label {
+	flex: 0 0 auto; width: 44px; color: #5b6b60;
+	font-size: 12px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase;
+}
+.browse-strip {
+	display: flex; gap: 8px; overflow-x: auto; padding: 2px 0 6px;
+	scrollbar-width: thin; min-width: 0;
+}
+.browse-chip {
+	flex: 0 0 auto; display: inline-flex; align-items: center; gap: 7px;
+	padding: 8px 15px; border: 1px solid #e3e6e4; border-radius: 999px;
+	background: transparent; color: #0f1e14;
+	font-size: 14px; font-weight: 600; white-space: nowrap; cursor: pointer;
+	transition: background .15s, border-color .15s, color .15s;
+}
+.browse-chip span {
+	font-size: 11px; font-weight: 700; color: #5b6b60;
+	background: #eef1ef; border-radius: 999px; padding: 1px 7px;
+}
+.browse-chip:hover { border-color: #0f1e14; }
+.browse-chip.is-active { background: #0f1e14; border-color: #0f1e14; color: #fff; }
+.browse-chip.is-active span { background: #9ced3a; color: #0f1e14; }
+
+[data-bs-theme="dark"] .browse-chip { color: #fff; border-color: rgba(255,255,255,.18); }
+[data-bs-theme="dark"] .browse-chip span { background: rgba(255,255,255,.1); color: rgba(255,255,255,.75); }
+[data-bs-theme="dark"] .browse-chip.is-active { background: #9ced3a; border-color: #9ced3a; color: #0f1e14; }
+[data-bs-theme="dark"] .browse-chip.is-active span { background: rgba(15,30,20,.25); color: #0f1e14; }
+
+@media (max-width: 767px) {
+	.browse-row { align-items: flex-start; flex-direction: column; gap: 6px; }
+	.browse-strip { width: 100%; }
+}
