@@ -106,7 +106,7 @@ const SECTIONS: Section[] = [
 			<Clauses
 				items={[
 					["Payment methods", "We accept bank transfer, mobile money and cash at our warehouse."],
-					["Protect yourself", "Before sending money, always confirm our payment details by calling us directly on +233 241 145 6455. We will never ask you to pay into a new or different account by message alone."],
+					["Protect yourself", "Before sending money, always confirm our payment details by calling us directly on +233 54 724 5658. We will never ask you to pay into a new or different account by message alone."],
 					["Currency", "Website prices are shown in US dollars. Ghana cedi and other currency conversions are shown for guidance only; the amount payable is the figure confirmed to you in writing."],
 					["Price changes", "Prices shown on the website may change with exchange rates, duty and supplier costs until a price has been confirmed to you in writing."],
 				]}
@@ -195,8 +195,8 @@ const SECTIONS: Section[] = [
 			<Clauses
 				items={[
 					["Address", "Esiama, off Nkroful Road, Western Region, Ghana"],
-					["Phone", <a href="tel:+2332411456455">+233 241 145 6455</a>],
-					["WhatsApp", <a href="https://wa.me/233595987271" target="_blank" rel="noopener noreferrer">+233 595 987 271</a>],
+					["Phone", <a href="tel:+233547245658">+233 54 724 5658</a>],
+					["WhatsApp", <a href="https://wa.me/233547245658" target="_blank" rel="noopener noreferrer">+233 54 724 5658</a>],
 					["Email", <a href="mailto:info@gastonsincardealership.com">info@gastonsincardealership.com</a>],
 				]}
 			/>

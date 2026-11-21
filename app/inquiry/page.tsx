@@ -57,8 +57,8 @@ export default function Inquiry() {
                                             info@gastonsincardealership.com
                                         </Link>{" "}
                                         or{" "}
-                                        <Link href="https://wa.me/233595987271" target="_blank" rel="noopener noreferrer" className="text-primary">
-                                            WhatsApp +233 595 987 271
+                                        <Link href="https://wa.me/233547245658" target="_blank" rel="noopener noreferrer" className="text-primary">
+                                            WhatsApp +233 54 724 5658
                                         </Link>.
                                     </p>
 
@@ -157,12 +157,12 @@ export default function Inquiry() {
                                     <h6 className="neutral-1000 mb-15">Contact Us Directly</h6>
                                     <p className="text-md-medium neutral-500 mb-10">
                                         <strong>Call:</strong>{" "}
-                                        <Link href="tel:+2332411456455" className="text-primary">+233 241 145 6455</Link>
+                                        <Link href="tel:+233547245658" className="text-primary">+233 54 724 5658</Link>
                                     </p>
                                     <p className="text-md-medium neutral-500 mb-10">
                                         <strong>WhatsApp:</strong>{" "}
-                                        <Link href="https://wa.me/233595987271" target="_blank" rel="noopener noreferrer" className="text-primary">
-                                            +233 595 987 271
+                                        <Link href="https://wa.me/233547245658" target="_blank" rel="noopener noreferrer" className="text-primary">
+                                            +233 54 724 5658
                                         </Link>
                                     </p>
                                     <p className="text-md-medium neutral-500 mb-10">

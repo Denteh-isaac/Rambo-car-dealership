@@ -21,7 +21,7 @@ type Car = Omit<(typeof carsData)[number], "price" | "dailyRate"> & {
 }
 
 const CARS = carsData as Car[]
-const WHATSAPP = "2332411456455"
+const WHATSAPP = "233547245658"
 
 const find = (slug: string) => CARS.find((c) => c.slug === slug)
 

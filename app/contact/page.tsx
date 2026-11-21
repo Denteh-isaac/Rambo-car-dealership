@@ -58,7 +58,7 @@ export default function Contact() {
 															<path d="M3.92512 7.77453C5.22103 11.9687 8.53091 15.2786 12.7251 16.5745C14.8357 17.2266 16.6663 15.3757 16.6663 13.1666C16.6663 12.6143 16.2171 12.1729 15.6687 12.1075C14.9545 12.0223 14.268 11.8467 13.621 11.5926L12.355 12.8587C10.2958 11.8732 8.62635 10.2038 7.64091 8.14464L8.90698 6.87857C8.65286 6.23159 8.47732 5.54513 8.39211 4.83093C8.32669 4.28253 7.88529 3.83325 7.33301 3.83325C5.12387 3.83325 3.27296 5.66384 3.92512 7.77453Z" stroke="#101010" strokeLinecap="round" strokeLinejoin="round" />
 														</svg>
 													</div>
-													<Link className="phone text-md-medium ms-2" href="tel:+2332411456455">+233 241 145 6455 (Call)</Link>
+													<Link className="phone text-md-medium ms-2" href="tel:+233547245658">+233 54 724 5658 (Call)</Link>
 												</div>
 												<div className="d-flex align-items-start mb-2">
 													<div className="icon">
@@ -66,7 +66,11 @@ export default function Contact() {
 															<path d="M3.92512 7.77453C5.22103 11.9687 8.53091 15.2786 12.7251 16.5745C14.8357 17.2266 16.6663 15.3757 16.6663 13.1666C16.6663 12.6143 16.2171 12.1729 15.6687 12.1075C14.9545 12.0223 14.268 11.8467 13.621 11.5926L12.355 12.8587C10.2958 11.8732 8.62635 10.2038 7.64091 8.14464L8.90698 6.87857C8.65286 6.23159 8.47732 5.54513 8.39211 4.83093C8.32669 4.28253 7.88529 3.83325 7.33301 3.83325C5.12387 3.83325 3.27296 5.66384 3.92512 7.77453Z" stroke="#101010" strokeLinecap="round" strokeLinejoin="round" />
 														</svg>
 													</div>
-													<Link className="phone text-md-medium ms-2" href="https://wa.me/233595987271" target="_blank" rel="noopener noreferrer">+233 595 987 271 (WhatsApp)</Link>
+													<Link className="phone text-md-medium ms-2" href="https://wa.me/233547245658" target="_blank" rel="noopener noreferrer">+233 54 724 5658 (WhatsApp)</Link>
+												</div>
+												<div className="d-flex align-items-start mb-2">
+													<div className="icon" />
+													<Link className="phone text-md-medium ms-2" href="tel:+233257134148">+233 25 713 4148 (Call)</Link>
 												</div>
 												<div className="d-flex align-items-center">
 													<div className="icon">
@@ -271,13 +275,13 @@ export default function Contact() {
 										<h4 className="neutral-1000">Our Location</h4>
 										<p className="neutral-500 mb-10">Esiama off Nkroful Road, Western Region, Ghana</p>
 										<div className="d-flex gap-3 mb-30 flex-wrap">
-											<Link href="tel:+2332411456455" className="btn btn-book btn-small">
+											<Link href="tel:+233547245658" className="btn btn-book btn-small">
 												<svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} viewBox="0 0 20 20" fill="none" className="me-1">
 													<path d="M3.925 7.775C5.221 11.969 8.531 15.279 12.725 16.575C14.836 17.227 16.666 15.376 16.666 13.167C16.666 12.614 16.217 12.173 15.669 12.108C14.955 12.022 14.268 11.847 13.621 11.593L12.355 12.859C10.296 11.873 8.626 10.204 7.641 8.145L8.907 6.879C8.653 6.232 8.477 5.545 8.392 4.831C8.327 4.283 7.885 3.833 7.333 3.833C5.124 3.833 3.273 5.664 3.925 7.775Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
 												</svg>
 												Call Us
 											</Link>
-											<Link href="https://wa.me/233595987271" target="_blank" rel="noopener noreferrer" className="btn btn-brand-2 btn-small text-dark">
+											<Link href="https://wa.me/233547245658" target="_blank" rel="noopener noreferrer" className="btn btn-brand-2 btn-small text-dark">
 												WhatsApp Us
 											</Link>
 										</div>

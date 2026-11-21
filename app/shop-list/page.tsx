@@ -102,7 +102,7 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Mobil%201%20Extended%20Performance%20Full%20Synthetic%20Motor%20Oil%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233547245658?text=Hello%2C%20I%20would%20like%20to%20order%20Mobil%201%20Extended%20Performance%20Full%20Synthetic%20Motor%20Oil%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -136,7 +136,7 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Thinkware%20F770%20Dash%20Cam%20Dual%20Channel%20Wifi%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233547245658?text=Hello%2C%20I%20would%20like%20to%20order%20Thinkware%20F770%20Dash%20Cam%20Dual%20Channel%20Wifi%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -170,7 +170,7 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Mobil%20Delvac%201300%20Super%20Heavy%20Duty%20Synthetic%20Blend%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233547245658?text=Hello%2C%20I%20would%20like%20to%20order%20Mobil%20Delvac%201300%20Super%20Heavy%20Duty%20Synthetic%20Blend%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -204,7 +204,7 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Spyder%C2%AE%20%E2%80%93%20Projector%20Headlight%20Misubisi%202024%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233547245658?text=Hello%2C%20I%20would%20like%20to%20order%20Spyder%C2%AE%20%E2%80%93%20Projector%20Headlight%20Misubisi%202024%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -238,7 +238,7 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20HRE%20FlowForm%C2%AE%20%E2%80%93%20FT01%20Tarma%20Honda%202024%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233547245658?text=Hello%2C%20I%20would%20like%20to%20order%20HRE%20FlowForm%C2%AE%20%E2%80%93%20FT01%20Tarma%20Honda%202024%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -272,7 +272,7 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Right%20Stuff%C2%AE%20%E2%80%93%20Drilled%20and%20Slotted%20Brake%20Rotor%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233547245658?text=Hello%2C%20I%20would%20like%20to%20order%20Right%20Stuff%C2%AE%20%E2%80%93%20Drilled%20and%20Slotted%20Brake%20Rotor%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -306,7 +306,7 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20PIRELLI%20TIRES%C2%AE%20%E2%80%93%20P4%20FOUR%20SEASONS%20PLUS%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233547245658?text=Hello%2C%20I%20would%20like%20to%20order%20PIRELLI%20TIRES%C2%AE%20%E2%80%93%20P4%20FOUR%20SEASONS%20PLUS%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -340,7 +340,7 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Lumen%C2%AE%20%E2%80%93%20Custom%20Sealed%20Beam%20LED%20Headlights%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233547245658?text=Hello%2C%20I%20would%20like%20to%20order%20Lumen%C2%AE%20%E2%80%93%20Custom%20Sealed%20Beam%20LED%20Headlights%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -374,7 +374,7 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Shell%20Rotella%20T1%20SAE%2030%20Conventional%20Heavy%20Duty%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233547245658?text=Hello%2C%20I%20would%20like%20to%20order%20Shell%20Rotella%20T1%20SAE%2030%20Conventional%20Heavy%20Duty%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -408,7 +408,7 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20R1%20Concepts%C2%AE%20%E2%80%93%20eLINE%20Series%20Plain%20Brake%20Rotors%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233547245658?text=Hello%2C%20I%20would%20like%20to%20order%20R1%20Concepts%C2%AE%20%E2%80%93%20eLINE%20Series%20Plain%20Brake%20Rotors%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -442,7 +442,7 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Mobil%20Delvac%201300%20Super%20Heavy%20Duty%20Synthetic%20Blend%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233547245658?text=Hello%2C%20I%20would%20like%20to%20order%20Mobil%20Delvac%201300%20Super%20Heavy%20Duty%20Synthetic%20Blend%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
@@ -476,7 +476,7 @@ export default function ShopList() {
 																<div className="card-price">
 																	<h6 className="text-lg-bold neutral-1000"><Price amount={98.67} /></h6>
 																</div>
-																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233595987271?text=Hello%2C%20I%20would%20like%20to%20order%20Mobil%20Delvac%201300%20Super%20Heavy%20Duty%20Synthetic%20Blend%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
+																<div className="card-button"><a className="btn btn-gray" href="https://wa.me/233547245658?text=Hello%2C%20I%20would%20like%20to%20order%20Mobil%20Delvac%201300%20Super%20Heavy%20Duty%20Synthetic%20Blend%20from%20your%20online%20shop.%20Is%20it%20available%3F" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div>
 															</div>
 														</div>
 													</div>
