@@ -43,7 +43,6 @@ export default function SortCarsFilter({
 							<span className="text-xs-medium neutral-500 mr-5 d-block m-w-50px">Sort by:</span>
 							<select value={sortCriteria} onChange={handleSortChange}>
 								<option value="name">Name</option>
-								<option value="price">Price</option>
 								<option value="rating">Rating</option>
 							</select>
 						</div>

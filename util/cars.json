@@ -74,7 +74,16 @@
     "dailyRate": null,
     "image": "/assets/imgs/cars/jetour-g700-2026/card.jpg",
     "gallery": [
-      "/assets/imgs/cars/jetour-g700-2026/gallery/01.jpg"
+      "/assets/imgs/cars/jetour-g700-2026/gallery/01.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/gallery/02.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/gallery/03.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/gallery/04.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/gallery/05.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/gallery/06.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/gallery/07.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/gallery/08.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/gallery/09.jpg",
+      "/assets/imgs/cars/jetour-g700-2026/gallery/10.jpg"
     ],
     "spin": [
       "/assets/imgs/cars/jetour-g700-2026/spin/00.jpg",
@@ -251,7 +260,7 @@
   },
   {
     "id": 1,
-    "price": 77595,
+    "price": null,
     "duration": "7",
     "carType": "Sedans",
     "amenities": "Leather upholstery",
@@ -268,7 +277,7 @@
   },
   {
     "id": 2,
-    "price": 51080,
+    "price": null,
     "duration": "5",
     "carType": "Hatchbacks",
     "amenities": "Heated seats",
@@ -285,7 +294,7 @@
   },
   {
     "id": 3,
-    "price": 34525,
+    "price": null,
     "duration": "10",
     "carType": "Convertibles",
     "amenities": "Sunroof/Moonroof",
@@ -302,7 +311,7 @@
   },
   {
     "id": 4,
-    "price": 37245,
+    "price": null,
     "duration": "7",
     "carType": "Sedans",
     "amenities": "Leather upholstery",
@@ -319,7 +328,7 @@
   },
   {
     "id": 5,
-    "price": 158550,
+    "price": null,
     "duration": "5",
     "carType": "Sedans",
     "amenities": "Heads-up display",
@@ -336,7 +345,7 @@
   },
   {
     "id": 6,
-    "price": 29100,
+    "price": null,
     "duration": "4",
     "carType": "SUVs",
     "amenities": "Leather upholstery",
@@ -346,14 +355,14 @@
     "image": "car-6.png",
     "name": "Toyota Camry LE Hybrid",
     "listingType": "both",
-    "dailyRate": 65,
+    "dailyRate": null,
     "brand": "Toyota",
     "slug": "toyota-camry-le-hybrid",
     "featured": false
   },
   {
     "id": 7,
-    "price": 29000,
+    "price": null,
     "duration": "7",
     "carType": "SUVs",
     "amenities": "Adaptive cruise control",
@@ -363,14 +372,14 @@
     "image": "car-7.png",
     "name": "Hyundai Sonata SEL Plus",
     "listingType": "both",
-    "dailyRate": 65,
+    "dailyRate": null,
     "brand": "Hyundai",
     "slug": "hyundai-sonata-sel-plus",
     "featured": false
   },
   {
     "id": 8,
-    "price": 61995,
+    "price": null,
     "duration": "7",
     "carType": "SUVs",
     "amenities": "Heated seats",
@@ -387,7 +396,7 @@
   },
   {
     "id": 9,
-    "price": 39695,
+    "price": null,
     "duration": "5",
     "carType": "Coupes",
     "amenities": "Sunroof/Moonroof",
@@ -404,7 +413,7 @@
   },
   {
     "id": 10,
-    "price": 44365,
+    "price": null,
     "duration": "7",
     "carType": "Coupes",
     "amenities": "Heated seats",
@@ -421,7 +430,7 @@
   },
   {
     "id": 11,
-    "price": 59575,
+    "price": null,
     "duration": "5",
     "carType": "Compacts",
     "amenities": "Sunroof/Moonroof",
@@ -438,7 +447,7 @@
   },
   {
     "id": 12,
-    "price": 49460,
+    "price": null,
     "duration": "7",
     "carType": "SUVs",
     "amenities": "Heated seats",
@@ -448,14 +457,14 @@
     "image": "car-12.png",
     "name": "Kia Telluride SX",
     "listingType": "both",
-    "dailyRate": 135,
+    "dailyRate": null,
     "brand": "Kia",
     "slug": "kia-telluride-sx",
     "featured": false
   },
   {
     "id": 13,
-    "price": 37650,
+    "price": null,
     "duration": "6",
     "carType": "Coupes",
     "amenities": "Sunroof/Moonroof",
@@ -472,7 +481,7 @@
   },
   {
     "id": 14,
-    "price": 37245,
+    "price": null,
     "duration": "7",
     "carType": "Compacts",
     "amenities": "Heated seats",
@@ -489,7 +498,7 @@
   },
   {
     "id": 15,
-    "price": 55700,
+    "price": null,
     "duration": "5",
     "carType": "SUVs",
     "amenities": "Sunroof/Moonroof",
@@ -506,7 +515,7 @@
   },
   {
     "id": 16,
-    "price": 53690,
+    "price": null,
     "duration": "6",
     "carType": "Coupes",
     "amenities": "Heated seats",
@@ -523,7 +532,7 @@
   },
   {
     "id": 17,
-    "price": 30695,
+    "price": null,
     "duration": "7",
     "carType": "Compacts",
     "amenities": "Sunroof/Moonroof",
@@ -533,14 +542,14 @@
     "image": "car-17.png",
     "name": "Chevrolet Bolt EV Premier",
     "listingType": "rental",
-    "dailyRate": 60,
+    "dailyRate": null,
     "brand": "Chevrolet",
     "slug": "chevrolet-bolt-ev-premier",
     "featured": false
   },
   {
     "id": 18,
-    "price": 51695,
+    "price": null,
     "duration": "5",
     "carType": "SUVs",
     "amenities": "Heated seats",
@@ -550,14 +559,14 @@
     "image": "car-18.png",
     "name": "Ford Explorer Limited",
     "listingType": "rental",
-    "dailyRate": 140,
+    "dailyRate": null,
     "brand": "Ford",
     "slug": "ford-explorer-limited",
     "featured": false
   },
   {
     "id": 19,
-    "price": 47200,
+    "price": null,
     "duration": "7",
     "carType": "Coupes",
     "amenities": "Sunroof/Moonroof",
@@ -574,7 +583,7 @@
   },
   {
     "id": 20,
-    "price": 31490,
+    "price": null,
     "duration": "5",
     "carType": "Compacts",
     "amenities": "Heated seats",
@@ -584,14 +593,14 @@
     "image": "car-20.png",
     "name": "Nissan Rogue SV AWD",
     "listingType": "both",
-    "dailyRate": 75,
+    "dailyRate": null,
     "brand": "Nissan",
     "slug": "nissan-rogue-sv-awd",
     "featured": false
   },
   {
     "id": 21,
-    "price": 25949,
+    "price": null,
     "duration": "7",
     "carType": "SUVs",
     "amenities": "Panoramic sunroof",
@@ -601,14 +610,14 @@
     "image": "car-1.png",
     "name": "Jetour X70 Plus 2024",
     "listingType": "both",
-    "dailyRate": 70,
+    "dailyRate": null,
     "brand": "Jetour",
     "slug": "jetour-x70-plus-2024",
     "featured": false
   },
   {
     "id": 22,
-    "price": 42532,
+    "price": null,
     "duration": "7",
     "carType": "SUVs",
     "amenities": "360-degree camera",
@@ -618,14 +627,14 @@
     "image": "car-2.png",
     "name": "Jetour X90 Plus 2024",
     "listingType": "both",
-    "dailyRate": 110,
+    "dailyRate": null,
     "brand": "Jetour",
     "slug": "jetour-x90-plus-2024",
     "featured": false
   },
   {
     "id": 23,
-    "price": 26582,
+    "price": null,
     "duration": "5",
     "carType": "SUVs",
     "amenities": "Leather upholstery",
@@ -635,14 +644,14 @@
     "image": "car-3.png",
     "name": "Changan CS55 Plus 2024",
     "listingType": "both",
-    "dailyRate": 70,
+    "dailyRate": null,
     "brand": "Changan",
     "slug": "changan-cs55-plus-2024",
     "featured": false
   },
   {
     "id": 24,
-    "price": 22152,
+    "price": null,
     "duration": "6",
     "carType": "SUVs",
     "amenities": "Smart ambient lighting",
@@ -652,7 +661,7 @@
     "image": "car-4.png",
     "name": "Changan Uni-T 2024",
     "listingType": "rental",
-    "dailyRate": 55,
+    "dailyRate": null,
     "brand": "Changan",
     "slug": "changan-uni-t-2024",
     "featured": false

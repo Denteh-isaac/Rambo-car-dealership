@@ -7,7 +7,6 @@ import ByCarType from "@/components/Filter/ByCarType";
 import ByFuel from "@/components/Filter/ByFuel";
 import ByLocation from "@/components/Filter/ByLocation";
 import ByPagination from "@/components/Filter/ByPagination";
-import ByPrice from "@/components/Filter/ByPrice";
 import ByRating from "@/components/Filter/ByRating";
 import Layout from "@/components/layout/Layout";
 import rawCarsData from "@/util/cars.json";
@@ -192,14 +191,6 @@ export default function CarsList1() {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="sidebar-left border-1 background-body">
-                                        <div className="box-filters-sidebar">
-                                            <div className="block-filter border-1">
-                                                <h6 className="text-lg-bold item-collapse neutral-1000">Filter Price </h6>
-                                                <ByPrice filter={filter} handlePriceRangeChange={handlePriceRangeChange} />
                                             </div>
                                         </div>
                                     </div>

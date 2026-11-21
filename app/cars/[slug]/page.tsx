@@ -6,7 +6,10 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 
-type Car = (typeof carsData)[number] & {
+type Car = Omit<(typeof carsData)[number], "price" | "dailyRate"> & {
+	/** Everything is quoted on request today, but keep the priced path compiling. */
+	price?: number | null
+	dailyRate?: number | null
 	gallery?: string[]
 	spin?: string[]
 	specs?: Record<string, string>
@@ -103,6 +106,7 @@ export default async function CarDetailPage({ params }: { params: Promise<{ slug
 									href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(enquiry)}`}>
 									Ask about this car
 								</a>
+								<a className="btn btn-gray" href={`tel:+${WHATSAPP}`}>Call us</a>
 								<Link className="btn btn-gray" href="/contact">Book a viewing</Link>
 							</div>
 

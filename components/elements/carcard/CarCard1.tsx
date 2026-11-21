@@ -52,7 +52,7 @@ export default function CarCard1({ car }: any) {
 							{car?.price == null ? (
 								<>
 									<h6 className="text-lg-bold neutral-1000">Price on request</h6>
-									<p className="text-md-medium neutral-500">talk to us</p>
+									<p className="text-md-medium neutral-500">call us or book a viewing</p>
 								</>
 							) : showsDailyRate ? (
 								<>
