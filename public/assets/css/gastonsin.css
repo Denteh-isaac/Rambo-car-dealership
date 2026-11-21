@@ -293,3 +293,50 @@ a[href^="mailto:"] {
 	.browse-row { align-items: flex-start; flex-direction: column; gap: 6px; }
 	.browse-strip { width: 100%; }
 }
+
+/* ---------------------------------------------------------------------------
+   Hero scrim — tuned to the port photograph, not guessed.
+   Measured backdrop luminance across the hero: the left edge is the ship's
+   white superstructure (0.72 -> 1.4:1 against white text) while the right half
+   is dark hull (0.05-0.09 -> already 8-10:1). A flat tint therefore either
+   fails on the left or flattens the car on the right, so the scrim is weighted
+   left and lifts off the Jetour entirely.
+   --------------------------------------------------------------------------- */
+.block-banner-home1 .bg-shape::after {
+	opacity: 1;
+	background:
+		linear-gradient(90deg,
+			rgba(6, 10, 8, 0.90) 0%,
+			rgba(6, 10, 8, 0.87) 12%,
+			rgba(6, 10, 8, 0.76) 24%,
+			rgba(6, 10, 8, 0.58) 32%,
+			rgba(6, 10, 8, 0.43) 40%,
+			rgba(6, 10, 8, 0.26) 50%,
+			rgba(6, 10, 8, 0.15) 62%,
+			rgba(6, 10, 8, 0.10) 78%,
+			rgba(6, 10, 8, 0.08) 100%),
+		linear-gradient(180deg,
+			rgba(6, 10, 8, 0.42) 0%,      /* keeps the top bar legible */
+			rgba(6, 10, 8, 0.06) 26%,
+			rgba(6, 10, 8, 0.06) 68%,
+			rgba(6, 10, 8, 0.34) 100%);   /* seats the search card */
+}
+
+/* A headline needs a floor of its own — the gradient does the work, this just
+   stops thin strokes disappearing into a highlight. */
+.block-banner-home1 h1,
+.block-banner-home1 .list-ticks-green li {
+	text-shadow: 0 1px 18px rgba(4, 8, 6, 0.55);
+}
+
+/* Narrow screens crop the photo differently and the copy runs full width,
+   so the horizontal weighting no longer maps — go even there instead. */
+@media (max-width: 991px) {
+	.block-banner-home1 .bg-shape::after {
+		background:
+			linear-gradient(180deg,
+				rgba(6, 10, 8, 0.62) 0%,
+				rgba(6, 10, 8, 0.58) 45%,
+				rgba(6, 10, 8, 0.72) 100%);
+	}
+}
