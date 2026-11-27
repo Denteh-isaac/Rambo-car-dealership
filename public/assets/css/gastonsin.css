@@ -309,3 +309,29 @@ a[href^="mailto:"] {
 .block-banner-home1 .list-ticks-green li {
 	text-shadow: 0 1px 18px rgba(4, 8, 6, 0.45);
 }
+
+/* ---------------------------------------------------------------------------
+   Hero sizing on small screens.
+   The template ships one rule — padding-top: 300px, min-height: 892px — with no
+   responsive override, so a 375x812 phone got 337px of dead space under the nav
+   (42% of the screen) inside a hero taller than the viewport itself.
+   --------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+	.block-banner-home1 {
+		min-height: 790px;
+		padding-top: 190px;
+	}
+}
+
+@media (max-width: 575px) {
+	/* The search card always rides 124px up over the hero's bottom edge, so the
+	   height has to leave the tick list clear of it. */
+	.block-banner-home1 {
+		min-height: 724px;
+		padding-top: 140px;
+	}
+	.block-banner-home1 h1 {
+		font-size: 36px;
+		line-height: 46px;
+	}
+}
