@@ -318,8 +318,8 @@ a[href^="mailto:"] {
    --------------------------------------------------------------------------- */
 @media (max-width: 991px) {
 	.block-banner-home1 {
-		min-height: 790px;
-		padding-top: 190px;
+		min-height: 765px;
+		padding-top: 165px;
 	}
 }
 
@@ -327,8 +327,8 @@ a[href^="mailto:"] {
 	/* The search card always rides 124px up over the hero's bottom edge, so the
 	   height has to leave the tick list clear of it. */
 	.block-banner-home1 {
-		min-height: 724px;
-		padding-top: 140px;
+		min-height: 690px;
+		padding-top: 105px;
 	}
 	.block-banner-home1 h1 {
 		font-size: 36px;
